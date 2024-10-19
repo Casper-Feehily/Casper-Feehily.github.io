@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Casper-Feehily.github.io</id>
     <title>Casper的个人博客</title>
-    <updated>2024-10-19T15:50:54.709Z</updated>
+    <updated>2024-10-19T15:59:51.901Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Casper-Feehily.github.io"/>
     <link rel="self" href="https://Casper-Feehily.github.io/atom.xml"/>
@@ -151,6 +151,15 @@ Flusk路由的功能就是把各种二级域名和对应的文件建立映射关
 </ul>
 <p>我是在去往法国巴黎参加iGEM Grand Jamboree的飞机上写下这些文字的，希望这比赛能有个顺利点的结果吧，也不负老师们、队员们这一年来的付出吧！</p>
 <p><strong>时也命也，善始慎终，尽人事，听天命。</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[测试]]></title>
+        <id>https://Casper-Feehily.github.io/post/0RitsymP_D/</id>
+        <link href="https://Casper-Feehily.github.io/post/0RitsymP_D/">
+        </link>
+        <updated>2024-10-19T15:58:51.000Z</updated>
+        <content type="html"><![CDATA[<p>测试</p>
 ]]></content>
     </entry>
     <entry>
