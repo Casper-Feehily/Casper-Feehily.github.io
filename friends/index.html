@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客 个人博客 电脑 web 程序 技术 数码产品 高中生 程序 hifi音乐 耳机 Casper CasperFeehily 干警小李 ">
+<meta name="description" content="你好！我是Casper 欢迎来到我的个人博客！">
+<meta name="theme-color" content="#000">
+<title>Casper的个人博客</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1729325907690">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>Casper的个人博客</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">I am a slow walker, but I never walk backwards. — Abraham Lincoln</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_blank">
+                  
+                    <i class="fa fa-address-book"></i> 我时常访问的网站
+                  
+                </a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">Casper Feehily</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>你好啊！我是一个喜欢唱，跳 ，rap（啊不是走错了</p>
+      
+        <p>我是一个喜欢折腾电脑的准高中生。我会不定期更新一些我折腾电脑心得体会（或者写一点我自己也不知道属于什么类别的东西😂）。其实我也是一个电脑小白，所以有什么写的不对的地方 大家可以在评论区中纠正！</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">10</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://CasperFeehily.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+        
+          
+            <a class="social-img" href="#">
+              <img src="/media/images/custom-array-imgSocials-1690797539854-socialImg.jpg" />
+              <i class="fa fa-wechat" title="我的微信" ></i>
+            </a>
+          
+        
+      </div>
+    </div>
+  
+
+
+  <div class="sidebar-item">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52 src="//music.163.com/outchain/player?type=2&id=1447110625&auto=1&height=32"></iframe>
+  </div>
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box gemini box-shadow-wrapper">
+          <section class="friends-section bg-color slide-down-in">
+            <div class="firends-box">
+              <h1 class="firends-title" itemprop="name headline">我时常访问的网站</h1>
+              
+              
+              <a href="https://appstorrent.ru/" target="_blank">
+                <div class="firends-item">
+                  <img src="https://appstorrent.ru/" />
+                  <div class="right">
+                    <div class="top">
+                      Mac付费软件下载网站
+                    </div>
+                    <div class="bottom">
+                      
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="https://blog.daliansky.net/" target="_blank">
+                <div class="firends-item">
+                  <img src="https://blog.daliansky.net/" />
+                  <div class="right">
+                    <div class="top">
+                      黑果小兵的部落阁
+                    </div>
+                    <div class="bottom">
+                      
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="https://sspai.com" target="_blank">
+                <div class="firends-item">
+                  <img src="https://sspai.com" />
+                  <div class="right">
+                    <div class="top">
+                      少数派
+                    </div>
+                    <div class="bottom">
+                      
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="http://www.ruanyifeng.com/blog/" target="_blank">
+                <div class="firends-item">
+                  <img src="http://www.ruanyifeng.com/blog/" />
+                  <div class="right">
+                    <div class="top">
+                      阮一峰的博客
+                    </div>
+                    <div class="bottom">
+                      
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="https://stackoverflow.co/" target="_blank">
+                <div class="firends-item">
+                  <img src="https://stackoverflow.co/" />
+                  <div class="right">
+                    <div class="top">
+                      Stackoverflow
+                    </div>
+                    <div class="bottom">
+                      
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+              
+            </div>
+            <hr>
+            <div style="text-align:center">
+              <span class="with-love">
+                <i class="fa fa-heart"></i>
+              </span>
+              留言添加友链
+              <span class="with-love">
+                <i class="fa fa-heart"></i>
+              </span>
+            </div>
+            <hr>
+            <div class="friends-note">
+              <p><strong>友链格式：</strong></p>
+              <ul>
+                <li>网站名称：枫糖</li>
+                <li>网站地址：<a href="https://blog.maplesugar.space" data-pjax-state="">https://blog.maplesugar.space</a>
+                </li>
+                <li> 网站描述：From rookie to master</li>
+                <li> 网站 Logo / 头像：<a href="https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg"
+                    data-pjax-state="">https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg</a></li>
+              </ul>
+            </div>
+            
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('https://upimage.alexhchu.com/2020/04/21/47eda59424daa.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'hs5F9XNvALS5uAGrwm4iR4iY-gzGzoHsz',
+    appKey: 'cnIVBxl3JKqFtjnD4v8Ho0T0',
+    avatar: 'retro',
+    placeholder: '',
+    pageSize: '',
+    lang: 'zh-cn',
+    visitor: 'true' === 'false',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'false',
+  });
+</script>
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Powered by Casper
+
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+    
+
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/P_suhiOnAp/"" data-c="
+          &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;2023 年，我非常幸运地加入了我们学校的 iGEM 队伍，并主要负责其中的 Wiki 制作。这里可能有些读者并不知道什么是 iGEM 在此我先简单介绍一下。这里借用百度的解释&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;iGEM competition（International Genetically Engineered Machine）国际遗传工程的机器设计竞赛，美国麻省理工学院（MIT）创办，是合成生物学（Synthetic Biology）领域最高水平的国际性学术竞赛。iGEM是以合成生物学为主，化学，数学，计算机，机械电子工程设计等多学科为辅的团队性竞赛。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;说白了，这玩意和平时咱们理解的学科竞赛不大一样。这玩意要求你利用生物学和工程学知识设计一个项目，用来解决生活中的实际问题。同时，仅仅做点实验、写点论文可不能算是完成任务。你还要做一系列社会实践调查、制作项目宣传片等等。最后，还需要把你这一年时间做的所有工作都呈现在一个叫做Wiki的网站上。而这就是我的主要职责。&lt;/p&gt;
+&lt;h2 id=&#34;相关语言的学习&#34;&gt;相关语言的学习&lt;/h2&gt;
+&lt;p&gt;编写这种静态的网站，所涉及到的语言基本上就是HTML、JS和CSS &lt;em&gt;（请注意我这里说的是“语言”而不是“编程语言”）&lt;/em&gt; 下面我会简单介绍一下这三个语言的特点和应用方面。&lt;/p&gt;
+&lt;h3 id=&#34;html&#34;&gt;HTML&lt;/h3&gt;
+&lt;p&gt;这玩意相当于是一种复杂版的Markdown语法。&lt;em&gt;(如果你不知道什么是Markdown的话，我强烈建议你了解一下。这玩意真超级好用，这篇博客就是用Markdown写成的)&lt;/em&gt; 但与之不同的是，他关于文字格式的描述不是用简单的符号，而是用一种叫做标签的东西。光说可能比较难理解，所以我来举个例子。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
+&amp;lt;body style=&amp;quot;background-color:yellow&amp;quot;&amp;gt; #这一行设置了网页背景色是黄色
+&amp;lt;h2 style=&amp;quot;background-color:red&amp;quot;&amp;gt;This is a heading&amp;lt;/h2&amp;gt; #前面的标签设定了这行字的背景是红色的
+&amp;lt;p style=&amp;quot;background-color:green&amp;quot;&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt; #前面的标签设置了这行字的背景是绿色
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面这些代码的效果是这样的：&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1729266155593.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+怎么样，是不是理解一些了？🐶具体的教程可以查看W3School的教程&lt;a href=&#34;https://www.w3school.com.cn/html/index.asp&#34;&gt;W3School的教程&lt;/a&gt;，我就是在这上面自学的！其实还是蛮容易的。&lt;/p&gt;
+&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
+&lt;p&gt;CSS严格来说不能算是一种标记语言，它的诞生主要是因为程序员的懒惰🐶举个例子，我想要在很多段文字上应用 “粗体 红色背景 绿色字体” 这个样式，按照之前的做法，我要在所有的文字前面都要添加一个标签，注明这段文字是 “粗体 红色背景 绿色字体” 这听起来就怪麻烦的。所以有人想到了一个好办法，他把“粗体 红色背景 绿色字体”这个格式规定了一个名字叫做“标题”，以后所有想引用这个格式的文段只需要在前面注明“标题”就好了。&lt;strong&gt;而CSS文件就是建立这些格式和他们的名字对应关系的文件&lt;/strong&gt;。这里还是举个例子吧。&lt;br&gt;
+这个是css文件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;h1 {
+  color: green;
+  text-align: center;
+} 
+# 这里定义了标题这一样式 格式是“绿色 居中显示”
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+} 
+# 这里定义了正文这一样式 格式是“vandana字体 大小20px”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个是他所标记的html文件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
+    &amp;lt;h1&amp;gt;我的第一个 CSS 实例&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;这是一个段落。&amp;lt;/p&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面这些代码的效果是这样的：&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1729267485570.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;css编写注意事项&#34;&gt;CSS编写注意事项&lt;/h4&gt;
+&lt;p&gt;这里是写给有点基础的朋友们看的，如果你看不懂，就去上面的网站好好学习吧🐶&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一定要认真的给你的样式取名，不要图省事就取类似于“a1”“a2”的名字，这样就是在折磨日后检查代码的自己🤡&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不要用太多的!improtant 提高权重，这样万一有写错的地方，很难找到问题所在。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iGEM组委会给的仓库中有很多预设的CSS，其中不乏一些十分脑瘫的设计，所以你在发现iGEM服务器上的网页和你本地的长的不一样时，记得检查并注释掉原来的脑瘫CSS。🐶&lt;s&gt;这点让当时的我吃了不少苦头&lt;/s&gt;&lt;/p&gt;
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;JavaScript是这三个东西里上手难度最高的一个，这是一个真正的编程语言，他能够改变HTML的样式，进而实现一些花里胡哨的效果。比如说文字图片的动画、鼠标追踪等等。总之，这是一个能让你的网站“动”起来的东西。&lt;/p&gt;
+&lt;p&gt;如果你是一个之前没有接触过Web前端开发，但又想写出一个网站，我建议你不要花费太多时间去学习JS，因为你可能要花费比HTML和CSS更多的时间去学习，最后还有可能写不出来像别人那样好看的动画效果。&lt;s&gt;不说了，说多了都是泪😥&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;但如果你的时间充裕，你也可以看看&lt;a href=&#34;https://www.w3school.com.cn/js/index.asp&#34;&gt;W3school&lt;/a&gt;、&lt;a href=&#34;https://www.runoob.com/&#34;&gt;菜鸟学院&lt;/a&gt;的教程。但如果你时间紧张，我的建议是直接面向&lt;a href=&#34;https://www.csdn.net/&#34;&gt;CSDN&lt;/a&gt;、&lt;a href=&#34;https://stackoverflow.com/&#34;&gt;Stack Overflow&lt;/a&gt;和&lt;a href=&#34;www.google.com&#34;&gt;Google&lt;/a&gt;编程。（手动狗头 在这些网站里搜索你想要的动画效果，然后直接把JS代码control+C+V大法到你的网页里，再简单修改一些参数，让它符合你网页的需要就行了。&lt;/p&gt;
+&lt;h2 id=&#34;igem组委会对于wiki要求&#34;&gt;iGEM组委会对于WIki要求&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;多媒体文件不能直接放到组委会给的Gitlab仓库里，需要上传到iGEM提供的&lt;a href=&#34;https://tools.igem.org/uploads/teams&#34;&gt;图床&lt;/a&gt;上，再在你的wiki中直接引用链接&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;注意版权，不要使用有版权保护的字体和图片。尽管历年有许多队伍不遵守这一规定，有些还获得了Best Wiki的奖项，但这种行为是不可取的。对于英文字体，我比较推荐&lt;a href=&#34;https://www.jetbrains.com/lp/mono/&#34;&gt;JetBrains Mono&lt;/a&gt;，还挺好看的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不要在网站中引入外部链接，这样会直接让你失去掉评选Best Wiki的资格。你可以用&lt;a href=&#34;https://tools.igem.org/wiki/external-content-check&#34;&gt;组委会提供的检查工具&lt;/a&gt; 检查一下自己的网页。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;血泪教训 注意Deadline 千万不要把所有工作全都压在Deadline之前做，这样真的特别崩溃。而且iGEM组委会收了这么多钱，买的服务器却破破烂烂的🙂，在上传量大的时候非常容易崩溃，而且这是一个国际性的比赛，每时每刻都可能有人在往服务器上上传数据，不会有半夜三点钟服务器空闲的情况。所以最好在Deadline的前两天就完成Wiki的上传，最后两天只进行一些小的改动。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;还是血泪教训 iGEM 中所有的页面都是基于 MediaWiki 构建的，我们在编辑页面提交的代码，会经过 MediaWiki 处理，修改代码中的部分内容。所以一定不要前期一直在本地埋头编写Wiki，一定要在每次编写完后Push到Gitlab上看看效果。iGEM 引入的默认规则总能给你带来别样的惊喜。😈&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iGEM组委会给的模板，最底下有一个写着gitlab地址的底栏，一定不要删去&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我可能还有一些遗漏的注意事项没说，所以还是一定一定一定要仔细阅读iGEM的帮助文档。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;美工与设计&#34;&gt;美工与设计&lt;/h2&gt;
+&lt;p&gt;iGEM 官方为我们提供了一套默认的 Wiki 模板。 虽然可以直接使用默认模板，但是为了 Wiki 页面的美观性，我们需要对 Wiki 页面进行重新设计。 因此，队伍中有名厉害的美工是件非常重要的事。 在正式进行设计前，一定要明确wiki的主题、基本配色和所需元素、布局规划等。&lt;/p&gt;
+&lt;p&gt;在这之后，负责美工的同学和负责 Wiki 制作的同学之间需要进行良好的沟通，这是非常重要的一环。 另外，建议设计在定下来以后不要轻易修改，否则一来容易引起风格不统一，一处修改后可能导致其他地方也需要修改， 二来可能会对制作 Wiki 的同学产生额外负担，因为一个不起眼的功能或设计可能需要大量的代码来实现。😥&lt;s&gt;真的，甲方爸爸改需求真的超崩溃&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;为了避免美工设计与实际实现有较大的出入，美工的同学可以将预想成品做成一张图片或是pdf， 在图上标注好颜色、尺寸、字体等信息，让制作 Wiki 的同学根据图上信息完成代码的编写工作。比如这样：&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1729308331422.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;还有一点需要注意的是，负责美工的同学设计出来的图片最好以透明为底色。如果以白色为底色，并且 Wiki 页面背景不是白色的话，就会出现下面这样的问题。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1729308452098.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;wiki制作技巧&#34;&gt;Wiki制作技巧&lt;/h2&gt;
+&lt;h3 id=&#34;编译器&#34;&gt;编译器&lt;/h3&gt;
+&lt;p&gt;你需要一个本地的应用来写代码，这个应用就叫做编译器。这里我强烈推荐JetBrain家的Webstorm，真的超级好用。如果你遇到了一些经济学问题🐶&lt;s&gt;可以去网上找找破解版&lt;/s&gt;🐶如果不想用破解版，VScode也是个不错的选则。这两个编译器里都有Git插件，可以让你在写完代码后很方便的Push到Gitlab上。&lt;br&gt;
+同时，iGEM官方也在Gitlab中内置了一个在线编辑器，这东西有点类似于VScode，但我并不建议你直接在这个上面写代码，这玩意运行的不是很流畅，但是用来进行简单的修改还是很好用的。&lt;/p&gt;
+&lt;h3 id=&#34;善用f12&#34;&gt;善用F12&lt;/h3&gt;
+&lt;p&gt;F12是打开浏览器中的开发者工具的快捷键，这东西在用来调试、修改代码的时候非常的好用，你可以直接把鼠标移动到要修改的地方，它就会显示出相应的css和html，你可以现在上面修改代码 用浏览器预览效果。等到修改好以后，直接在本地的编译器查找替换相应的代码即可。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1729319078813.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+另外，当你看到别的网站上有让你惊艳的设计，可以直接F12一下，看看源码，再control+C+V大法一下🐶&lt;br&gt;
+这里强烈推荐google chorme的开发者工具，真的非常好用。&lt;/p&gt;
+&lt;h2 id=&#34;我遇到的奇奇怪怪的问题&#34;&gt;我遇到的奇奇怪怪的问题&lt;/h2&gt;
+&lt;p&gt;下面写了一些我在wiki编写过程中遇到的个性化问题和我的解决方式，我觉得这应该属于小概率事件，应该不会经常发生。但是解决问题的过程还是挺&lt;s&gt;痛苦&lt;/s&gt;好玩的，所以不妨听我唠两句🐶&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;我在往Gitlab上面提交代码的时候，发现虽然代码能成功提交，但是Gitlab老显示Pipline Failed网页构建失败&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1729319728601.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+经过一个通宵的排查，终于找到了问题。。。我之前觉得iGEM给的footer.html、layout.html、menu.html没啥用，就直接给删了。。。结果后来一看，这里面全是各种依赖关系，把这三个文件删了以后，没有了依赖，Gitlab自然也没法完成构建。于是我把这三个文件回滚回来后修改了一下dependencies.txt文件就解决了问题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果说上面那个是我自己作的，那下面这个问题就是Gitlab自己的锅。在Pipline正常后，我发现我的网页还是乱七八糟的，很像没有加载css文件的样子。所以不用怀疑，一定又是构建出问题了。又是一个通宵的排查，我发现iGEM组委会是用Flusk路由来构建网页的，而这种情况的出现很有可能是因为Flusk路由出问题了。而这个万恶之源app.py就是负责构建网页的。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1729320609183.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">有关iGEM大赛Wiki制作的反思和经验总结</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/you-guan-wu-sun-yin-pin-he-fa-sheng-dan-yuan-de-zhi-shi/"" data-c="
+          &lt;p&gt;我本人是一个无损音乐的爱好者，喜欢折腾耳机和音箱，对无损也有自己的一点见解。再加上现在的无损音乐圈子很乱，到处都是标榜自己是什么HIFI Hi-Res……各种智商税层出不穷。我觉得很有必要讲一讲关于无损音频的常识，让你可以简单的分辨这首歌曲到底是不是所谓的“真无损”。同时，我也会捎带着讲讲音箱 耳机的发声单元。那么，咱们就开始吧！&lt;br&gt;
+首先，我们要知道，现在的主流音频都是采用的数字信号进行传输。也就是说，现在的音频文件都是用“0”和“1”来表示音频信号。数字信号相比于靠波来传输的模拟信号来说，具有准确度高、失真度小等优点&lt;br&gt;
+既然音频都是用数字信号进行传输，那么他们之间的区别又在那里呢？这里就要介绍衡量音频质量高低的三个因素。采样率、位深度和信道数。这里我们就借用Adobe Audiation来打开一个mp3文件，一起来看看这三个名词都是什么意思。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1697163533115.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+1 采样率&lt;br&gt;
+首先我们观察一下上面绿色的图案&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1697163743663.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+再放大一点&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1697163765563.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+再继续放大一点&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1697163782434.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+我们会看见，原来的音频曲线，在我们不断的放大下，变成了一个一个的点。有点像视频中“帧”的概念，音频文件其实就是记录了这些点的信息，再快速的播放。音乐就出现了。音频采样率就是衡量这些点密集程度的东西，采样率越高，这些点就越密集。正如视频单位时间内，帧数越多，画面越流畅的原理一样，这些点越密集，证明这条音频播放起来就会更&amp;quot;丝滑&amp;quot;😂，含有的信息也就越多。&lt;br&gt;
+再Adobe Audiation中，我们可以在右下角看到这条音频的采样率是44100Hz，也就是44.1kHz。这与普通CD的采样率是一样的，这证明这个音频在一秒钟内记录了44100个音频点。常见的采样率还有48kHz、96kHz&lt;br&gt;
+128kHz等。&lt;/p&gt;
+&lt;p&gt;2 位深度&lt;br&gt;
+位深度是衡量一个音频文件能表示多少音调的声音的参数。位深度越高，所能表现的声音音调就越多。常见的位深度有8bit 16bit 24bit 32bit等。8bit的音频能够表示出2^24种音调 16bit则能表示出2&lt;sup&gt;48种音调。而32bit所能表示的音调数达到了惊人的2&lt;/sup&gt;96种。我的评价是，音频采样率在16bit 或24bit就已经完全够用了。更大的位深度你的耳朵基本听不会出来任何区别，还会让音频文件的大小成指数级增加。&lt;br&gt;
+而图片中这个音乐的位深度也可以在右下角看到，是16bit，达到了普通CD的标准。&lt;/p&gt;
+&lt;p&gt;3 信道数&lt;br&gt;
+信道数也叫声道数，当一个管弦乐队演奏时，你可以感到大提琴在你的右前方，小提琴在你的左前方，而小号却在中间……听一个电声乐队时，你可以明显感觉出主奏乐器来自不同的方向。听重唱，你可以清楚地分辨出左、右声道中分别播出的各自的高声部和低声部。这来自不同方向的声音，就构成了一个个信道。当人听到声音时，能对声源进行定位，那么通过在不同的位置设置声源，就可以造就出更好的听觉感受。&lt;br&gt;
+常见的声道有&lt;br&gt;
+单声道：假如你带着一个耳机，那么你耳机的左右耳罩只能播放同一个音频，也就是说，你的两个耳朵无法听到不同的声音&lt;br&gt;
+双声道： 分成左右两个声道，这样你两个耳朵就能听到不同的声音了&lt;br&gt;
+2.1声道：在双声道基础上增加一个低音声道&lt;br&gt;
+5.1声道：包含一个正面声道、左前方声道、右前方声道、左环绕声道、右环绕声道、一个低音声道。这样你就能听到不同方向的声音了。&lt;br&gt;
+7.1声道：    在5.1声道的基础上，把左右的环绕声道拆分为左右环绕声道以及左右后置声道。比5.1声道听起来更加立体&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701182168301.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+在这张图片里，能看到振幅图（上面那个绿色的波）和下面的频谱图（下面那个红色黄色的图像）都各有两个，说明这个音频文件是双声道的，也就是我们平时说的立体声。&lt;/p&gt;
+&lt;p&gt;这里强调一点！信道数多绝对不代表听感好或者是音质好！！！ 那网易云音乐来说，这家伙最近推出了一个叫环绕音效的东西，据称是使用了5.1声道。结果我下载了音频文件打开一看，差点没笑掉大牙😂，仔细一看，这五个声道全部一摸一样😂也就是说，我下载的那个音频本质上其实就是一个单声道的音频。被网易云用复制粘贴大法凭空捏造了4个新的声道以后就出来捞钱😓&lt;br&gt;
+而且，就算你有了真正的多声道音频，如果没有支持多声道音频的设备，那也是白扯。只有支持播放多声道的音箱/耳机 才能让你真正听到多声道。那些不支持多声道的设备在播放多声道音频时会直接把他们压缩成单声道或者双声道进行播放。&lt;br&gt;
+这里再顺带提一嘴，有个听起来很厉害的东西 叫做杜比全景声。这东西可以给音乐增加一些空间感，还能让你感觉歌手是在你的头顶转着圈唱歌，而不是在你的耳朵旁边😂这个东西虽然神奇 但它本质上还是一个算法。他并不能提高你音频的音质。&lt;/p&gt;
+&lt;p&gt;音频格式&lt;br&gt;
+音频格式就是音频的编码规则，目前咱们正常人所能接触到的大多都是以数字信号（不连续的1和0）进行编码的，很少有用模拟信号编码的（连续的波）&lt;br&gt;
+目前主流的编码格式有以下几种 我会把她们的优缺点一并列在下面 注意，这里的音质好坏是指这种音频格式音质的上限 并不代表采用无损格式的音频音质就一定好！&lt;br&gt;
+mp3: 体积小 音质差 为了减小音频大小，他会把音频中的一些极高频和一些低频去掉。&lt;br&gt;
+wav：体积大 音质好 是一种未经过压缩的格式&lt;br&gt;
+flac：体积较小 音质好 是一种无损压缩的格式 但可能出现一些播放器无法正常播放的情况&lt;br&gt;
+aac：体积较小 音质较好 但可能出现一些播放器无法正常播放的情况&lt;/p&gt;
+&lt;p&gt;大概说完了音频的知识，我们再来聊一聊各种发声单元。&lt;br&gt;
+目前市场上主流的发声单元有：动圈式单元   动铁式单元   骨传导（气传导）单元  平板单元 静电式单元&lt;/p&gt;
+&lt;p&gt;先说说最简单 也是应用范围最广的动圈式单元&lt;br&gt;
+目前市面上较多耳机使用的发声单元都是利用动圈技术的，从10块一条的地摊货到万元级的Hi-Fi耳机都能够看到动圈单元的身影。虽然各家厂商的动圈单元设计各有不同，但始终离不开磁铁、音圈和振膜这三些零件。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701185038216.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+音圈上有已经绕好的线圈，利用通过线圈的电流强弱、方向来形成磁场，这时候就会跟旁边的磁铁相吸、相斥，进而带动振膜往复运动推动空气发声。&lt;br&gt;
+优点：发声原理接近人类耳膜，因此声音自然耐听，低频宽松舒服。&lt;br&gt;
+缺点：单元体积越大，需要的功率越大。对播放器的要求较高，解析度和高频的表现比同等级动铁单元差一些&lt;/p&gt;
+&lt;p&gt;动铁单元&lt;br&gt;
+动铁单元主要通过线圈绕在一个位于永磁场的中央被称为“平衡衔铁”的精密铁片上，被带电线圈磁化的铁片在磁力的作用下带动振膜发声。&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701185324188.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+优点：体积较小，灵敏度高，拥有更强的解析力，拥有较好的高频表现。&lt;br&gt;
+缺点：贵，动铁单元较为拉垮 （所以就有了将动圈和动铁结合在一起的全铁耳机，让两者优势互补。但是这种圈铁耳机调音难度大，很容易出现割裂感）&lt;/p&gt;
+&lt;p&gt;平板单元&lt;br&gt;
+平板单元，其背后的原理也叫做等磁式原理，其实在音频行业这种换能原理诞生已久，只是一直都没有太多的厂商制作这样的扬声器产品。不同于动圈的圆形磁体，平板的磁体是分布在振膜两侧的平行磁体，就像两块平板，把振膜夹在中间，同时振膜上覆盖了一层很薄的金属导体，通常是通过印刷或者切割的方式让其成之字状多次折返于振膜上，当其有电流信号经过会通过电磁受力，在两块平板型磁体之间的缝隙里进行运动，从而发出声音。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701185677171.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701185922638.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+优点：震膜可以做得很大，对震膜质量忽略不计，受力均衡遍布在震膜各处，这些优点使平板式耳机在动态和声音信息量上有着先天优势。&lt;br&gt;
+缺点：发声单元体积大，重量大，对播放器要求高。贵！&lt;/p&gt;
+&lt;p&gt;骨传导单元&lt;br&gt;
+这个没啥特别的，其实就相当于是把一块震动的板子放到你耳朵旁边的骨头上，让声音通过你的骨头传导到耳蜗里，而不是通过耳道。&lt;br&gt;
+优点：可以在使用骨传导耳机时听到外界的声音（这也是为什么运动耳机基本上都是骨传导）&lt;br&gt;
+缺点：音质被同等级的其他类型的单元爆杀😂尤其是低频&lt;/p&gt;
+&lt;p&gt;静电单元&lt;br&gt;
+最高端的发声单元，我的人生一大愿望就是亲眼见到一个静电单元的耳机😂 其结构与平板式耳机相似，都是两块非常薄的平面振膜，然后把金属电极振膜夹在中间（但是没有碰到），而平板式耳机两侧并非是磁体，而是充高压电的极板。通过中央的振膜带正电，两侧金属电极通过变换正/负电场的方式来推/拉振膜，达到发声的目的。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701186302225.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+森海塞尔最贵的耳机——大奥2代就采用了静电单元&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701186491472.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+优点：各个方面爆杀其他单元&lt;br&gt;
+缺点：依我看，这是一个非常复杂的经济学问题（手动狗头&lt;/p&gt;
+&lt;p&gt;最后，不同的耳机单元，都会有其独特的声音特质，优点以及缺点相对的。根据自己的喜好甚至是偏好方向去选择耳机产品，不失为一个明智之选。&lt;br&gt;
+最后送给大家两句话&lt;br&gt;
+“单反穷三代，HIFI毁一生”&lt;br&gt;
+“早知道，还是原道”&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1701186788500.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">有关无损音频和发声单元的知识</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/dian-nao-ying-jian-de-jie-shao/"" data-c="
+          &lt;p&gt;这次的文章有点长，里面的知识也比较多比较杂，大家混个脸熟就行😂。今天我来讲讲电脑的硬件组成部分，其实你可以观察一下你的台式电脑，以外观来说这家伙分为以下这三部分。&lt;br&gt;
+输入单元：包括键盘、鼠标、手写板、读卡器等等&lt;br&gt;
+主机部分：这个就是系统单元，被主机机箱保护着，里面有一堆版子、cpu、内存等等&lt;br&gt;
+输出单元：例如屏幕、扬声器等&lt;br&gt;
+我们主要通过输入设备来将一些数据输入到主机里面，然后再由主机处理后将结果传输到输出设备。&lt;br&gt;
+我们主要了解的也就是这里面比较复杂的主机部分。这一部分主要分为以下几个部件&lt;br&gt;
+CPU、主板、显卡、内存条（RAM）、硬盘&lt;/p&gt;
+&lt;p&gt;CPU&lt;br&gt;
+CPU就好像是人的脑袋一样，主要负责相关事情的判断和与实际处理的机制等。CPU负责控制协调电脑其他硬件的运作。CPU还有架构之分，目前市面上主流的架构有复杂指令集（CISC)和精简指令集（RISC）这里的指令集相当于一本英汉字典，他会将你输入的信息转化为cpu可以识别和执行的指令。&lt;br&gt;
+这里再打个不太恰当的比方说明一下CISC和RISC的区别：比如你下答一个指令“我饿了” 精简指令集就会把它转化为“去吃饭”然后扔给CPU去执行，而复杂指令集则会把它转化为“走到饭桌前”“拿勺子”“盛饭”“张嘴”等一系列动作。&lt;br&gt;
+现在常见的使用复杂指令集的CPU有AMD、Intel等x86架构的cpu，使用精简指令集的主要有苹果的M系列芯片还有树莓派和各种手机CPU等ARM架构的CPU。x86架构的CPU的性能相比于同级别的使用ARM架构的CPU更好，而ARM则有低发热、低耗电这些x86架构所不具备的优点。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1692604849446.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+Intel 12代i9 CPU&lt;br&gt;
+由于CPU负责大量运算，所以它的发热很严重。如果你曾经拆开过主板，你会看见CPU上通常会安装一个&lt;s&gt;萝卜&lt;/s&gt;风扇用来散热。&lt;br&gt;
+目前主流的CPU都是双核以上的架构原来老式的单核CPU只有一个运算单元，所谓的多内核这是在一块CPU上嵌入了两个以上的运算内核。简单说就是在一个外壳中有多个CPU运算单元。如果你主要那你的电脑打游戏的话，就不需要太在意CPU的核心数，而更应该关注它的单核性能。因为大多数游戏的多核优化都做的很差，经常会出现这种情况&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1692605524585.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+一核有难，多核围观😂&lt;br&gt;
+但如果你想要进行音视频渲染这种工作，那CPU的核心数还是很重要的。&lt;br&gt;
+CPU还有一个东西叫做线程。线程是指这一块CPU能同时执行多少任务的意思。这自然是越多越好。比如i9 13900K就拥有32个线程，说明它能同时执行32个任务。&lt;br&gt;
+我们前面谈到了CPU的指令集、核心、线程。除了这些东西以外，CPU性能高低的比较还有什么呢？那就是CPU的频率。什么是频率？简单来说，频率就是CPU在单位时间内能够进行的工作次数。频率越高 CPU的工作速度就越快。就比如Intel的i9-13900K 它开启睿频以后频率可以达到5.8GHz，也就是说，它在一秒之内能够进行 5.8x10^9 次运算。&lt;br&gt;
+而在CPU的频率中，又分为外频和倍频。因为CPU要和其他部件进行连接，所以他们的频率必须要一致。而外频就是CPU在与其他硬件进行数据传输时的工作。但是如果CPU一直保持和其他硬件一致的速度就太慢了，所以在CPU进行内部运算时就会使用倍频进行加速。而CPU的频率就是外频和倍频的乘积。比如AMD的R9 7950X的外频是100MHz，倍频是50x 那么它的频率就是100MHz*50x=5000Mhz=5GHz&lt;br&gt;
+这里又需要提到一个东西 超频 这玩意指的是将CPU的外频和倍频通过BIOS来调制到更高频率。超频后的CPU会有更强的性能，但同时发热也会更加严重&lt;br&gt;
+现在Intel和amd的CPU会自动帮你超频，Intel使用的叫睿频技术，AMD用的那个技术的名字我记不得了，但是这俩功能都差不多。所以，如果没有特殊需求，就不建议大家手动超频了。你的CPU已经帮你把这事干了。&lt;br&gt;
+你在打开cpu-z（一个查看电脑硬件型号和使用情况的软件，大家可以下载一个玩玩）以后会发现，你的cpu频率会一直变化。很正常，你的电脑没坏😂&lt;/p&gt;
+&lt;p&gt;主板&lt;br&gt;
+主板就好像是人的神经系统一样，将电脑的各个部件连接起来。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1692773538051.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这一部分没啥好说的，大家在挑选主板的时候就挑一个大牌子的、然后记得看一眼主板cpu插槽支持的针脚格式和你的cpu一不一样。不然你买回来主板以后发现cpu插不上去可就糟了😂&lt;/p&gt;
+&lt;p&gt;内存&lt;br&gt;
+如上图，这块华硕主板右上方那四个插槽，就是用来插内存条的。那么内存又是什么东西？这里不得不提到一个有一个好多人弄混的概念“内存和存储” 好多人都说过“我这电脑内存可大了，有1个T呢”之类的话。有1个T内存的个人电脑可能只有王思聪这种有钱没事闲的的人才会有吧😂在这句话里，他们所说的“内存”其实是存储，也就是硬盘的大小。而真正的内存是指RAM（动态随机存储内存）的大小。由于内存只能在通电的时候进行存储工作，断电以后数据就消失了，所以我们把它成为挥发性内存。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1692775119978.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+内存的功能是暂时存放cpu需要处理的信息。就相当于是我们的脑袋需要对外界的刺激（语言、光线、环境等）进行分析，而内存就是暂时存放这些信息的区域。&lt;br&gt;
+正常电脑 （记住！我是说正常！不包括特别老的电脑、特殊用途的电脑和王思聪的那种神经病电脑）内存的大小一般在4GB～32GB之间，多为8GB或16GB。因为所有的数据都需要先加载到内存中才能被CPU读取，所以内存的大小和速度对计算机的性能影响巨大。如果内存容量不够大的话会导致某些大容量数据无法被完整的加载，此时内存中的暂时没有使用的其他数据就会先被删除。使得内存能够加载这个大容量数据。所以，通常内存越大意味着系统运行越快速，因为系统不用常常释放内存中的数据。&lt;/p&gt;
+&lt;p&gt;显卡&lt;br&gt;
+显卡负责处理图像和图形的工作，它还要负责将主机已经处理好的信息做一次信号转换，传输到显示器上，让显示器能够显示出对应的画面。它就相当于是将我们眼睛收到的刺激转化成脑子里的影响这一步。显卡的质量与你屏幕分辨率、刷新速度、颜色深度有直接关系。&lt;br&gt;
+我们先来了解以下分辨率、刷新速度、颜色深度这几个名词的意思&lt;br&gt;
+分辨率：分辨率越大，图片越清晰&lt;br&gt;
+刷新速度：这个数值是显卡运算速度的体现 我们知道，电脑的视频其实是有一堆图片快速播放而产生的，刷新速度越快，每秒钟显卡所计算产生的图片也就越多，每秒钟播放的图片也就越多。我们看起来也就越流畅。&lt;br&gt;
+颜色深度：主流的色深有8bit 16bit 32bit。色深越高，所表现的颜色也就越多。8bit的图像能够表示出2^24种颜色 16bit则能表示出2^48种颜色&lt;br&gt;
+请大家不要误会，显卡的功能远远不只处理图形和图像。它同时还肩负着进行大量运算的工作，就比如说训练ai模型这件事，虽然和图形图像没有什么关系，但由于训练ai大模型需要很多的算力，所以这项工作也是由显卡来完成的。&lt;br&gt;
+显卡分为两种：集成显卡和独立显卡 集成显卡是集成在cpu中的，而独立显卡则是安装在主板上的一块大板子，就像下面这个。独立显卡的性能要远远高于同级别的集成显卡。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1692975859201.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+现在由于3D动画和游戏的流行，因此显卡的运算能力越来越重要。&lt;br&gt;
+如果你的电脑是用来办公，平时也就玩玩小游戏，我推荐大家直接买带有集成显卡的cpu。但如果你要进行音视频的编辑渲染、玩3D游戏这些活动，那么我强烈建议你给自己的电脑配一个好的独立显卡。&lt;/p&gt;
+&lt;p&gt;硬盘&lt;br&gt;
+电脑是需要记录和储存数据的，而这些数据就被储存在硬盘之中。它就像是人的记忆一样，记录种种经验。而硬盘的读写速度也决定了电脑的开机速度和软件运行的速度。&lt;br&gt;
+主流的硬盘分为机械硬盘（HDD）和固态硬盘（SSD），机械硬盘在硬盘之中有碟片，其通过主轴马达带动碟片，通过磁头在碟片上读写数据 工作原理有点像光盘。而固态硬盘这是则是通过闪存颗粒进行存储，有点类似于sd卡。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1692978077967.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+机械硬盘&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1692978050224.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+固态硬盘&lt;/p&gt;
+&lt;p&gt;由于机械硬盘在读取特定的数据是要花费时间将磁头移动到那个位置，所以机械硬盘的速度普遍低于同级别的固态硬盘，但是机械硬盘的价格更加便宜、容量更大、寿命更久。所以现在好一点的电脑基本上都用两块磁盘，固态磁盘作为系统盘提供更快的速度，机械硬盘则用来储存文件 提供更大的容量。&lt;br&gt;
+机械硬盘比较复杂，涉及到一些叫扇区、磁道、柱头、分区表的东西。这些概念比较复杂，有兴趣的可以自行百度了解。这里就不再过多赘述了。（了解这些知识对用pe系统重装系统时格式化磁盘时很有用）&lt;/p&gt;
+&lt;p&gt;电脑的基本硬件知识大概就是这些了，下一篇文章我可能会讲讲怎么搞到微软的E5开发者，从而免费使用onedrive和office。因为我马上要开学了，所以文章以后的更新可能就不会这么频繁了。大家可以通过RSS订阅我的网站（参见之前的文章）我以后更新文章也会在朋友圈中同步发布&lt;/p&gt;
+">电脑硬件的介绍</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/github-shang-bu-qu-de-jie-jue-fang-fa/"" data-c="
+          &lt;p&gt;相信大家在访问github的时候或多或少会遇到浏览器加载了很久仍然没有结果的情况。github是一个多么棒的网站啊，我不能容忍我访问不了它！（doge 下面我来讲讲解决方法&lt;/p&gt;
+&lt;p&gt;第一个方法：不输入网址，直接输入github的服务器ip地址&lt;br&gt;
+为什么这个方法会有效呢？那是因为github访问不了可能是DNS出现了问题。&lt;br&gt;
+DNS又是什么呢？来人，上维基百科（doge：DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）&lt;br&gt;
+如果你没看明白，我再拿人话解释一遍。ip地址相当于是一个人的名字，它的形式一般是一串数字，比如百度的ip就是39.156.66.10 但是这一大串数字可太难记忆了，于是就有了域名的出现，而我们平常访问的域名就相当于是一个人易于记忆的外号。而DNS的作用则是把外号和名字连接起来。比如你在访问百度时，你在浏览器里输入baidu.com 你的浏览器会先去问问dns，这个baidu.com的外号指的是谁啊？然后DNS就会告诉他网站的ip地址，这样你的浏览器就可以和服务器建立连接了。&lt;br&gt;
+但如果DNS出现了问题，那么你的浏览器可能就会获得一个错误的ip地址，这样一来，你也自然无法正常与服务器建立连接了。&lt;br&gt;
+我们要做的就是直接查询github服务器的IP地址，直接在浏览器中输入ip地址。&lt;br&gt;
+点击链接：https://ipw.cn/ping/  在输入框里输入github.com&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690980868640.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+显示的ip是20.205.243.166，我们直接把它输入到浏览器中&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690981011059.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690981017580.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+可以成功访问了！&lt;/p&gt;
+&lt;p&gt;如果第一个方法不行的话，那就排除了dns的问题，那么剩下的可能性还有两个，一个是因为服务器在国外，本身连接速度就慢，再加上访问github的人很多。所以你的流量就直接被挤掉了。还有一个就是咱们中国的防火墙😂咱中国的防火墙还挺迷惑的，不知道什么时候就突然不让你访问github了😂&lt;/p&gt;
+&lt;p&gt;接下来说的两种方法可以应对以上两个情况&lt;/p&gt;
+&lt;p&gt;第二个方法：使用dev-sidecar 这是一个github上的开源应用 顾名思义，它就像一个给开发者搭的便车，它可以让我们更容易访问github。注意，这个工具并不是科学上网工具 它并不能帮你翻越我国的网络防护墙。&lt;br&gt;
+听起来有点搞笑，你要访问github就要下载这个应用，但是你要下载应用又必须去github上找😂&lt;br&gt;
+这只能靠你的一点运气了😂，一旦你成功登上的了github，记得赶紧下载这个玩意&lt;br&gt;
+在这里放上链接：https://github.com/docmirror/dev-sidecar/releases&lt;br&gt;
+打开链接，找到合适你系统的文件下载（支持Mac WIndows  Debian系Linux）&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690982728748.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+（exe文件是windows的 dmg是mac的 deb是debian系linux的）&lt;br&gt;
+点击文件进行下载。&lt;br&gt;
+下载以后双击打开，他会提示你需要配置一个证书。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690982851754.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690982858888.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690982864664.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+跟着他的步骤来 最后配置好后点击按钮开启即可&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690982951829.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+你会发现你可以正常的访问github了！不过有一个需要注意的点是，在使用完后记得关闭这个应用，如果你在关机的时候它没有关闭的话，你在开机以后可能会连不上网，如果连不上的话，就再打开这个应用，将其开启以后就可以联网了。&lt;/p&gt;
+&lt;p&gt;第三个方法：这是最简单粗暴的方式 你不是服务器在国外吗？你不是有放防火墙吗？我直接翻墙不就得了😂&lt;br&gt;
+请大家注意！我翻墙的目的是明确的，我是为了访问github获取知识，请大家一定不要用学到的技术去干一些法律绝对不允许的事情！如果你确定自己有足够的控制能力，可以保证自己不滥用学到的技术，那就往下看吧。&lt;br&gt;
+这里说句题外话，大家有没有感觉在访问我的博客时非常的慢啊😂 那是因为我的博客就搭建在github的服务器上。其中一大原因就是我会再博客中教授这种处于灰色地带的方法。要是搭建在国内的服务器里，说不定哪天就被封号了😂&lt;br&gt;
+再次声明：不要用学到的知识干坏事 技术没有好坏之分，但人有。&lt;/p&gt;
+&lt;p&gt;言归正传，这需要我们下载一个叫做clash的软件 clash是一个vpn软件 有关vpn的解释，你可以在我的上篇讲洋葱网的博文中找到比较详细易懂的解释  讲个笑话，这个东西也需要在github里下载哈哈哈&lt;br&gt;
+mac下载地址：https://github.com/yichengchen/clashX/releases&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690983912482.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+点击这个文件进行下载&lt;br&gt;
+windows下载：https://github.com/Z-Siqi/Clash-for-Windows_Chinese/releases&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690984030954.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+点击这个文件进行下载&lt;br&gt;
+下载后我们需要添加v2ray线路才可以使用，而这个东西一般是付费的，但是网上每天都能找得到免费的v2ray线路，当这些东西存活时间很短，基本上只有一天，所以你需要在每次用的时候更换新的v2ray线路&lt;br&gt;
+这里推荐一个每日更新免费线路的rss订阅源，不了解rss的可以去阅读我之前的文章。&lt;br&gt;
+链接：https://rsshub.app/v2rayshares&lt;br&gt;
+这里还有一个网站链接：https://www.iyio.net/2023/08/011056.html&lt;br&gt;
+然后复制这些链接，点击clash中的导入，导入你的链接即可。&lt;br&gt;
+这部分比较简单，我不做过多说明 网上的教程也挺多，大家自行百度吧&lt;br&gt;
+我还有一些比较好用的手机VPN软件 如果你想了解的话，可以在微信中询问我。&lt;/p&gt;
+">Github上不去的解决方法</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/yang-cong-lu-you-he-dark-web/"" data-c="
+          &lt;p&gt;说在前面&lt;br&gt;
+如果你是一个不愿意折腾的人，可以立即退出这篇文章。这篇文章提到的所有东西应该对你的电脑使用没有任何影响。 你掌握了洋葱路由的使用方法以后干的所有事情也与我无关，我仅仅是把它当做一个学术知识来讲述。&lt;/p&gt;
+&lt;p&gt;首先，我来说说Dark Web是什么东西。按照维基百科的解释，所谓“暗网（Dark Web），统称那些只能用特殊软件、特殊授权或对电脑做特殊设置才能连上的网络，使用一般的浏览器和搜索引擎找不到暗网的内容。与此相对，一般常用的互联网，由于可追踪其真实地理位置和通信进行人的身份识别被称为明网（Clearnet）不同于明网的域名.com .cn .top之类的结尾，暗网中的网站是以.onion结尾的，而且前面通常是一大串乱码&lt;br&gt;
+比如这个：http://ybzlxo7r5agiyfvugtsi4peepjzad57cqm57h65a6xzcwd6grfuhxvqd.onion&lt;br&gt;
+我从网上找到了这样一张图片&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690939531649.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+（这张图中的Deep Web是深网的意思，指那些不能被普通搜索引擎检索到的非表面网络内容。所有需要个人密码才能访问的内容都属于深网内容，比如我个人邮箱里的信息，或是有密码保护的百度网盘)&lt;br&gt;
+这张图的意思是我们平时访问的明网，也就是万维网 只占互联网总数的一小部分。但其实我并不认同这张图片。首先一个证据是DarkWeb过隐蔽，我们几乎无法知道他到底有多大。第二个证据是 互联网的基础就是大量的用户和设备，比如中国就有好几亿的网民。假设中国只有50万人使用暗网，那它产生的数据怎么可能和那好几亿人产生的数据相当呢？从数据规模上来说，暗网无论从规模还是数据量都不可能和明网相比。&lt;/p&gt;
+&lt;p&gt;接下来，我再来讲讲DarkWeb的大致原理，给大家解释解释洋葱浏览器为什么是世界上最安全的浏览器。&lt;br&gt;
+洋葱路由这项技术最初却是由政府提出的。根据各种公开信息，暗网这个概念最初是在1994年由美国军方科学家提出的，1996年5月，美国海军研究实验所的3名科学家提交了一篇论文，题目是《隐藏路径信息》，提出打造一个系统，使用者在连接因特网时不会向服务器泄露身份。在这个系统构想中，保护数据的密码因为像洋葱一样层层叠叠，于是他们将之称为“洋葱网络”（Tor, the Onion Router）。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690954927334.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这是你用普通浏览器上网时的示意图，你的手机会通过你家的路由器直接和网站的服务器进行沟通。而别人可以轻易的通过服务器的访问记录或是PPPOE的访问路径锁定你家的路由器。如果有一个人在你的路由器和服务器之间监听，那么它不仅知道你家的路由器在哪里，还知道你访问的数据去了哪个服务器。这样，别人就知道了你在何时何地访问了什么网站。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690955172953.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+而这张照片则展示了访问暗网的路径&lt;br&gt;
+首先，你不再借助家中的路由器，而是直接通过VPN连接到一个完全随机的服务器。VPN（Virtual Private Network）即虚拟私有网络。可以允许你与外部的服务器直接建立一个加密的通信连接。这里有人可能要说了，VPN不就是那个用来翻墙（访问被封禁的外国网站）的东西吗？&lt;br&gt;
+其实，VPN的作用是允许你更安全的上网，比如我在外出吃饭的时候，想要链接餐厅的WIFI，可是我又害怕自己的个人隐私被轻易泄漏，这时 我就可以使用VPN。或者有一个大公司想要同时给北京和上海提供服务，那他们该如何通过互联网交流含有商业机密的信息呢？答案还是使用VPN 总之，说了这么多 我的意思是，翻墙只不过是VPN的一个副加作用，所以恳请大家以后听到VPN的时候也不要认为他就是一个违法的东西。&lt;br&gt;
+技术是不分好坏的，真正有好坏之分的是使用技术的的人。&lt;br&gt;
+言归正传，当你用VPN与一个随机的服务器建立连接后，你会立马跳到另外一个随机的服务器，然后你的访问请求就会在好多好多随机的服务器里跳来跳去，最后跳上四五次才会到达你真正要访问的服务器。&lt;br&gt;
+接下来我们假设如果你要访问的服务器那里有一个监视者，他只能看见你的信息是从前面那个随机服务器来的。如果有人在其中一个服务器上监视你，他只能看到你的数据从上一个服务器来，到下一个随机服务器去（因为他不知道你到底要访问什么，所以就算他位于最后一个随机服务器也没关系，因为他不知道你下一个访问的服务器就是你真正的服务器）所以说如果一个人要监视你的话，他必须在你访问的所有的服务器上同时监视你，但这基本是不可能的，因为你访问的服务器遍布在全世界各地，也就是说，当你使用洋葱路由时，你的访问申请分布在全世界各地。&lt;br&gt;
+怎么样，是不是有点懂（晕）了😂，没听懂也没关系，反正你知道现在洋葱浏览器被认为是世界上最隐蔽浏览器就行了。现在我再来说说该如何使用它。&lt;br&gt;
+首先打开洋葱浏览器官网（真有意思，咱们中国的防火墙墙这墙那的，竟然漏了这个玩意😂）选择适合你系统的软件进行下载。&lt;br&gt;
+链接：http://torproject.netcologne.de/&lt;br&gt;
+下载之后双击打开，你会看到这样一个界面（tor浏览器是基于firefox搭建的，所以有很多东西和firefox是一样的，你可以把它理解成一个增强版的firefox）&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690957885828.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+接下来，跟着我做几个设置（我这里由于之前配置好了，所以已经自动链接到洋葱网了）&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690958103783.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+点击进入设置选项 选择搜索&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690958294196.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+确定你的默认搜索引擎是duckduckgo（多可爱的名字啊doge&lt;br&gt;
+duckduckgo是一个非常棒的搜索引擎，它可以比bing 或是 google 更有效的保护你的信息&lt;br&gt;
+我找到一个知乎文章，详细的写了duckduckgo创立的历史 感兴趣的朋友可以看看&lt;br&gt;
+链接：https://zhuanlan.zhihu.com/p/164691886&lt;/p&gt;
+&lt;p&gt;接下来我们要更改一下网桥设置，不然你在中国境内是无法访问洋葱网的 这里再次声明，不要用你学到的技术去做违反国家法律的事情！技术不分好坏，但人分好坏！&lt;br&gt;
+打开连接 选择添加新网桥 选择内置网桥 选择snowflake网桥或是meek-azure网桥进行连接&lt;br&gt;
+仅我个人测试，obfs4基本上用不了，meek-azure网桥太慢了，所以推荐大家连接snowflake&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690959339672.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690959633188.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+好了，连接完网桥以后 等待你的浏览器接入洋葱网 当他显示duckduckgo的界面时，就说明连接成功了。&lt;br&gt;
+这个时候，你就可以使用啦！&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690959828228.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这里就可以看到，我在访问这个页面时，跳到了德国的服务器和美国的服务器，这意味着什么大家可以自己动动脑子想想。&lt;br&gt;
+在这里给大家几个建议：&lt;br&gt;
+1 不要在用洋葱浏览器下载任何东西，包括浏览器插件。因为这有可能会泄漏你真实ip&lt;br&gt;
+2 不要在暗网上用你的手机收验证码&lt;br&gt;
+3 不要直接或间接透露任何个人信息&lt;br&gt;
+4 不要在tor中登录你之前用普通浏览器登录过的账号 尽量让你再tor上访问的东西与你在普通浏览器里访问的东西没有任何关联&lt;br&gt;
+注意：用洋葱浏览器访问普通网站并不会把他们变成暗网，只有.onion结尾的网站才是暗网。&lt;br&gt;
+这里提供一个暗网搜索引擎not evai：http://ybzlxo7r5agiyfvugtsi4peepjzad57cqm57h65a6xzcwd6grfuhxvqd.onion（这名字可真是讽刺啊😂）&lt;br&gt;
+黑市交易当然是暗网上最重要的一块内容了。不过这里要注意，暗网上不流行使用各国现实的货币交易，只能用比特币，毕竟比特币去中心化的特征能最大程度保障双方的安全，因此这里也是研究比特币的重镇。&lt;/p&gt;
+&lt;p&gt;就拿这个专门出售苹果产品的网站为例，它的价格能低到让你绝望。一部128GB的iPhone 7仅需325美元（约合2200元人民币），而它的官方价格高达6188元。别问我它为什么这么便宜，我也不想知道。不过你需要拿出0.137个比特币来完成这笔交易，美元和人民币都不行。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690960237815.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;更加劲爆的军火当然不会少。从AK-47到沙漠之鹰，甚至连弩都有。目前这家网站的AK-47正在打折，人民币两万多就能买一把，是不是心动啦？但请不要知法犯法。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690960263748.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在黑市上颇受欢迎的外国护照和各种证件自然也有。比如这个网站专卖英国护照，店主非常自信，据它所说，你的信息将会被登记到官方的护照数据库中，用这本护照可以自由进出英国和各欧盟国家。不过价格当然也不便宜，一本2000英镑😂&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690960296954.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当然，上面所提到的这些都只是暗网中的一小部分，“not Evil”就显示他们能索引到23228219个隐藏网址。如果你真的用心去找，你能在上面找到太多人性的复杂呈现。其中既有我们上面呈现的种种游走在法律以外的黑色交易，其实更多的还是正常的个人表达、交流和交易行为。&lt;br&gt;
+有的人是为了所谓的“自由”，毕竟这里没有人能监管到你；有的人则是单纯想掩盖自己的身份，毕竟内心深处的有些东西没办法光明正大地讲出来；有的人则是好奇，觉得这里太酷了。种种一切合法的非法的内容充斥着暗网的世界&lt;/p&gt;
+&lt;p&gt;那么，对于互联网世界，暗网意味着什么？&lt;br&gt;
+因为上面遍布着非法交易及众多人类的恶的一面，我们是否应该完全否定暗网呢？我不这么觉得，正如我在上文所说，技术不分好坏，但使用技术的人分好坏。科技本身就是一把双刃剑，就看人类怎么使用它。首先，构建暗网的技术对于整个互联网行业来说就很有价值。“比如构建暗网时使用了大量的区块链技术，而区块链技术在保密通讯、分布式传输等环节当中都在被使用，只不过在日常使用当中不会将所用信息都隐藏起来。&lt;br&gt;
+当然，随着暗网犯罪的逐渐增多，人们对它的研究也在加强，我没记错的话，著名的暗网黑市“丝绸之路2.0”就在2020年被多国的网络警察联合入侵，一举逮捕了网站的运营者。我相信，将来肯定会找到能监管暗网的方式。事实上，使用正常网络进行犯罪的行为肯定要大大超过暗网上的犯罪行为，毕竟不是每个犯罪分子都是高科技爱好者。😂&lt;br&gt;
+而这里面的矛盾之处在于，这种黑色地带真的能被消灭吗？当我们解决了暗网之后，那些毒贩、变态和军火商们就会消失吗？显然不会。从实体的地下黑市到虚拟的线上平台，犯罪分子们其实才是走在科技最前沿的那一群人&lt;br&gt;
+而在知乎上，有一个在暗网问题下的高票回答得到了很多人的认同，“暗网是新闻自由的保证。”他在里面使用了斯诺登的例子，因为暗网，斯诺登才能躲开美国国家安全局的监控，将资料透露给新闻媒体。&lt;br&gt;
+本应该最开放、最自由、最信息通畅的行业却要靠一个无法见光的工具来保护，也蛮奇怪的。虚拟和现实、监管和自由，当我们身处这样一个完全没有监管者的空间时，真的能得到所谓的“真实”吗？恐怕又是一个疑问。&lt;br&gt;
+暗网给了这个世界上许多身处阴暗角落的人们一个空间，让他们可以通过这个虚拟空间释放自己的心底难以言表的黑暗，获得罪恶带来的利益，同时又能享受那没有限制的匿名自由。而这种自由与罪恶共存的地方恐怕正是它吸引人的地方。就像过去的人们消灭不了各种地下交易一样，我们也很难完全根除暗网。这里就是人性的释放空间，如果你到了那里，看到了那一切的光怪陆离，看到了人性的黑暗一面，然后要做的不是沉浸在其中无法自拔，而是摇摇头，回到真实的世界中，好好地认真生活。&lt;/p&gt;
+&lt;p&gt;唉 不知道为什么写完这篇文章以后，我的心情竟然有些沉重&lt;/p&gt;
+">洋葱路由和Dark Web</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/windows-dian-nao-chong-zhuang-xi-tong-de-fang-fa/"" data-c="
+          &lt;p&gt;当你的windows出现问题的时候，或是你想从win10升级至win11的时候，就需要重装系统了。今天我就给大家讲讲如何通过pe系统盘重装系统（这个文章中不仅会教授方法，而且可能会连带着介绍很多知识，所以如果你没有耐心看完的话，就只看方法就可以了，但是了解这些基础知识对以后折腾电脑还是有很多帮助的）&lt;br&gt;
+首先列出几个你需要准备的东西&lt;br&gt;
+1 系统镜像文件 这是一个一般以.iso 结尾的文件，里面存放着安装系统需要的所有东西，大小大概在4～7个Gb左右。windows系统的镜像文件可以上hellowindows网站找，在这里给出网址：https://hellowindows.cn/&lt;br&gt;
+2 一个大小为8G以上的u盘&lt;br&gt;
+3 firpe 的 iso文件 这是一个非常厉害的玩意，具体功能下文讲 下载连接：https://pan.yukaidi.com/s/0e7FY?path=%2FISO 点击最后一个.iso后缀的文件进行下载。&lt;br&gt;
+4 ventoy安装程序 这也是一个非常棒的玩意 下载链接：https://www.ventoy.net/cn/download.html&lt;/p&gt;
+&lt;p&gt;好了，需要东西都准备好了，我来解释解释他们都是干嘛用的&lt;br&gt;
+iso镜像文件：这个没啥可解释的，这就是一个文件，里面包含了安装系统所需要的所有东西&lt;/p&gt;
+&lt;p&gt;Ventoy：简单来说，Ventoy是一个制作可启动U盘的开源工具。&lt;br&gt;
+有了Ventoy你就无需反复地格式化U盘，你只需要把 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件直接拷贝到U盘里面就可以启动了，无需其他操作。&lt;br&gt;
+你可以一次性拷贝很多个不同类型的镜像文件，Ventoy 会在启动时显示一个菜单来供你进行选择&lt;br&gt;
+你还可以在 Ventoy 的界面中直接浏览并启动本地硬盘中的 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件。&lt;br&gt;
+Ventoy 安装之后，同一个U盘可以同时支持 x86 Legacy BIOS、IA32 UEFI、x86_64 UEFI、ARM64 UEFI 和 MIPS64EL UEFI 模式，同时还不影响U盘的日常使用。&lt;br&gt;
+（上面是官方文档的说明，如果你没看懂的话，我再用自己的话解释一遍😂）&lt;br&gt;
+如果你在桌面上双击iso文件，你会发现他打开会有一堆文件夹，但是并不能进入到系统的安装界面。传统方法上，如果你想要进入启动界面的话，你就需要把这个文件「刻录」到u盘中，但这个方法存在许多的局限，比如你在一个u盘里刻录了系统镜像的话，你这个u盘就算是废了，它就只能作为一个系统启动盘。甚至不能再往里面放文件了。但ventoy不一样，你可以在一个安装有ventoy的u盘里存放好多系统，需要安装哪个直接选哪个，而且制作完的u盘仍然可以正常使用。&lt;br&gt;
+安装ventoy：双击下载的exe打开 将你准备好的u盘插入电脑 在ventoy的页面中选择这个u盘 并点击「确定」写入ventoy   ** 注意！！！确保你的u盘已经清空，重要的数据都已经转移。因为这个操作会直接格式化u盘！！！**&lt;/p&gt;
+&lt;p&gt;再写入好ventoy以后，我们就可以把镜像文件直接拖到u盘中了 把你之前下载的系统镜像和firpe的镜像拖拽到u盘中。&lt;/p&gt;
+&lt;p&gt;现在我再来说说firpe是个什么玩意，firpe是一个PE系统。这个PE系统是一个被精简过的win11系统，PE系统去除了win11上一些比较不常用的功能，只留下了最重要的骨架。这使得它十分的精简 firpe的镜像只有700MB左右！这样小巧的身形使得pe系统可以被放进u盘中，直接将u盘作为启动盘。比如说我只需要把这个u盘插到我爸的电脑里，我就可以直接进入这个pe系统，而不是我爸电脑上的windows系统。同时，firpe也有很多有用的功能，比如更改磁盘分区，破解windows电脑的密码之类的。PE系统有很多，比较老的有什么老毛桃，大白菜之类的。但我绝对不推荐大家使用这些流氓，这些垃圾在安装系统的时候给你的电脑捆绑安装特别多的垃圾软件。我想没有一个人愿意看到自己刚装的系统里面赫然出现360和2345的全家桶吧😂&lt;/p&gt;
+&lt;p&gt;好了，说了这么多，现在让我们开始重装系统吧！&lt;/p&gt;
+&lt;p&gt;首先，把你的u盘插入要重装系统的电脑。我们首先需要进入电脑的bios bios大家可以理解成一个超级迷你的系统，他被写入在了主板之中，他负责引导并启动你的操作系统。进入bios的方法很简单，只需要你在电脑重启的时候不停的按键盘上的一个键就可以了。至于这个键是什么，不同的电脑不一样。如果你是笔记本电脑，请百度搜索“xxx笔记本进入bios”如果你是台式电脑，首先要看看你的电脑主板是什么厂家生产的，比如我的台式机就是华硕主板，我就需要搜索“华硕主板进入bios”&lt;br&gt;
+接下来，我用我爸的windows电脑进行演示😂&lt;br&gt;
+首先进入bios&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690902887117.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+（不同电脑的bios都是大同小异，老一点的bios比如像我演示用的这个，只能用上下左右键和回车键进行选择，新一点的bios可以使用鼠标）&lt;br&gt;
+找到Security选项找到Secure Boot，回车键进入&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690903080306.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+找到Secure Boot，回车键进入&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690903122509.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+选择disable禁用该选项，如果你不禁用，你是无法进入u盘的安装界面的。&lt;br&gt;
+禁用后我们按esc退出，找到Startup或是Boot选项，找到大概意思是启动顺序的选项，回车进入。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690903208846.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+通过回车键和上下方向键将你的电脑的第一启动选项调成你的u盘，如上图所示。如果你还是不清楚怎么弄的话，可以去阅读选项右边的帮助文档，里面的解释还是比较详细的&lt;/p&gt;
+&lt;p&gt;好，调完启动顺序以后，按下键盘上的F10（可能有的机型是其他键，但一般都会写在屏幕底下，叫做Save and Exit） 保存并退出，等待片刻，如果你进入了这个界面，恭喜你！你完成一大半了！&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690903644994.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+然后我们通过上下键选择firpe选项，一路无脑回车，等待片刻后你会发现自己进入了firpe的桌面&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690903721054.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+接下来我们打开diskgenius，这是一个很棒的磁盘管理软件，选择你的系统盘（C盘），右键点击 选择格式化当前分区。格式化后选择顶栏上的「保存更改」至此，你已经完成了安装系统的所有步骤&lt;br&gt;
+接下来，我们再次重启电脑，注意不要拔出你的u盘！再次来到这个界面&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690903976393.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这次选择windows的镜像，一路回车进入安装程序&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690904068392.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690904073861.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+注意这里要选择自定义安装&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690904098488.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+选择你刚刚格式化的c盘，点击下一步 安装的系统版本选啥都无所谓，但我自己是习惯安装企业版&lt;br&gt;
+后面就基本无脑操作了，唯一需要注意的是微软找你要激活密钥的时候要选择先不需要密钥，激活windows这个事情等我们安装好系统以后再说。&lt;br&gt;
+剩下的就是等待了&lt;br&gt;
+如果你是第一次重装系统的话，重装完以后是不是有一种极大的成就感啊？😂反正我第一次是这样的。其实就这一次一次的成就感就是我继续折腾电脑的动力。&lt;br&gt;
+最后，我们再来激活你的windows&lt;br&gt;
+进入我的网盘，下载激活软件 https://casperfeehily-my.sharepoint.com/:u:/g/personal/casper_casperfeehily_onmicrosoft_com/EXIopdV821JPs4ZqaDkX4FQBfGDdrhQLpQvudOY1ZGf8HA?e=DtMxaH&lt;br&gt;
+下载完了双击打开，点击自动激活即可&lt;br&gt;
+诶呦，这么长的文章终于写完了😂&lt;/p&gt;
+">Windows 电脑重装系统的方法</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/li-yong-rss-ding-yue-you-xiao-de-huo-qu-xin-xi-bi-mian-xin-xi-guo-zai/"" data-c="
+          &lt;p&gt;相信大家也和我一样遇到过本来想上网搜索一个知识，但是看着看着就跳到了搞笑视频，或者是什么劲爆新闻之类的地方。今天就来说说该如何避免这种情况&lt;br&gt;
+我们每天都在接收资讯。无论是社交网络中好友分享的新鲜事，还是像今日头条等聚合阅读工具里的文章，依靠推荐算法，它们总能带来你可能感兴趣的内容。这些或有用、或无用的资讯不仅消耗了我们大量的时间，无穷尽的时间流也在让我们超负荷地接受信息，还会在无形之中让我们接触的资讯类型越来越窄。&lt;br&gt;
+为了解决信息过载的问题，让我们对于接收的信息掌握主动权，RSS 重新进入了我们的视野：我们可以自由选择订阅的信息源，不用再受算法的控制，也可以及时地对信息源进行调整以避免信息过载。&lt;/p&gt;
+&lt;p&gt;RSS，一个每天刷着抖音的你可能并不知道的词，一个来自上世纪的产物，一个曾经风光无限如今却快被多数人遗忘的东西...&lt;br&gt;
+我知道 RSS 注定小众，但正因知道知道它的人少，我就想有更多的人知道它。&lt;br&gt;
+但在国内，想要真正舒服的用上 RSS 对于多数人来说太难了&lt;br&gt;
+知名在线 RSS 服务 Feedly（2018.11）、Inoreader（2020.4） 先后被墙，打着万物皆可RSS大旗的 RssHub 官方域名也被墙了（2020.3）， iOS 端最多好评的 RSS 阅读器 Reeder 也于2020年九月在国区被下架。&lt;br&gt;
+尽管困难重重，但这并不意味着我们该放弃 RSS，甚至越是如此，我觉得越能体现 RSS 的价值。&lt;br&gt;
+RSS 的全称有三种说法，RDF Site Summary（资源描述框架站点摘要）、Rich Site Summary（网站内容摘要）和 Really Simple Syndication（简易资讯聚合）&lt;br&gt;
+当然，具体是什么其实不太重要&lt;br&gt;
+对于多数人，你这样理解就够了：RSS是一个能让你在&lt;strong&gt;一个地方&lt;/strong&gt;订阅各种感兴趣网站的工具&lt;br&gt;
+仔细去理解这句话，这和你常见的订阅行为并不一样&lt;/p&gt;
+&lt;p&gt;以社交媒体举个最简单的例子：&lt;br&gt;
+如果我想对「Backstreet boys」保持关注，那我可能需要关注他的 ins、FaceBook、微博、B站、抖音、贴吧...&lt;br&gt;
+同时为了不漏掉演出信息、新专发布，那我可能还需要在大麦网、音乐平台上也关注他&lt;br&gt;
+而事实上，我不使用其中的大多数平台，也不想给手机装这么多APP，然后每天一个一个打开查看，更不可能给这些APP都打开通知权限，毕竟通知权限可是垃圾信息的重灾区。&lt;br&gt;
+你应该知道我接下来要说什么了&lt;/p&gt;
+&lt;p&gt;是的，RSS 就可以解决这个问题。用RSS追番可太舒服了😂&lt;/p&gt;
+&lt;p&gt;2 拒绝推荐算法&lt;br&gt;
+RSS 的核心是资讯聚合，但远不止此&lt;br&gt;
+时至2021年，订阅这种行为，早已不再纯粹，而是被大量的「推荐算法」所侵占&lt;br&gt;
+如今只要是个APP，就会被加入「视频流」功能，算是一个很好的例子&lt;br&gt;
+不否认推荐算法能有助于我们节约时间，快速发现更多自己感兴趣的内容&lt;br&gt;
+但你得承认：大多数人很容易陷入被毫无意义的推荐内容浪费了时间却还浑然不知的处境&lt;br&gt;
+技术应当是给人们带来自由和发展，而非接管人们的注意力，浪费宝贵的时间&lt;br&gt;
+对于那些真正明白自己需要什么的人来说，用上 RSS 吧，因为 RSS 能真正给你一个自己决定看什么的机会。&lt;/p&gt;
+&lt;p&gt;大致了解了的优点后，我们从最简单的开始——先看看如何用 RSS 订阅一个博客&lt;br&gt;
+这里就用我自己的博客进行演示，可以看到，我的博客界面上有很明显的RSS标识&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690863241830.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+如果你是电脑用户，只需要右键点击这个按钮并选择复制链接就好了&lt;br&gt;
+如果你是手机用户，可以复制以下这个链接：https://casperfeehily.github.io/atom.xml&lt;/p&gt;
+&lt;p&gt;好，复制完连接以后，我们需要从网上下载一个RSS阅读器，这里我给出几个推荐。&lt;br&gt;
+1 安卓手机&lt;br&gt;
+Feedme下载地址：https://play.google.com/store/apps/details?id=com.seazon.feedme&lt;br&gt;
+2 windows&lt;br&gt;
+fluent下载地址：https://apps.microsoft.com/store/detail/fluent-%E9%98%85%E8%AF%BB%E5%99%A8/9P71FC94LRH8?hl=zh-cn&amp;amp;gl=cn&amp;amp;rtc=1&lt;br&gt;
+（别看上面显示的要付费，其实这个软件可以无限期免费试用，付费按钮只是提供一个打赏渠道）&lt;br&gt;
+3 mac&lt;br&gt;
+在appstore中搜索fluent进行下载&lt;br&gt;
+4 iphone ipad&lt;br&gt;
+在appstore中搜索Ego reader或NetNews Reader&lt;/p&gt;
+&lt;p&gt;接下来我们将复制好的连接导入你的RSS阅读器，这里就以mac上的fluent为例，其他阅读器大同小异&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690864521169.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+首先点击右上角设置按钮，在弹出的界面中找到添加订阅源这一项&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690864775655.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+然后control+v把之前复制的连接粘贴进去，点击添加即可。当然，你也可以把订阅源的名称改成自己喜欢的名字。&lt;br&gt;
+这样，就创建好了一个RSS订阅啦&lt;br&gt;
+那么如果想订阅一个网站，但是网站上没有rss连接该怎么办？&lt;br&gt;
+这里提供一个涵盖很多常用网站RSS值的网站&lt;br&gt;
+https://docs.rsshub.app/social-media.html#bilibili&lt;br&gt;
+这里以添加一个bilibili up主专栏的RSS订阅来给大家演示如何使用&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690878226129.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这里我们可以看到网站上有比较详细的描述，我们只需要把例子中连接最后的那一串数字换成想要订阅的up主的用户id即可。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690878585797.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690878592445.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+复制用户id 进行替换，替换完了应该是这样：https://rsshub.app/bilibili/user/article/6336952&lt;br&gt;
+然后导入订阅即可。&lt;br&gt;
+这个网站里还有像柳叶刀或者是nature这类的学术期刊的链接，也很不错。&lt;/p&gt;
+&lt;p&gt;另外推荐一个油猴脚本：RSS+ 这个脚本可以自动识别当前网站的RSS源 点击此链接下载https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss&lt;br&gt;
+如果你之前没有用过油猴脚本的话，需要先在浏览器上安装一个插件（这里推荐使用Eage或chorme进行安装，firefox可能会出现一些问题）&lt;br&gt;
+启用这个油猴脚本以后，在他检测到CSS源以后，你的浏览器右下方会有一个小蓝点，点开以后找到你需要的链接进行复制即可。&lt;/p&gt;
+&lt;p&gt;最后我推荐几个我个人订阅的RSS&lt;br&gt;
+1 少数派 https://sspai.com/feed&lt;br&gt;
+2 阮一峰的博客 http://www.ruanyifeng.com/blog/atom.xml&lt;br&gt;
+3 果壳网 https://rss.aishort.top/?type=guokr&lt;br&gt;
+4 知乎每日精选 https://zhihu.com/rss&lt;br&gt;
+5 国内应急新闻 http://newzone.top/rss.php?type=cneb&lt;br&gt;
+6 百度实时热点 http://newzone.top/rss.php?type=baidu&lt;/p&gt;
+">利用RSS订阅有效的获取信息，避免信息过载</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/windows-dian-nao-de-shi-yong-ji-qiao-he-zhu-yi-shi-xiang-zhi-bing-du-de-yu-fang-xiao-bai-xiang/"" data-c="
+          &lt;p&gt;今天来说说windows电脑对病毒的预防&lt;br&gt;
+首先，安装正确的杀毒软件是非常重要的。一个好的杀毒软件可以帮你省下很多功夫&lt;br&gt;
+下面推荐几个不错的杀毒软件，并且我会写出他们各自的优点和缺点。&lt;br&gt;
+1 火绒 超老牌的杀毒软件&lt;br&gt;
+优点：非常安静、简洁 内存占用小 不流氓 被动防御和弹窗拦截很强大 内置的火绒剑非常好用。&lt;br&gt;
+缺点：主动防御较弱 病毒识别能力较弱（经我本人测试彩虹猫病毒被upx加壳后火绒识别不出来）&lt;br&gt;
+评价：推荐不喜欢经常有弹窗提醒的人使用 功能日常完全够用&lt;br&gt;
+2 卡巴斯基付费版&lt;br&gt;
+优点：病毒库非常广泛，杀毒能力强悍&lt;br&gt;
+缺点：付费 （不要在网上下载所谓的破解版）&lt;br&gt;
+3 智量&lt;br&gt;
+优点：中规中矩&lt;br&gt;
+缺点：被动防御较弱&lt;br&gt;
+4 360极速版（一定要在官网下载极速版！不要下载普通版！）&lt;br&gt;
+优点：相比360普通版来说不流氓了 基本没广告 病毒库广 杀毒能力强&lt;br&gt;
+缺点：弹窗还是有点多 比较吵闹 系统性能占用多&lt;br&gt;
+其实日常使用的话，火绒完全够用了，如果你对安全要求比较高，而且你的电脑还不错的话，可以去官网安装360极速版。&lt;br&gt;
+其次，养成良好的上网习惯也是十分必要的，好的上网习惯可以减少你个人隐私的泄漏。&lt;br&gt;
+首先，你要是用正确的浏览器&lt;br&gt;
+1 microsoft eage 这是微软开发的浏览器，日常使用很不错&lt;/p&gt;
+&lt;p&gt;2 firefox developer 火狐开发者版 这是我日常使用的浏览器 隐私保护做的不错，也集成了一些web工具&lt;/p&gt;
+&lt;p&gt;3 Google chorme 功能十分强大 但是隐私保护应该是这四个浏览器里最差的 而且网上的盗版很多，要下载就去谷歌中国的官网下载&lt;/p&gt;
+&lt;p&gt;4 Tor Browser 洋葱浏览器 这4个浏览器中隐私保护最好的一个 同时也是速度最慢的一个 上手难度也比较高。关于这个神秘的TorBrowser，我以后可能会单独开一篇博客的讲讲他的原理和使用方法。&lt;/p&gt;
+&lt;p&gt;说完了浏览器，再说说上网习惯&lt;br&gt;
+1 尽量访问https网站：一般咱们访问网站时，都会看到地址栏开头有https:// 或是http:// 的字样 这是该网页采用的网络安全协议而https的诞生就是为了取代老旧而且不安全的http协议的。所以一般在访问网站是，记得看看地址栏前面是不是https&lt;/p&gt;
+&lt;p&gt;2 时刻注意浏览器地址栏：有些钓鱼网站可能会模仿成正常网站的登录页面来骗取你的个人信息，其中有些钓鱼网站的网址是和你要访问的网站十分不同的。所以当你发现你的浏览器跳转到了一个奇怪的地址以后，一定要提高警惕&lt;/p&gt;
+&lt;p&gt;3 养成良好的下载习惯：尽量在官网或是Appstore下载东西 或是在大型的镜像站上下载&lt;/p&gt;
+&lt;p&gt;4 不要相信所谓的破解版：如果你真的要试试这些东西的话，建议先放在虚拟机里运行试试，虚拟机里打开火绒剑看看有没有可疑的进程。（安装虚拟机和火绒剑的用法以后再说吧😂）&lt;/p&gt;
+&lt;p&gt;5 如果你迫不得已在所谓的软件下载网之类的地方下载软件，一定点击“普通下载”而不是“安全（快速）下载” 安全下载意味着他会先给你下载一个下载器，比如360软件管家，再从下载器上下载应用。这些下载器对你的电脑没有任何好处。&lt;/p&gt;
+&lt;p&gt;6 躲开流氓软件 下面列出一些我想到的流氓软件：金山毒霸 360普通版 2345全家桶 p2p下载器 瑞金杀毒软件 360安全浏览器 驱动精灵 鲁大师 flashplayer（这个不是flashplayer流氓，是因为flashplayer有很多安全漏洞） 快压&lt;/p&gt;
+">Windows电脑的使用技巧和注意事项之病毒的预防（小白向）</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/xiang-wo-yi-yang-ji-yu-grideagithub-pages-da-jian-yi-ge-ge-ren-bo-ke/"" data-c="
+          &lt;p&gt;今天就来教大家搭建一个自己的网站，可以像我一样随便写点东西放上去😂&lt;br&gt;
+Grida是一个博客软件，用他不仅搭建的时候非常简单，后续的维护更是简单。基本上你一两年不关它也没啥事。&lt;br&gt;
+搭建博客之前，需要先下载几个软件。&lt;br&gt;
+1 Git&lt;br&gt;
+Gridea 的同步功能依赖本地 Git 客户端，所以我们需要先安装 Git。Git这个东西是由我的偶像、linux之父 Linus Torvalds 主持建立的（我记得当时Linus好像是在休假期间，用不到一周的时间随随便便组织写出了这个超级好用的东西）Git让编程变得更加方便，同时也便利了本地主机与服务器的沟通。 Git官网下载平台对应的安装程序。安装没有特别的要求，一路下一步即可。&lt;br&gt;
+官网地址：https://git-scm.com/downloads&lt;br&gt;
+网站会自动给你挑选适合的版本，点击我图片中画圈的按钮下载并安装。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690802862477.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2 Gridea&lt;br&gt;
+进入官网，选择自己的操作系统下载并安装。&lt;br&gt;
+官网地址：https://open.gridea.dev/#started&lt;/p&gt;
+&lt;p&gt;好了，准备工作都做完了，现在开始申请一个免费的github服务器。建立一个网站主要分成两步，一个是编写网站的代码（这里Gridea就相当于是会自动生成一个博客页面的代码）另一个就是服务器，你总不能只有程序吧，没有服务器你程序在哪里运行啊？服务器其实就是一台日夜不停运行的电脑，通常服务器都是要花好多钱的，但是Github真的是一个特别棒的网站。他竟然给咱们免费提供服务器诶！快，和我一起喊：谢谢Github！！！！（手动狗头&lt;br&gt;
+GitHub是一个开源网站，全世界的程序猿都可以参与代码的开发，比如我想开发一个破解软件，我可以把代码公布在github上，全世界的程序员都能看见，其中感兴趣的的人就可以把你的程序下载到他那里进行改进，改进完了以后在发给你，你可以选择是否采用他的改进。这可以让一个本来需要一年才能完成的项目在一个月内就完成了。总之这个网站是一个特别特别棒的想法。顺带提一句，上文那位Linus Torvalds就是github的主要创建者之一&lt;br&gt;
+言归正传，没有登录过github的小伙伴需要首先创建一个账号 进入官网，点击右上角的sign up进行注册 这里注意，给自己选个好点的名字！因为你以后博客网站的地址就是  ‘你的账户名’.github.io&lt;br&gt;
+官网地址：https://github.com/（这个网站如果用正常方式进入的话，有的时候可能会登不上去 解决方法以后再讲，这次咱们就看运气了😂如果登不上去可以过一会再试）&lt;br&gt;
+注册完了以后，点击右上角的加号，选择图片中画圈的那个，新建一个仓库。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690804088199.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+然后给你的仓库命名 这里十分重要！！！一定要写成 你的用户名.github.io的形式！！！比如我用户名是CasperFeehily，我就要填CapserFeehily.github.io&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690804288615.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+输入完就点击右下角绿色按钮创造仓库就行了。&lt;br&gt;
+创造完仓库以后我们要创造一个新的token值，这个token值是为了让Gridea连接github时让github仓库同意Gridea的连接的。&lt;br&gt;
+进入这个连接新建一个token：https://github.com/settings/tokens/new&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690804892647.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这里的note随便填什么都可以，但是要记得把下面repo的相关权限全都选上&lt;br&gt;
+点击下一步以后会出现一个绿色的条条，里面有一大串字母和数字，记得一定把它复制下来保存好，因为一旦关闭这个页面以后你就再也看不见了。&lt;/p&gt;
+&lt;p&gt;如果你看到这里，并且完成了上述步骤，那么恭喜你，你已经完成三分之二了，加油！胜利就在眼前！&lt;/p&gt;
+&lt;p&gt;接下来我们打开刚刚安装的Gridea，点击左边的“远程”你会发现有一个下图一样的东西出现。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690805384962.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+接下来按着步骤一步一步模仿这个图片填写&lt;br&gt;
+平台选择github pages  域名和仓库名称里面填上你的仓库名字  分支填main  用户名填你注册github时给自己取的名字，邮箱填你注册github时用的邮箱。令牌填入你刚才复制的那个token值。&lt;br&gt;
+底下的CNAME留空&lt;br&gt;
+然后点击保存，这步设置好后就可以开始使用。你可以点击客户端左下角的预览按钮来查看本地渲染效果，或者点击同步进行博客最新内容的部署。&lt;br&gt;
+至此 安装过程已经结束。这个博客有很多功能，可以上网更换模版，我用的就是Next模版。剩下的操作就比较简单了，大家可以自行百度。如果有不明白的也欢迎在评论中或微信里向我提问。&lt;/p&gt;
+">像我一样基于Gridea、github pages搭建一个个人博客</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://CasperFeehily.github.io/post/shuo-zai-qian-mian/"" data-c="
+          &lt;p&gt;如果你是一个对折腾电脑感兴趣的人，我在篇文章中会谈谈我对折腾电脑的理解，并且也会给你一些从何处开始的建议。&lt;br&gt;
+首先，我们先来看看折腾电脑到底能折腾出来点啥。&lt;br&gt;
+依我看，折腾电脑主要分成在本地折腾和在互联网上折腾😂。比如说重装系统、找盗版软件、玩虚拟机之类的都属于在本地折腾。我在本地折腾的结果有给我的ipad装上了win7虚拟机、在虚拟机里面玩电脑病毒之类的😂在我在互联网上折腾出来一个自己的网站 xionggongda.github.io 申请到了微软e5开发者账号 白白领取Office的使用资格和5个Tb的onedrive空间、还有包括建立这个个人博客。英勇事迹太多了，就不一一赘述了（手动狗头&lt;br&gt;
+怎么样，现在是不是对折腾电脑有点兴趣了？现在，我再来说说该如何开始。&lt;br&gt;
+在我看来，计算机知识是一个非常庞大的存在，种类繁多。这也就导致了一种情况的出现：你在解决a问题的时候发现解决a问题之前又必须要掌握b知识，结果你在学习b知识的时候发现网上的教学中又提到了c知识🤣这就是一个挺让人崩溃的情况。&lt;br&gt;
+那我们该如何应对这样的情况呢？方法只有一个：尽可能多的学习😂 那有没有方法能让这个学习过程变得不那么痛苦吗？答案是有的，就是在解决问题 在玩电脑中学习。比如当我有迫切的欲望想要建立一个网站的时候，我脑子里想的一切事情都是怎么着把这个网站快点建好。一旦你进入了这个状态，我相信你不会抱怨说这时候还要去费劲了解域名、服务器、dns之类的知识了。&lt;br&gt;
+那我们应该从何处开始呢？我个人的观点是从哪里开始都无所谓，就看你自己的兴趣。想从哪折腾起就从哪里折腾。因为前文说过，电脑这个玩意的知识面是非常广的，所以了解什么知识都不是没用的。当然这些知识积累到一定地步以后就可以选择一个自己最感兴趣的地方钻研下去，比如我就选择了我感兴趣的Kali Linux打算仔细研究。&lt;br&gt;
+在这里我给大家3个鼓捣电脑的建议&lt;br&gt;
+1 学会使用浏览器获取知识&lt;br&gt;
+你可以通过多个关键词来更加具体的检索你需要的知识，比如我想了解如何用kali破解wifi密码，我首先&lt;br&gt;
+会通过帮助文档了解到kali里有个叫Hydra的玩意可以破解wifi。然后我会在搜索框里输入“kali Hydra&lt;br&gt;
+wifi密码破解”来进行搜索。这样搜到的东西会更符合你的需要。&lt;br&gt;
+其次根据我的个人经验，有关折腾电脑方面，一般知乎、CSDN、或者程序员的个人博客会更有帮助。所以&lt;br&gt;
+你在搜到很多结果的时候，可以优先查看这几个平台上的。&lt;br&gt;
+2 先从实用性出发&lt;br&gt;
+这一条适用于像我一样对电脑有兴趣但是惰性比较强、容易折腾一半就放弃的人。从实用出发可以让你有&lt;br&gt;
+更强的需求，让你更容易坚持下去。比如我的网盘空间不足以后我就有很强的需求去申请微软开发者。&lt;br&gt;
+具体的项目就有比如白嫖网易云音乐会员、下载各种破解软件、白嫖苹果商店里的付费应用、在重装系统&lt;br&gt;
+以后免费激活windows等。大家可以一一尝试😂&lt;br&gt;
+3 千万不要害怕失败&lt;br&gt;
+折腾电脑，尤其是白嫖付费软件这种东西，在鼓捣很久以后仍然不成功的概率是很大的，但是这个时候千&lt;br&gt;
+万不要气馁啊💪越是难搞的东西，成功以后你的成就感就会越大。只要成功个两三次以后，我相信你也会&lt;br&gt;
+和我一样，有很强的动力继续折腾下去。&lt;br&gt;
+&lt;img src=&#34;https://CasperFeehily.github.io/post-images/1690802067359.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+（手动狗头&lt;/p&gt;
+">说在前面</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;h2 id=\&#34;前言\&#34;&gt;前言&lt;/h2&gt;\n&lt;p&gt;2023 年，我非常幸运地加入了我们学校的 iGEM 队伍，并主要负责其中的 Wiki 制作。这里可能有些读者并不知道什么是 iGEM 在此我先简单介绍一下。这里借用百度的解释&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;iGEM competition（International Genetically Engineered Machine）国际遗传工程的机器设计竞赛，美国麻省理工学院（MIT）创办，是合成生物学（Synthetic Biology）领域最高水平的国际性学术竞赛。iGEM是以合成生物学为主，化学，数学，计算机，机械电子工程设计等多学科为辅的团队性竞赛。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;说白了，这玩意和平时咱们理解的学科竞赛不大一样。这玩意要求你利用生物学和工程学知识设计一个项目，用来解决生活中的实际问题。同时，仅仅做点实验、写点论文可不能算是完成任务。你还要做一系列社会实践调查、制作项目宣传片等等。最后，还需要把你这一年时间做的所有工作都呈现在一个叫做Wiki的网站上。而这就是我的主要职责。&lt;/p&gt;\n&lt;h2 id=\&#34;相关语言的学习\&#34;&gt;相关语言的学习&lt;/h2&gt;\n&lt;p&gt;编写这种静态的网站，所涉及到的语言基本上就是HTML、JS和CSS &lt;em&gt;（请注意我这里说的是“语言”而不是“编程语言”）&lt;/em&gt; 下面我会简单介绍一下这三个语言的特点和应用方面。&lt;/p&gt;\n&lt;h3 id=\&#34;html\&#34;&gt;HTML&lt;/h3&gt;\n&lt;p&gt;这玩意相当于是一种复杂版的Markdown语法。&lt;em&gt;(如果你不知道什么是Markdown的话，我强烈建议你了解一下。这玩意真超级好用，这篇博客就是用Markdown写成的)&lt;/em&gt; 但与之不同的是，他关于文字格式的描述不是用简单的符号，而是用一种叫做标签的东西。光说可能比较难理解，所以我来举个例子。&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-html\&#34;&gt;&amp;lt;html&amp;gt;\n&amp;lt;body style=&amp;quot;background-color:yellow&amp;quot;&amp;gt; #这一行设置了网页背景色是黄色\n&amp;lt;h2 style=&amp;quot;background-color:red&amp;quot;&amp;gt;This is a heading&amp;lt;/h2&amp;gt; #前面的标签设定了这行字的背景是红色的\n&amp;lt;p style=&amp;quot;background-color:green&amp;quot;&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt; #前面的标签设置了这行字的背景是绿色\n&amp;lt;/body&amp;gt;\n&amp;lt;/html&amp;gt;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;上面这些代码的效果是这样的：&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1729266155593.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n怎么样，是不是理解一些了？🐶具体的教程可以查看W3School的教程&lt;a href=\&#34;https://www.w3school.com.cn/html/index.asp\&#34;&gt;W3School的教程&lt;/a&gt;，我就是在这上面自学的！其实还是蛮容易的。&lt;/p&gt;\n&lt;h3 id=\&#34;css\&#34;&gt;CSS&lt;/h3&gt;\n&lt;p&gt;CSS严格来说不能算是一种标记语言，它的诞生主要是因为程序员的懒惰🐶举个例子，我想要在很多段文字上应用 “粗体 红色背景 绿色字体” 这个样式，按照之前的做法，我要在所有的文字前面都要添加一个标签，注明这段文字是 “粗体 红色背景 绿色字体” 这听起来就怪麻烦的。所以有人想到了一个好办法，他把“粗体 红色背景 绿色字体”这个格式规定了一个名字叫做“标题”，以后所有想引用这个格式的文段只需要在前面注明“标题”就好了。&lt;strong&gt;而CSS文件就是建立这些格式和他们的名字对应关系的文件&lt;/strong&gt;。这里还是举个例子吧。&lt;br&gt;\n这个是css文件&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-css\&#34;&gt;h1 {\n  color: green;\n  text-align: center;\n} \n# 这里定义了标题这一样式 格式是“绿色 居中显示”\n\np {\n  font-family: verdana;\n  font-size: 20px;\n} \n# 这里定义了正文这一样式 格式是“vandana字体 大小20px”\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;这个是他所标记的html文件&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-html\&#34;&gt;&amp;lt;html&amp;gt;\n    &amp;lt;h1&amp;gt;我的第一个 CSS 实例&amp;lt;/h1&amp;gt;\n    &amp;lt;p&amp;gt;这是一个段落。&amp;lt;/p&amp;gt;\n&amp;lt;/html&amp;gt;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;上面这些代码的效果是这样的：&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1729267485570.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;h4 id=\&#34;css编写注意事项\&#34;&gt;CSS编写注意事项&lt;/h4&gt;\n&lt;p&gt;这里是写给有点基础的朋友们看的，如果你看不懂，就去上面的网站好好学习吧🐶&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;一定要认真的给你的样式取名，不要图省事就取类似于“a1”“a2”的名字，这样就是在折磨日后检查代码的自己🤡&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;不要用太多的!improtant 提高权重，这样万一有写错的地方，很难找到问题所在。&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;iGEM组委会给的仓库中有很多预设的CSS，其中不乏一些十分脑瘫的设计，所以你在发现iGEM服务器上的网页和你本地的长的不一样时，记得检查并注释掉原来的脑瘫CSS。🐶&lt;s&gt;这点让当时的我吃了不少苦头&lt;/s&gt;&lt;/p&gt;\n&lt;h3 id=\&#34;javascript\&#34;&gt;JavaScript&lt;/h3&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;JavaScript是这三个东西里上手难度最高的一个，这是一个真正的编程语言，他能够改变HTML的样式，进而实现一些花里胡哨的效果。比如说文字图片的动画、鼠标追踪等等。总之，这是一个能让你的网站“动”起来的东西。&lt;/p&gt;\n&lt;p&gt;如果你是一个之前没有接触过Web前端开发，但又想写出一个网站，我建议你不要花费太多时间去学习JS，因为你可能要花费比HTML和CSS更多的时间去学习，最后还有可能写不出来像别人那样好看的动画效果。&lt;s&gt;不说了，说多了都是泪😥&lt;/s&gt;&lt;/p&gt;\n&lt;p&gt;但如果你的时间充裕，你也可以看看&lt;a href=\&#34;https://www.w3school.com.cn/js/index.asp\&#34;&gt;W3school&lt;/a&gt;、&lt;a href=\&#34;https://www.runoob.com/\&#34;&gt;菜鸟学院&lt;/a&gt;的教程。但如果你时间紧张，我的建议是直接面向&lt;a href=\&#34;https://www.csdn.net/\&#34;&gt;CSDN&lt;/a&gt;、&lt;a href=\&#34;https://stackoverflow.com/\&#34;&gt;Stack Overflow&lt;/a&gt;和&lt;a href=\&#34;www.google.com\&#34;&gt;Google&lt;/a&gt;编程。（手动狗头 在这些网站里搜索你想要的动画效果，然后直接把JS代码control+C+V大法到你的网页里，再简单修改一些参数，让它符合你网页的需要就行了。&lt;/p&gt;\n&lt;h2 id=\&#34;igem组委会对于wiki要求\&#34;&gt;iGEM组委会对于WIki要求&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;多媒体文件不能直接放到组委会给的Gitlab仓库里，需要上传到iGEM提供的&lt;a href=\&#34;https://tools.igem.org/uploads/teams\&#34;&gt;图床&lt;/a&gt;上，再在你的wiki中直接引用链接&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;注意版权，不要使用有版权保护的字体和图片。尽管历年有许多队伍不遵守这一规定，有些还获得了Best Wiki的奖项，但这种行为是不可取的。对于英文字体，我比较推荐&lt;a href=\&#34;https://www.jetbrains.com/lp/mono/\&#34;&gt;JetBrains Mono&lt;/a&gt;，还挺好看的。&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;不要在网站中引入外部链接，这样会直接让你失去掉评选Best Wiki的资格。你可以用&lt;a href=\&#34;https://tools.igem.org/wiki/external-content-check\&#34;&gt;组委会提供的检查工具&lt;/a&gt; 检查一下自己的网页。&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;血泪教训 注意Deadline 千万不要把所有工作全都压在Deadline之前做，这样真的特别崩溃。而且iGEM组委会收了这么多钱，买的服务器却破破烂烂的🙂，在上传量大的时候非常容易崩溃，而且这是一个国际性的比赛，每时每刻都可能有人在往服务器上上传数据，不会有半夜三点钟服务器空闲的情况。所以最好在Deadline的前两天就完成Wiki的上传，最后两天只进行一些小的改动。&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;还是血泪教训 iGEM 中所有的页面都是基于 MediaWiki 构建的，我们在编辑页面提交的代码，会经过 MediaWiki 处理，修改代码中的部分内容。所以一定不要前期一直在本地埋头编写Wiki，一定要在每次编写完后Push到Gitlab上看看效果。iGEM 引入的默认规则总能给你带来别样的惊喜。😈&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;iGEM组委会给的模板，最底下有一个写着gitlab地址的底栏，一定不要删去&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;我可能还有一些遗漏的注意事项没说，所以还是一定一定一定要仔细阅读iGEM的帮助文档。&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2 id=\&#34;美工与设计\&#34;&gt;美工与设计&lt;/h2&gt;\n&lt;p&gt;iGEM 官方为我们提供了一套默认的 Wiki 模板。 虽然可以直接使用默认模板，但是为了 Wiki 页面的美观性，我们需要对 Wiki 页面进行重新设计。 因此，队伍中有名厉害的美工是件非常重要的事。 在正式进行设计前，一定要明确wiki的主题、基本配色和所需元素、布局规划等。&lt;/p&gt;\n&lt;p&gt;在这之后，负责美工的同学和负责 Wiki 制作的同学之间需要进行良好的沟通，这是非常重要的一环。 另外，建议设计在定下来以后不要轻易修改，否则一来容易引起风格不统一，一处修改后可能导致其他地方也需要修改， 二来可能会对制作 Wiki 的同学产生额外负担，因为一个不起眼的功能或设计可能需要大量的代码来实现。😥&lt;s&gt;真的，甲方爸爸改需求真的超崩溃&lt;/s&gt;&lt;/p&gt;\n&lt;p&gt;为了避免美工设计与实际实现有较大的出入，美工的同学可以将预想成品做成一张图片或是pdf， 在图上标注好颜色、尺寸、字体等信息，让制作 Wiki 的同学根据图上信息完成代码的编写工作。比如这样：&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1729308331422.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;还有一点需要注意的是，负责美工的同学设计出来的图片最好以透明为底色。如果以白色为底色，并且 Wiki 页面背景不是白色的话，就会出现下面这样的问题。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1729308452098.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;wiki制作技巧\&#34;&gt;Wiki制作技巧&lt;/h2&gt;\n&lt;h3 id=\&#34;编译器\&#34;&gt;编译器&lt;/h3&gt;\n&lt;p&gt;你需要一个本地的应用来写代码，这个应用就叫做编译器。这里我强烈推荐JetBrain家的Webstorm，真的超级好用。如果你遇到了一些经济学问题🐶&lt;s&gt;可以去网上找找破解版&lt;/s&gt;🐶如果不想用破解版，VScode也是个不错的选则。这两个编译器里都有Git插件，可以让你在写完代码后很方便的Push到Gitlab上。&lt;br&gt;\n同时，iGEM官方也在Gitlab中内置了一个在线编辑器，这东西有点类似于VScode，但我并不建议你直接在这个上面写代码，这玩意运行的不是很流畅，但是用来进行简单的修改还是很好用的。&lt;/p&gt;\n&lt;h3 id=\&#34;善用f12\&#34;&gt;善用F12&lt;/h3&gt;\n&lt;p&gt;F12是打开浏览器中的开发者工具的快捷键，这东西在用来调试、修改代码的时候非常的好用，你可以直接把鼠标移动到要修改的地方，它就会显示出相应的css和html，你可以现在上面修改代码 用浏览器预览效果。等到修改好以后，直接在本地的编译器查找替换相应的代码即可。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1729319078813.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n另外，当你看到别的网站上有让你惊艳的设计，可以直接F12一下，看看源码，再control+C+V大法一下🐶&lt;br&gt;\n这里强烈推荐google chorme的开发者工具，真的非常好用。&lt;/p&gt;\n&lt;h2 id=\&#34;我遇到的奇奇怪怪的问题\&#34;&gt;我遇到的奇奇怪怪的问题&lt;/h2&gt;\n&lt;p&gt;下面写了一些我在wiki编写过程中遇到的个性化问题和我的解决方式，我觉得这应该属于小概率事件，应该不会经常发生。但是解决问题的过程还是挺&lt;s&gt;痛苦&lt;/s&gt;好玩的，所以不妨听我唠两句🐶&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;我在往Gitlab上面提交代码的时候，发现虽然代码能成功提交，但是Gitlab老显示Pipline Failed网页构建失败&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1729319728601.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n经过一个通宵的排查，终于找到了问题。。。我之前觉得iGEM给的footer.html、layout.html、menu.html没啥用，就直接给删了。。。结果后来一看，这里面全是各种依赖关系，把这三个文件删了以后，没有了依赖，Gitlab自然也没法完成构建。于是我把这三个文件回滚回来后修改了一下dependencies.txt文件就解决了问题。&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;如果说上面那个是我自己作的，那下面这个问题就是Gitlab自己的锅。在Pipline正常后，我发现我的网页还是乱七八糟的，很像没有加载css文件的样子。所以不用怀疑，一定又是构建出问题了。又是一个通宵的排查，我发现iGEM组委会是用Flusk路由来构建网页的，而这种情况的出现很有可能是因为Flusk路由出问题了。而这个万恶之源app.py就是负责构建网页的。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1729320609183.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;,&#34;fileName&#34;:&#34;P_suhiOnAp&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;有关iGEM大赛Wiki制作的反思和经验总结&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;随便写点&#34;,&#34;slug&#34;:&#34;IRESGG8eh&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/IRESGG8eh/&#34;},{&#34;index&#34;:-1,&#34;name&#34;:&#34;网站Web类&#34;,&#34;slug&#34;:&#34;Yqw5RtzQo&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/Yqw5RtzQo/&#34;}],&#34;date&#34;:&#34;2024-10-22 00:30:29&#34;,&#34;dateFormat&#34;:&#34;2024-10-22&#34;,&#34;feature&#34;:&#34;https://CasperFeehily.github.io/post-images/P_suhiOnAp.png&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/P_suhiOnAp/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;11 min read&#34;,&#34;time&#34;:648000,&#34;words&#34;:3069,&#34;minutes&#34;:11},&#34;description&#34;:&#34;前言\n2023 年，我非常幸运地加入了我们学校的 iGEM 队伍，并主要负责其中的 Wiki 制作。这里可能有些读者并不知道什么是 iGEM 在此我先简单介绍一下。这里借用百度的解释\n\niGEM competition（Internatio...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%89%8D%E8%A8%80\&#34;&gt;前言&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%9B%B8%E5%85%B3%E8%AF%AD%E8%A8%80%E7%9A%84%E5%AD%A6%E4%B9%A0\&#34;&gt;相关语言的学习&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#html\&#34;&gt;HTML&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#css\&#34;&gt;CSS&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#css%E7%BC%96%E5%86%99%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9\&#34;&gt;CSS编写注意事项&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#javascript\&#34;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#igem%E7%BB%84%E5%A7%94%E4%BC%9A%E5%AF%B9%E4%BA%8Ewiki%E8%A6%81%E6%B1%82\&#34;&gt;iGEM组委会对于WIki要求&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%BE%8E%E5%B7%A5%E4%B8%8E%E8%AE%BE%E8%AE%A1\&#34;&gt;美工与设计&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#wiki%E5%88%B6%E4%BD%9C%E6%8A%80%E5%B7%A7\&#34;&gt;Wiki制作技巧&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%BC%96%E8%AF%91%E5%99%A8\&#34;&gt;编译器&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%96%84%E7%94%A8f12\&#34;&gt;善用F12&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%88%91%E9%81%87%E5%88%B0%E7%9A%84%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98\&#34;&gt;我遇到的奇奇怪怪的问题&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;我本人是一个无损音乐的爱好者，喜欢折腾耳机和音箱，对无损也有自己的一点见解。再加上现在的无损音乐圈子很乱，到处都是标榜自己是什么HIFI Hi-Res……各种智商税层出不穷。我觉得很有必要讲一讲关于无损音频的常识，让你可以简单的分辨这首歌曲到底是不是所谓的“真无损”。同时，我也会捎带着讲讲音箱 耳机的发声单元。那么，咱们就开始吧！&lt;br&gt;\n首先，我们要知道，现在的主流音频都是采用的数字信号进行传输。也就是说，现在的音频文件都是用“0”和“1”来表示音频信号。数字信号相比于靠波来传输的模拟信号来说，具有准确度高、失真度小等优点&lt;br&gt;\n既然音频都是用数字信号进行传输，那么他们之间的区别又在那里呢？这里就要介绍衡量音频质量高低的三个因素。采样率、位深度和信道数。这里我们就借用Adobe Audiation来打开一个mp3文件，一起来看看这三个名词都是什么意思。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1697163533115.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n1 采样率&lt;br&gt;\n首先我们观察一下上面绿色的图案&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1697163743663.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n再放大一点&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1697163765563.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n再继续放大一点&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1697163782434.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n我们会看见，原来的音频曲线，在我们不断的放大下，变成了一个一个的点。有点像视频中“帧”的概念，音频文件其实就是记录了这些点的信息，再快速的播放。音乐就出现了。音频采样率就是衡量这些点密集程度的东西，采样率越高，这些点就越密集。正如视频单位时间内，帧数越多，画面越流畅的原理一样，这些点越密集，证明这条音频播放起来就会更&amp;quot;丝滑&amp;quot;😂，含有的信息也就越多。&lt;br&gt;\n再Adobe Audiation中，我们可以在右下角看到这条音频的采样率是44100Hz，也就是44.1kHz。这与普通CD的采样率是一样的，这证明这个音频在一秒钟内记录了44100个音频点。常见的采样率还有48kHz、96kHz&lt;br&gt;\n128kHz等。&lt;/p&gt;\n&lt;p&gt;2 位深度&lt;br&gt;\n位深度是衡量一个音频文件能表示多少音调的声音的参数。位深度越高，所能表现的声音音调就越多。常见的位深度有8bit 16bit 24bit 32bit等。8bit的音频能够表示出2^24种音调 16bit则能表示出2&lt;sup&gt;48种音调。而32bit所能表示的音调数达到了惊人的2&lt;/sup&gt;96种。我的评价是，音频采样率在16bit 或24bit就已经完全够用了。更大的位深度你的耳朵基本听不会出来任何区别，还会让音频文件的大小成指数级增加。&lt;br&gt;\n而图片中这个音乐的位深度也可以在右下角看到，是16bit，达到了普通CD的标准。&lt;/p&gt;\n&lt;p&gt;3 信道数&lt;br&gt;\n信道数也叫声道数，当一个管弦乐队演奏时，你可以感到大提琴在你的右前方，小提琴在你的左前方，而小号却在中间……听一个电声乐队时，你可以明显感觉出主奏乐器来自不同的方向。听重唱，你可以清楚地分辨出左、右声道中分别播出的各自的高声部和低声部。这来自不同方向的声音，就构成了一个个信道。当人听到声音时，能对声源进行定位，那么通过在不同的位置设置声源，就可以造就出更好的听觉感受。&lt;br&gt;\n常见的声道有&lt;br&gt;\n单声道：假如你带着一个耳机，那么你耳机的左右耳罩只能播放同一个音频，也就是说，你的两个耳朵无法听到不同的声音&lt;br&gt;\n双声道： 分成左右两个声道，这样你两个耳朵就能听到不同的声音了&lt;br&gt;\n2.1声道：在双声道基础上增加一个低音声道&lt;br&gt;\n5.1声道：包含一个正面声道、左前方声道、右前方声道、左环绕声道、右环绕声道、一个低音声道。这样你就能听到不同方向的声音了。&lt;br&gt;\n7.1声道：    在5.1声道的基础上，把左右的环绕声道拆分为左右环绕声道以及左右后置声道。比5.1声道听起来更加立体&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701182168301.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n在这张图片里，能看到振幅图（上面那个绿色的波）和下面的频谱图（下面那个红色黄色的图像）都各有两个，说明这个音频文件是双声道的，也就是我们平时说的立体声。&lt;/p&gt;\n&lt;p&gt;这里强调一点！信道数多绝对不代表听感好或者是音质好！！！ 那网易云音乐来说，这家伙最近推出了一个叫环绕音效的东西，据称是使用了5.1声道。结果我下载了音频文件打开一看，差点没笑掉大牙😂，仔细一看，这五个声道全部一摸一样😂也就是说，我下载的那个音频本质上其实就是一个单声道的音频。被网易云用复制粘贴大法凭空捏造了4个新的声道以后就出来捞钱😓&lt;br&gt;\n而且，就算你有了真正的多声道音频，如果没有支持多声道音频的设备，那也是白扯。只有支持播放多声道的音箱/耳机 才能让你真正听到多声道。那些不支持多声道的设备在播放多声道音频时会直接把他们压缩成单声道或者双声道进行播放。&lt;br&gt;\n这里再顺带提一嘴，有个听起来很厉害的东西 叫做杜比全景声。这东西可以给音乐增加一些空间感，还能让你感觉歌手是在你的头顶转着圈唱歌，而不是在你的耳朵旁边😂这个东西虽然神奇 但它本质上还是一个算法。他并不能提高你音频的音质。&lt;/p&gt;\n&lt;p&gt;音频格式&lt;br&gt;\n音频格式就是音频的编码规则，目前咱们正常人所能接触到的大多都是以数字信号（不连续的1和0）进行编码的，很少有用模拟信号编码的（连续的波）&lt;br&gt;\n目前主流的编码格式有以下几种 我会把她们的优缺点一并列在下面 注意，这里的音质好坏是指这种音频格式音质的上限 并不代表采用无损格式的音频音质就一定好！&lt;br&gt;\nmp3: 体积小 音质差 为了减小音频大小，他会把音频中的一些极高频和一些低频去掉。&lt;br&gt;\nwav：体积大 音质好 是一种未经过压缩的格式&lt;br&gt;\nflac：体积较小 音质好 是一种无损压缩的格式 但可能出现一些播放器无法正常播放的情况&lt;br&gt;\naac：体积较小 音质较好 但可能出现一些播放器无法正常播放的情况&lt;/p&gt;\n&lt;p&gt;大概说完了音频的知识，我们再来聊一聊各种发声单元。&lt;br&gt;\n目前市场上主流的发声单元有：动圈式单元   动铁式单元   骨传导（气传导）单元  平板单元 静电式单元&lt;/p&gt;\n&lt;p&gt;先说说最简单 也是应用范围最广的动圈式单元&lt;br&gt;\n目前市面上较多耳机使用的发声单元都是利用动圈技术的，从10块一条的地摊货到万元级的Hi-Fi耳机都能够看到动圈单元的身影。虽然各家厂商的动圈单元设计各有不同，但始终离不开磁铁、音圈和振膜这三些零件。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701185038216.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n音圈上有已经绕好的线圈，利用通过线圈的电流强弱、方向来形成磁场，这时候就会跟旁边的磁铁相吸、相斥，进而带动振膜往复运动推动空气发声。&lt;br&gt;\n优点：发声原理接近人类耳膜，因此声音自然耐听，低频宽松舒服。&lt;br&gt;\n缺点：单元体积越大，需要的功率越大。对播放器的要求较高，解析度和高频的表现比同等级动铁单元差一些&lt;/p&gt;\n&lt;p&gt;动铁单元&lt;br&gt;\n动铁单元主要通过线圈绕在一个位于永磁场的中央被称为“平衡衔铁”的精密铁片上，被带电线圈磁化的铁片在磁力的作用下带动振膜发声。&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701185324188.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n优点：体积较小，灵敏度高，拥有更强的解析力，拥有较好的高频表现。&lt;br&gt;\n缺点：贵，动铁单元较为拉垮 （所以就有了将动圈和动铁结合在一起的全铁耳机，让两者优势互补。但是这种圈铁耳机调音难度大，很容易出现割裂感）&lt;/p&gt;\n&lt;p&gt;平板单元&lt;br&gt;\n平板单元，其背后的原理也叫做等磁式原理，其实在音频行业这种换能原理诞生已久，只是一直都没有太多的厂商制作这样的扬声器产品。不同于动圈的圆形磁体，平板的磁体是分布在振膜两侧的平行磁体，就像两块平板，把振膜夹在中间，同时振膜上覆盖了一层很薄的金属导体，通常是通过印刷或者切割的方式让其成之字状多次折返于振膜上，当其有电流信号经过会通过电磁受力，在两块平板型磁体之间的缝隙里进行运动，从而发出声音。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701185677171.webp\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701185922638.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n优点：震膜可以做得很大，对震膜质量忽略不计，受力均衡遍布在震膜各处，这些优点使平板式耳机在动态和声音信息量上有着先天优势。&lt;br&gt;\n缺点：发声单元体积大，重量大，对播放器要求高。贵！&lt;/p&gt;\n&lt;p&gt;骨传导单元&lt;br&gt;\n这个没啥特别的，其实就相当于是把一块震动的板子放到你耳朵旁边的骨头上，让声音通过你的骨头传导到耳蜗里，而不是通过耳道。&lt;br&gt;\n优点：可以在使用骨传导耳机时听到外界的声音（这也是为什么运动耳机基本上都是骨传导）&lt;br&gt;\n缺点：音质被同等级的其他类型的单元爆杀😂尤其是低频&lt;/p&gt;\n&lt;p&gt;静电单元&lt;br&gt;\n最高端的发声单元，我的人生一大愿望就是亲眼见到一个静电单元的耳机😂 其结构与平板式耳机相似，都是两块非常薄的平面振膜，然后把金属电极振膜夹在中间（但是没有碰到），而平板式耳机两侧并非是磁体，而是充高压电的极板。通过中央的振膜带正电，两侧金属电极通过变换正/负电场的方式来推/拉振膜，达到发声的目的。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701186302225.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n森海塞尔最贵的耳机——大奥2代就采用了静电单元&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701186491472.webp\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n优点：各个方面爆杀其他单元&lt;br&gt;\n缺点：依我看，这是一个非常复杂的经济学问题（手动狗头&lt;/p&gt;\n&lt;p&gt;最后，不同的耳机单元，都会有其独特的声音特质，优点以及缺点相对的。根据自己的喜好甚至是偏好方向去选择耳机产品，不失为一个明智之选。&lt;br&gt;\n最后送给大家两句话&lt;br&gt;\n“单反穷三代，HIFI毁一生”&lt;br&gt;\n“早知道，还是原道”&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1701186788500.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;you-guan-wu-sun-yin-pin-he-fa-sheng-dan-yuan-de-zhi-shi&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;有关无损音频和发声单元的知识&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2023-10-12 21:45:47&#34;,&#34;dateFormat&#34;:&#34;2023-10-12&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/you-guan-wu-sun-yin-pin-he-fa-sheng-dan-yuan-de-zhi-shi/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;10 min read&#34;,&#34;time&#34;:595000,&#34;words&#34;:2927,&#34;minutes&#34;:10},&#34;description&#34;:&#34;我本人是一个无损音乐的爱好者，喜欢折腾耳机和音箱，对无损也有自己的一点见解。再加上现在的无损音乐圈子很乱，到处都是标榜自己是什么HIFI Hi-Res……各种智商税层出不穷。我觉得很有必要讲一讲关于无损音频的常识，让你可以简单的分辨这首歌曲...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;这次的文章有点长，里面的知识也比较多比较杂，大家混个脸熟就行😂。今天我来讲讲电脑的硬件组成部分，其实你可以观察一下你的台式电脑，以外观来说这家伙分为以下这三部分。&lt;br&gt;\n输入单元：包括键盘、鼠标、手写板、读卡器等等&lt;br&gt;\n主机部分：这个就是系统单元，被主机机箱保护着，里面有一堆版子、cpu、内存等等&lt;br&gt;\n输出单元：例如屏幕、扬声器等&lt;br&gt;\n我们主要通过输入设备来将一些数据输入到主机里面，然后再由主机处理后将结果传输到输出设备。&lt;br&gt;\n我们主要了解的也就是这里面比较复杂的主机部分。这一部分主要分为以下几个部件&lt;br&gt;\nCPU、主板、显卡、内存条（RAM）、硬盘&lt;/p&gt;\n&lt;p&gt;CPU&lt;br&gt;\nCPU就好像是人的脑袋一样，主要负责相关事情的判断和与实际处理的机制等。CPU负责控制协调电脑其他硬件的运作。CPU还有架构之分，目前市面上主流的架构有复杂指令集（CISC)和精简指令集（RISC）这里的指令集相当于一本英汉字典，他会将你输入的信息转化为cpu可以识别和执行的指令。&lt;br&gt;\n这里再打个不太恰当的比方说明一下CISC和RISC的区别：比如你下答一个指令“我饿了” 精简指令集就会把它转化为“去吃饭”然后扔给CPU去执行，而复杂指令集则会把它转化为“走到饭桌前”“拿勺子”“盛饭”“张嘴”等一系列动作。&lt;br&gt;\n现在常见的使用复杂指令集的CPU有AMD、Intel等x86架构的cpu，使用精简指令集的主要有苹果的M系列芯片还有树莓派和各种手机CPU等ARM架构的CPU。x86架构的CPU的性能相比于同级别的使用ARM架构的CPU更好，而ARM则有低发热、低耗电这些x86架构所不具备的优点。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1692604849446.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\nIntel 12代i9 CPU&lt;br&gt;\n由于CPU负责大量运算，所以它的发热很严重。如果你曾经拆开过主板，你会看见CPU上通常会安装一个&lt;s&gt;萝卜&lt;/s&gt;风扇用来散热。&lt;br&gt;\n目前主流的CPU都是双核以上的架构原来老式的单核CPU只有一个运算单元，所谓的多内核这是在一块CPU上嵌入了两个以上的运算内核。简单说就是在一个外壳中有多个CPU运算单元。如果你主要那你的电脑打游戏的话，就不需要太在意CPU的核心数，而更应该关注它的单核性能。因为大多数游戏的多核优化都做的很差，经常会出现这种情况&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1692605524585.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n一核有难，多核围观😂&lt;br&gt;\n但如果你想要进行音视频渲染这种工作，那CPU的核心数还是很重要的。&lt;br&gt;\nCPU还有一个东西叫做线程。线程是指这一块CPU能同时执行多少任务的意思。这自然是越多越好。比如i9 13900K就拥有32个线程，说明它能同时执行32个任务。&lt;br&gt;\n我们前面谈到了CPU的指令集、核心、线程。除了这些东西以外，CPU性能高低的比较还有什么呢？那就是CPU的频率。什么是频率？简单来说，频率就是CPU在单位时间内能够进行的工作次数。频率越高 CPU的工作速度就越快。就比如Intel的i9-13900K 它开启睿频以后频率可以达到5.8GHz，也就是说，它在一秒之内能够进行 5.8x10^9 次运算。&lt;br&gt;\n而在CPU的频率中，又分为外频和倍频。因为CPU要和其他部件进行连接，所以他们的频率必须要一致。而外频就是CPU在与其他硬件进行数据传输时的工作。但是如果CPU一直保持和其他硬件一致的速度就太慢了，所以在CPU进行内部运算时就会使用倍频进行加速。而CPU的频率就是外频和倍频的乘积。比如AMD的R9 7950X的外频是100MHz，倍频是50x 那么它的频率就是100MHz*50x=5000Mhz=5GHz&lt;br&gt;\n这里又需要提到一个东西 超频 这玩意指的是将CPU的外频和倍频通过BIOS来调制到更高频率。超频后的CPU会有更强的性能，但同时发热也会更加严重&lt;br&gt;\n现在Intel和amd的CPU会自动帮你超频，Intel使用的叫睿频技术，AMD用的那个技术的名字我记不得了，但是这俩功能都差不多。所以，如果没有特殊需求，就不建议大家手动超频了。你的CPU已经帮你把这事干了。&lt;br&gt;\n你在打开cpu-z（一个查看电脑硬件型号和使用情况的软件，大家可以下载一个玩玩）以后会发现，你的cpu频率会一直变化。很正常，你的电脑没坏😂&lt;/p&gt;\n&lt;p&gt;主板&lt;br&gt;\n主板就好像是人的神经系统一样，将电脑的各个部件连接起来。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1692773538051.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n这一部分没啥好说的，大家在挑选主板的时候就挑一个大牌子的、然后记得看一眼主板cpu插槽支持的针脚格式和你的cpu一不一样。不然你买回来主板以后发现cpu插不上去可就糟了😂&lt;/p&gt;\n&lt;p&gt;内存&lt;br&gt;\n如上图，这块华硕主板右上方那四个插槽，就是用来插内存条的。那么内存又是什么东西？这里不得不提到一个有一个好多人弄混的概念“内存和存储” 好多人都说过“我这电脑内存可大了，有1个T呢”之类的话。有1个T内存的个人电脑可能只有王思聪这种有钱没事闲的的人才会有吧😂在这句话里，他们所说的“内存”其实是存储，也就是硬盘的大小。而真正的内存是指RAM（动态随机存储内存）的大小。由于内存只能在通电的时候进行存储工作，断电以后数据就消失了，所以我们把它成为挥发性内存。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1692775119978.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n内存的功能是暂时存放cpu需要处理的信息。就相当于是我们的脑袋需要对外界的刺激（语言、光线、环境等）进行分析，而内存就是暂时存放这些信息的区域。&lt;br&gt;\n正常电脑 （记住！我是说正常！不包括特别老的电脑、特殊用途的电脑和王思聪的那种神经病电脑）内存的大小一般在4GB～32GB之间，多为8GB或16GB。因为所有的数据都需要先加载到内存中才能被CPU读取，所以内存的大小和速度对计算机的性能影响巨大。如果内存容量不够大的话会导致某些大容量数据无法被完整的加载，此时内存中的暂时没有使用的其他数据就会先被删除。使得内存能够加载这个大容量数据。所以，通常内存越大意味着系统运行越快速，因为系统不用常常释放内存中的数据。&lt;/p&gt;\n&lt;p&gt;显卡&lt;br&gt;\n显卡负责处理图像和图形的工作，它还要负责将主机已经处理好的信息做一次信号转换，传输到显示器上，让显示器能够显示出对应的画面。它就相当于是将我们眼睛收到的刺激转化成脑子里的影响这一步。显卡的质量与你屏幕分辨率、刷新速度、颜色深度有直接关系。&lt;br&gt;\n我们先来了解以下分辨率、刷新速度、颜色深度这几个名词的意思&lt;br&gt;\n分辨率：分辨率越大，图片越清晰&lt;br&gt;\n刷新速度：这个数值是显卡运算速度的体现 我们知道，电脑的视频其实是有一堆图片快速播放而产生的，刷新速度越快，每秒钟显卡所计算产生的图片也就越多，每秒钟播放的图片也就越多。我们看起来也就越流畅。&lt;br&gt;\n颜色深度：主流的色深有8bit 16bit 32bit。色深越高，所表现的颜色也就越多。8bit的图像能够表示出2^24种颜色 16bit则能表示出2^48种颜色&lt;br&gt;\n请大家不要误会，显卡的功能远远不只处理图形和图像。它同时还肩负着进行大量运算的工作，就比如说训练ai模型这件事，虽然和图形图像没有什么关系，但由于训练ai大模型需要很多的算力，所以这项工作也是由显卡来完成的。&lt;br&gt;\n显卡分为两种：集成显卡和独立显卡 集成显卡是集成在cpu中的，而独立显卡则是安装在主板上的一块大板子，就像下面这个。独立显卡的性能要远远高于同级别的集成显卡。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1692975859201.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n现在由于3D动画和游戏的流行，因此显卡的运算能力越来越重要。&lt;br&gt;\n如果你的电脑是用来办公，平时也就玩玩小游戏，我推荐大家直接买带有集成显卡的cpu。但如果你要进行音视频的编辑渲染、玩3D游戏这些活动，那么我强烈建议你给自己的电脑配一个好的独立显卡。&lt;/p&gt;\n&lt;p&gt;硬盘&lt;br&gt;\n电脑是需要记录和储存数据的，而这些数据就被储存在硬盘之中。它就像是人的记忆一样，记录种种经验。而硬盘的读写速度也决定了电脑的开机速度和软件运行的速度。&lt;br&gt;\n主流的硬盘分为机械硬盘（HDD）和固态硬盘（SSD），机械硬盘在硬盘之中有碟片，其通过主轴马达带动碟片，通过磁头在碟片上读写数据 工作原理有点像光盘。而固态硬盘这是则是通过闪存颗粒进行存储，有点类似于sd卡。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1692978077967.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n机械硬盘&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1692978050224.jpeg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n固态硬盘&lt;/p&gt;\n&lt;p&gt;由于机械硬盘在读取特定的数据是要花费时间将磁头移动到那个位置，所以机械硬盘的速度普遍低于同级别的固态硬盘，但是机械硬盘的价格更加便宜、容量更大、寿命更久。所以现在好一点的电脑基本上都用两块磁盘，固态磁盘作为系统盘提供更快的速度，机械硬盘则用来储存文件 提供更大的容量。&lt;br&gt;\n机械硬盘比较复杂，涉及到一些叫扇区、磁道、柱头、分区表的东西。这些概念比较复杂，有兴趣的可以自行百度了解。这里就不再过多赘述了。（了解这些知识对用pe系统重装系统时格式化磁盘时很有用）&lt;/p&gt;\n&lt;p&gt;电脑的基本硬件知识大概就是这些了，下一篇文章我可能会讲讲怎么搞到微软的E5开发者，从而免费使用onedrive和office。因为我马上要开学了，所以文章以后的更新可能就不会这么频繁了。大家可以通过RSS订阅我的网站（参见之前的文章）我以后更新文章也会在朋友圈中同步发布&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;dian-nao-ying-jian-de-jie-shao&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;电脑硬件的介绍&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;维修电脑&#34;,&#34;slug&#34;:&#34;QclRBFus-&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/QclRBFus-/&#34;}],&#34;date&#34;:&#34;2023-08-21 10:27:29&#34;,&#34;dateFormat&#34;:&#34;2023-08-21&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/dian-nao-ying-jian-de-jie-shao/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;10 min read&#34;,&#34;time&#34;:598000,&#34;words&#34;:2906,&#34;minutes&#34;:10},&#34;description&#34;:&#34;这次的文章有点长，里面的知识也比较多比较杂，大家混个脸熟就行😂。今天我来讲讲电脑的硬件组成部分，其实你可以观察一下你的台式电脑，以外观来说这家伙分为以下这三部分。\n输入单元：包括键盘、鼠标、手写板、读卡器等等\n主机部分：这个就是系统单元，...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;相信大家在访问github的时候或多或少会遇到浏览器加载了很久仍然没有结果的情况。github是一个多么棒的网站啊，我不能容忍我访问不了它！（doge 下面我来讲讲解决方法&lt;/p&gt;\n&lt;p&gt;第一个方法：不输入网址，直接输入github的服务器ip地址&lt;br&gt;\n为什么这个方法会有效呢？那是因为github访问不了可能是DNS出现了问题。&lt;br&gt;\nDNS又是什么呢？来人，上维基百科（doge：DNS（Domain Name System，域名系统），因特网上作为域名和IP地址互相映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机对应的IP地址的过程叫做域名解析（或主机名解析）&lt;br&gt;\n如果你没看明白，我再拿人话解释一遍。ip地址相当于是一个人的名字，它的形式一般是一串数字，比如百度的ip就是39.156.66.10 但是这一大串数字可太难记忆了，于是就有了域名的出现，而我们平常访问的域名就相当于是一个人易于记忆的外号。而DNS的作用则是把外号和名字连接起来。比如你在访问百度时，你在浏览器里输入baidu.com 你的浏览器会先去问问dns，这个baidu.com的外号指的是谁啊？然后DNS就会告诉他网站的ip地址，这样你的浏览器就可以和服务器建立连接了。&lt;br&gt;\n但如果DNS出现了问题，那么你的浏览器可能就会获得一个错误的ip地址，这样一来，你也自然无法正常与服务器建立连接了。&lt;br&gt;\n我们要做的就是直接查询github服务器的IP地址，直接在浏览器中输入ip地址。&lt;br&gt;\n点击链接：https://ipw.cn/ping/  在输入框里输入github.com&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690980868640.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n显示的ip是20.205.243.166，我们直接把它输入到浏览器中&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690981011059.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690981017580.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n可以成功访问了！&lt;/p&gt;\n&lt;p&gt;如果第一个方法不行的话，那就排除了dns的问题，那么剩下的可能性还有两个，一个是因为服务器在国外，本身连接速度就慢，再加上访问github的人很多。所以你的流量就直接被挤掉了。还有一个就是咱们中国的防火墙😂咱中国的防火墙还挺迷惑的，不知道什么时候就突然不让你访问github了😂&lt;/p&gt;\n&lt;p&gt;接下来说的两种方法可以应对以上两个情况&lt;/p&gt;\n&lt;p&gt;第二个方法：使用dev-sidecar 这是一个github上的开源应用 顾名思义，它就像一个给开发者搭的便车，它可以让我们更容易访问github。注意，这个工具并不是科学上网工具 它并不能帮你翻越我国的网络防护墙。&lt;br&gt;\n听起来有点搞笑，你要访问github就要下载这个应用，但是你要下载应用又必须去github上找😂&lt;br&gt;\n这只能靠你的一点运气了😂，一旦你成功登上的了github，记得赶紧下载这个玩意&lt;br&gt;\n在这里放上链接：https://github.com/docmirror/dev-sidecar/releases&lt;br&gt;\n打开链接，找到合适你系统的文件下载（支持Mac WIndows  Debian系Linux）&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690982728748.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n（exe文件是windows的 dmg是mac的 deb是debian系linux的）&lt;br&gt;\n点击文件进行下载。&lt;br&gt;\n下载以后双击打开，他会提示你需要配置一个证书。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690982851754.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690982858888.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690982864664.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n跟着他的步骤来 最后配置好后点击按钮开启即可&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690982951829.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n你会发现你可以正常的访问github了！不过有一个需要注意的点是，在使用完后记得关闭这个应用，如果你在关机的时候它没有关闭的话，你在开机以后可能会连不上网，如果连不上的话，就再打开这个应用，将其开启以后就可以联网了。&lt;/p&gt;\n&lt;p&gt;第三个方法：这是最简单粗暴的方式 你不是服务器在国外吗？你不是有放防火墙吗？我直接翻墙不就得了😂&lt;br&gt;\n请大家注意！我翻墙的目的是明确的，我是为了访问github获取知识，请大家一定不要用学到的技术去干一些法律绝对不允许的事情！如果你确定自己有足够的控制能力，可以保证自己不滥用学到的技术，那就往下看吧。&lt;br&gt;\n这里说句题外话，大家有没有感觉在访问我的博客时非常的慢啊😂 那是因为我的博客就搭建在github的服务器上。其中一大原因就是我会再博客中教授这种处于灰色地带的方法。要是搭建在国内的服务器里，说不定哪天就被封号了😂&lt;br&gt;\n再次声明：不要用学到的知识干坏事 技术没有好坏之分，但人有。&lt;/p&gt;\n&lt;p&gt;言归正传，这需要我们下载一个叫做clash的软件 clash是一个vpn软件 有关vpn的解释，你可以在我的上篇讲洋葱网的博文中找到比较详细易懂的解释  讲个笑话，这个东西也需要在github里下载哈哈哈&lt;br&gt;\nmac下载地址：https://github.com/yichengchen/clashX/releases&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690983912482.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n点击这个文件进行下载&lt;br&gt;\nwindows下载：https://github.com/Z-Siqi/Clash-for-Windows_Chinese/releases&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690984030954.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n点击这个文件进行下载&lt;br&gt;\n下载后我们需要添加v2ray线路才可以使用，而这个东西一般是付费的，但是网上每天都能找得到免费的v2ray线路，当这些东西存活时间很短，基本上只有一天，所以你需要在每次用的时候更换新的v2ray线路&lt;br&gt;\n这里推荐一个每日更新免费线路的rss订阅源，不了解rss的可以去阅读我之前的文章。&lt;br&gt;\n链接：https://rsshub.app/v2rayshares&lt;br&gt;\n这里还有一个网站链接：https://www.iyio.net/2023/08/011056.html&lt;br&gt;\n然后复制这些链接，点击clash中的导入，导入你的链接即可。&lt;br&gt;\n这部分比较简单，我不做过多说明 网上的教程也挺多，大家自行百度吧&lt;br&gt;\n我还有一些比较好用的手机VPN软件 如果你想了解的话，可以在微信中询问我。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;github-shang-bu-qu-de-jie-jue-fang-fa&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;Github上不去的解决方法&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;网站Web类&#34;,&#34;slug&#34;:&#34;Yqw5RtzQo&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/Yqw5RtzQo/&#34;}],&#34;date&#34;:&#34;2023-08-02 20:31:56&#34;,&#34;dateFormat&#34;:&#34;2023-08-02&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/github-shang-bu-qu-de-jie-jue-fang-fa/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;6 min read&#34;,&#34;time&#34;:342000,&#34;words&#34;:1618,&#34;minutes&#34;:6},&#34;description&#34;:&#34;相信大家在访问github的时候或多或少会遇到浏览器加载了很久仍然没有结果的情况。github是一个多么棒的网站啊，我不能容忍我访问不了它！（doge 下面我来讲讲解决方法\n第一个方法：不输入网址，直接输入github的服务器ip地址\n为什...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;说在前面&lt;br&gt;\n如果你是一个不愿意折腾的人，可以立即退出这篇文章。这篇文章提到的所有东西应该对你的电脑使用没有任何影响。 你掌握了洋葱路由的使用方法以后干的所有事情也与我无关，我仅仅是把它当做一个学术知识来讲述。&lt;/p&gt;\n&lt;p&gt;首先，我来说说Dark Web是什么东西。按照维基百科的解释，所谓“暗网（Dark Web），统称那些只能用特殊软件、特殊授权或对电脑做特殊设置才能连上的网络，使用一般的浏览器和搜索引擎找不到暗网的内容。与此相对，一般常用的互联网，由于可追踪其真实地理位置和通信进行人的身份识别被称为明网（Clearnet）不同于明网的域名.com .cn .top之类的结尾，暗网中的网站是以.onion结尾的，而且前面通常是一大串乱码&lt;br&gt;\n比如这个：http://ybzlxo7r5agiyfvugtsi4peepjzad57cqm57h65a6xzcwd6grfuhxvqd.onion&lt;br&gt;\n我从网上找到了这样一张图片&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690939531649.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n（这张图中的Deep Web是深网的意思，指那些不能被普通搜索引擎检索到的非表面网络内容。所有需要个人密码才能访问的内容都属于深网内容，比如我个人邮箱里的信息，或是有密码保护的百度网盘)&lt;br&gt;\n这张图的意思是我们平时访问的明网，也就是万维网 只占互联网总数的一小部分。但其实我并不认同这张图片。首先一个证据是DarkWeb过隐蔽，我们几乎无法知道他到底有多大。第二个证据是 互联网的基础就是大量的用户和设备，比如中国就有好几亿的网民。假设中国只有50万人使用暗网，那它产生的数据怎么可能和那好几亿人产生的数据相当呢？从数据规模上来说，暗网无论从规模还是数据量都不可能和明网相比。&lt;/p&gt;\n&lt;p&gt;接下来，我再来讲讲DarkWeb的大致原理，给大家解释解释洋葱浏览器为什么是世界上最安全的浏览器。&lt;br&gt;\n洋葱路由这项技术最初却是由政府提出的。根据各种公开信息，暗网这个概念最初是在1994年由美国军方科学家提出的，1996年5月，美国海军研究实验所的3名科学家提交了一篇论文，题目是《隐藏路径信息》，提出打造一个系统，使用者在连接因特网时不会向服务器泄露身份。在这个系统构想中，保护数据的密码因为像洋葱一样层层叠叠，于是他们将之称为“洋葱网络”（Tor, the Onion Router）。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690954927334.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n这是你用普通浏览器上网时的示意图，你的手机会通过你家的路由器直接和网站的服务器进行沟通。而别人可以轻易的通过服务器的访问记录或是PPPOE的访问路径锁定你家的路由器。如果有一个人在你的路由器和服务器之间监听，那么它不仅知道你家的路由器在哪里，还知道你访问的数据去了哪个服务器。这样，别人就知道了你在何时何地访问了什么网站。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690955172953.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n而这张照片则展示了访问暗网的路径&lt;br&gt;\n首先，你不再借助家中的路由器，而是直接通过VPN连接到一个完全随机的服务器。VPN（Virtual Private Network）即虚拟私有网络。可以允许你与外部的服务器直接建立一个加密的通信连接。这里有人可能要说了，VPN不就是那个用来翻墙（访问被封禁的外国网站）的东西吗？&lt;br&gt;\n其实，VPN的作用是允许你更安全的上网，比如我在外出吃饭的时候，想要链接餐厅的WIFI，可是我又害怕自己的个人隐私被轻易泄漏，这时 我就可以使用VPN。或者有一个大公司想要同时给北京和上海提供服务，那他们该如何通过互联网交流含有商业机密的信息呢？答案还是使用VPN 总之，说了这么多 我的意思是，翻墙只不过是VPN的一个副加作用，所以恳请大家以后听到VPN的时候也不要认为他就是一个违法的东西。&lt;br&gt;\n技术是不分好坏的，真正有好坏之分的是使用技术的的人。&lt;br&gt;\n言归正传，当你用VPN与一个随机的服务器建立连接后，你会立马跳到另外一个随机的服务器，然后你的访问请求就会在好多好多随机的服务器里跳来跳去，最后跳上四五次才会到达你真正要访问的服务器。&lt;br&gt;\n接下来我们假设如果你要访问的服务器那里有一个监视者，他只能看见你的信息是从前面那个随机服务器来的。如果有人在其中一个服务器上监视你，他只能看到你的数据从上一个服务器来，到下一个随机服务器去（因为他不知道你到底要访问什么，所以就算他位于最后一个随机服务器也没关系，因为他不知道你下一个访问的服务器就是你真正的服务器）所以说如果一个人要监视你的话，他必须在你访问的所有的服务器上同时监视你，但这基本是不可能的，因为你访问的服务器遍布在全世界各地，也就是说，当你使用洋葱路由时，你的访问申请分布在全世界各地。&lt;br&gt;\n怎么样，是不是有点懂（晕）了😂，没听懂也没关系，反正你知道现在洋葱浏览器被认为是世界上最隐蔽浏览器就行了。现在我再来说说该如何使用它。&lt;br&gt;\n首先打开洋葱浏览器官网（真有意思，咱们中国的防火墙墙这墙那的，竟然漏了这个玩意😂）选择适合你系统的软件进行下载。&lt;br&gt;\n链接：http://torproject.netcologne.de/&lt;br&gt;\n下载之后双击打开，你会看到这样一个界面（tor浏览器是基于firefox搭建的，所以有很多东西和firefox是一样的，你可以把它理解成一个增强版的firefox）&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690957885828.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n接下来，跟着我做几个设置（我这里由于之前配置好了，所以已经自动链接到洋葱网了）&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690958103783.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n点击进入设置选项 选择搜索&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690958294196.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n确定你的默认搜索引擎是duckduckgo（多可爱的名字啊doge&lt;br&gt;\nduckduckgo是一个非常棒的搜索引擎，它可以比bing 或是 google 更有效的保护你的信息&lt;br&gt;\n我找到一个知乎文章，详细的写了duckduckgo创立的历史 感兴趣的朋友可以看看&lt;br&gt;\n链接：https://zhuanlan.zhihu.com/p/164691886&lt;/p&gt;\n&lt;p&gt;接下来我们要更改一下网桥设置，不然你在中国境内是无法访问洋葱网的 这里再次声明，不要用你学到的技术去做违反国家法律的事情！技术不分好坏，但人分好坏！&lt;br&gt;\n打开连接 选择添加新网桥 选择内置网桥 选择snowflake网桥或是meek-azure网桥进行连接&lt;br&gt;\n仅我个人测试，obfs4基本上用不了，meek-azure网桥太慢了，所以推荐大家连接snowflake&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690959339672.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690959633188.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n好了，连接完网桥以后 等待你的浏览器接入洋葱网 当他显示duckduckgo的界面时，就说明连接成功了。&lt;br&gt;\n这个时候，你就可以使用啦！&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690959828228.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n这里就可以看到，我在访问这个页面时，跳到了德国的服务器和美国的服务器，这意味着什么大家可以自己动动脑子想想。&lt;br&gt;\n在这里给大家几个建议：&lt;br&gt;\n1 不要在用洋葱浏览器下载任何东西，包括浏览器插件。因为这有可能会泄漏你真实ip&lt;br&gt;\n2 不要在暗网上用你的手机收验证码&lt;br&gt;\n3 不要直接或间接透露任何个人信息&lt;br&gt;\n4 不要在tor中登录你之前用普通浏览器登录过的账号 尽量让你再tor上访问的东西与你在普通浏览器里访问的东西没有任何关联&lt;br&gt;\n注意：用洋葱浏览器访问普通网站并不会把他们变成暗网，只有.onion结尾的网站才是暗网。&lt;br&gt;\n这里提供一个暗网搜索引擎not evai：http://ybzlxo7r5agiyfvugtsi4peepjzad57cqm57h65a6xzcwd6grfuhxvqd.onion（这名字可真是讽刺啊😂）&lt;br&gt;\n黑市交易当然是暗网上最重要的一块内容了。不过这里要注意，暗网上不流行使用各国现实的货币交易，只能用比特币，毕竟比特币去中心化的特征能最大程度保障双方的安全，因此这里也是研究比特币的重镇。&lt;/p&gt;\n&lt;p&gt;就拿这个专门出售苹果产品的网站为例，它的价格能低到让你绝望。一部128GB的iPhone 7仅需325美元（约合2200元人民币），而它的官方价格高达6188元。别问我它为什么这么便宜，我也不想知道。不过你需要拿出0.137个比特币来完成这笔交易，美元和人民币都不行。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690960237815.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;更加劲爆的军火当然不会少。从AK-47到沙漠之鹰，甚至连弩都有。目前这家网站的AK-47正在打折，人民币两万多就能买一把，是不是心动啦？但请不要知法犯法。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690960263748.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;在黑市上颇受欢迎的外国护照和各种证件自然也有。比如这个网站专卖英国护照，店主非常自信，据它所说，你的信息将会被登记到官方的护照数据库中，用这本护照可以自由进出英国和各欧盟国家。不过价格当然也不便宜，一本2000英镑😂&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690960296954.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;当然，上面所提到的这些都只是暗网中的一小部分，“not Evil”就显示他们能索引到23228219个隐藏网址。如果你真的用心去找，你能在上面找到太多人性的复杂呈现。其中既有我们上面呈现的种种游走在法律以外的黑色交易，其实更多的还是正常的个人表达、交流和交易行为。&lt;br&gt;\n有的人是为了所谓的“自由”，毕竟这里没有人能监管到你；有的人则是单纯想掩盖自己的身份，毕竟内心深处的有些东西没办法光明正大地讲出来；有的人则是好奇，觉得这里太酷了。种种一切合法的非法的内容充斥着暗网的世界&lt;/p&gt;\n&lt;p&gt;那么，对于互联网世界，暗网意味着什么？&lt;br&gt;\n因为上面遍布着非法交易及众多人类的恶的一面，我们是否应该完全否定暗网呢？我不这么觉得，正如我在上文所说，技术不分好坏，但使用技术的人分好坏。科技本身就是一把双刃剑，就看人类怎么使用它。首先，构建暗网的技术对于整个互联网行业来说就很有价值。“比如构建暗网时使用了大量的区块链技术，而区块链技术在保密通讯、分布式传输等环节当中都在被使用，只不过在日常使用当中不会将所用信息都隐藏起来。&lt;br&gt;\n当然，随着暗网犯罪的逐渐增多，人们对它的研究也在加强，我没记错的话，著名的暗网黑市“丝绸之路2.0”就在2020年被多国的网络警察联合入侵，一举逮捕了网站的运营者。我相信，将来肯定会找到能监管暗网的方式。事实上，使用正常网络进行犯罪的行为肯定要大大超过暗网上的犯罪行为，毕竟不是每个犯罪分子都是高科技爱好者。😂&lt;br&gt;\n而这里面的矛盾之处在于，这种黑色地带真的能被消灭吗？当我们解决了暗网之后，那些毒贩、变态和军火商们就会消失吗？显然不会。从实体的地下黑市到虚拟的线上平台，犯罪分子们其实才是走在科技最前沿的那一群人&lt;br&gt;\n而在知乎上，有一个在暗网问题下的高票回答得到了很多人的认同，“暗网是新闻自由的保证。”他在里面使用了斯诺登的例子，因为暗网，斯诺登才能躲开美国国家安全局的监控，将资料透露给新闻媒体。&lt;br&gt;\n本应该最开放、最自由、最信息通畅的行业却要靠一个无法见光的工具来保护，也蛮奇怪的。虚拟和现实、监管和自由，当我们身处这样一个完全没有监管者的空间时，真的能得到所谓的“真实”吗？恐怕又是一个疑问。&lt;br&gt;\n暗网给了这个世界上许多身处阴暗角落的人们一个空间，让他们可以通过这个虚拟空间释放自己的心底难以言表的黑暗，获得罪恶带来的利益，同时又能享受那没有限制的匿名自由。而这种自由与罪恶共存的地方恐怕正是它吸引人的地方。就像过去的人们消灭不了各种地下交易一样，我们也很难完全根除暗网。这里就是人性的释放空间，如果你到了那里，看到了那一切的光怪陆离，看到了人性的黑暗一面，然后要做的不是沉浸在其中无法自拔，而是摇摇头，回到真实的世界中，好好地认真生活。&lt;/p&gt;\n&lt;p&gt;唉 不知道为什么写完这篇文章以后，我的心情竟然有些沉重&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;yang-cong-lu-you-he-dark-web&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;洋葱路由和Dark Web&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;网站Web类&#34;,&#34;slug&#34;:&#34;Yqw5RtzQo&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/Yqw5RtzQo/&#34;}],&#34;date&#34;:&#34;2023-08-02 09:13:37&#34;,&#34;dateFormat&#34;:&#34;2023-08-02&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/yang-cong-lu-you-he-dark-web/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;13 min read&#34;,&#34;time&#34;:736000,&#34;words&#34;:3601,&#34;minutes&#34;:13},&#34;description&#34;:&#34;说在前面\n如果你是一个不愿意折腾的人，可以立即退出这篇文章。这篇文章提到的所有东西应该对你的电脑使用没有任何影响。 你掌握了洋葱路由的使用方法以后干的所有事情也与我无关，我仅仅是把它当做一个学术知识来讲述。\n首先，我来说说Dark Web是...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;当你的windows出现问题的时候，或是你想从win10升级至win11的时候，就需要重装系统了。今天我就给大家讲讲如何通过pe系统盘重装系统（这个文章中不仅会教授方法，而且可能会连带着介绍很多知识，所以如果你没有耐心看完的话，就只看方法就可以了，但是了解这些基础知识对以后折腾电脑还是有很多帮助的）&lt;br&gt;\n首先列出几个你需要准备的东西&lt;br&gt;\n1 系统镜像文件 这是一个一般以.iso 结尾的文件，里面存放着安装系统需要的所有东西，大小大概在4～7个Gb左右。windows系统的镜像文件可以上hellowindows网站找，在这里给出网址：https://hellowindows.cn/&lt;br&gt;\n2 一个大小为8G以上的u盘&lt;br&gt;\n3 firpe 的 iso文件 这是一个非常厉害的玩意，具体功能下文讲 下载连接：https://pan.yukaidi.com/s/0e7FY?path=%2FISO 点击最后一个.iso后缀的文件进行下载。&lt;br&gt;\n4 ventoy安装程序 这也是一个非常棒的玩意 下载链接：https://www.ventoy.net/cn/download.html&lt;/p&gt;\n&lt;p&gt;好了，需要东西都准备好了，我来解释解释他们都是干嘛用的&lt;br&gt;\niso镜像文件：这个没啥可解释的，这就是一个文件，里面包含了安装系统所需要的所有东西&lt;/p&gt;\n&lt;p&gt;Ventoy：简单来说，Ventoy是一个制作可启动U盘的开源工具。&lt;br&gt;\n有了Ventoy你就无需反复地格式化U盘，你只需要把 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件直接拷贝到U盘里面就可以启动了，无需其他操作。&lt;br&gt;\n你可以一次性拷贝很多个不同类型的镜像文件，Ventoy 会在启动时显示一个菜单来供你进行选择&lt;br&gt;\n你还可以在 Ventoy 的界面中直接浏览并启动本地硬盘中的 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件。&lt;br&gt;\nVentoy 安装之后，同一个U盘可以同时支持 x86 Legacy BIOS、IA32 UEFI、x86_64 UEFI、ARM64 UEFI 和 MIPS64EL UEFI 模式，同时还不影响U盘的日常使用。&lt;br&gt;\n（上面是官方文档的说明，如果你没看懂的话，我再用自己的话解释一遍😂）&lt;br&gt;\n如果你在桌面上双击iso文件，你会发现他打开会有一堆文件夹，但是并不能进入到系统的安装界面。传统方法上，如果你想要进入启动界面的话，你就需要把这个文件「刻录」到u盘中，但这个方法存在许多的局限，比如你在一个u盘里刻录了系统镜像的话，你这个u盘就算是废了，它就只能作为一个系统启动盘。甚至不能再往里面放文件了。但ventoy不一样，你可以在一个安装有ventoy的u盘里存放好多系统，需要安装哪个直接选哪个，而且制作完的u盘仍然可以正常使用。&lt;br&gt;\n安装ventoy：双击下载的exe打开 将你准备好的u盘插入电脑 在ventoy的页面中选择这个u盘 并点击「确定」写入ventoy   ** 注意！！！确保你的u盘已经清空，重要的数据都已经转移。因为这个操作会直接格式化u盘！！！**&lt;/p&gt;\n&lt;p&gt;再写入好ventoy以后，我们就可以把镜像文件直接拖到u盘中了 把你之前下载的系统镜像和firpe的镜像拖拽到u盘中。&lt;/p&gt;\n&lt;p&gt;现在我再来说说firpe是个什么玩意，firpe是一个PE系统。这个PE系统是一个被精简过的win11系统，PE系统去除了win11上一些比较不常用的功能，只留下了最重要的骨架。这使得它十分的精简 firpe的镜像只有700MB左右！这样小巧的身形使得pe系统可以被放进u盘中，直接将u盘作为启动盘。比如说我只需要把这个u盘插到我爸的电脑里，我就可以直接进入这个pe系统，而不是我爸电脑上的windows系统。同时，firpe也有很多有用的功能，比如更改磁盘分区，破解windows电脑的密码之类的。PE系统有很多，比较老的有什么老毛桃，大白菜之类的。但我绝对不推荐大家使用这些流氓，这些垃圾在安装系统的时候给你的电脑捆绑安装特别多的垃圾软件。我想没有一个人愿意看到自己刚装的系统里面赫然出现360和2345的全家桶吧😂&lt;/p&gt;\n&lt;p&gt;好了，说了这么多，现在让我们开始重装系统吧！&lt;/p&gt;\n&lt;p&gt;首先，把你的u盘插入要重装系统的电脑。我们首先需要进入电脑的bios bios大家可以理解成一个超级迷你的系统，他被写入在了主板之中，他负责引导并启动你的操作系统。进入bios的方法很简单，只需要你在电脑重启的时候不停的按键盘上的一个键就可以了。至于这个键是什么，不同的电脑不一样。如果你是笔记本电脑，请百度搜索“xxx笔记本进入bios”如果你是台式电脑，首先要看看你的电脑主板是什么厂家生产的，比如我的台式机就是华硕主板，我就需要搜索“华硕主板进入bios”&lt;br&gt;\n接下来，我用我爸的windows电脑进行演示😂&lt;br&gt;\n首先进入bios&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690902887117.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n（不同电脑的bios都是大同小异，老一点的bios比如像我演示用的这个，只能用上下左右键和回车键进行选择，新一点的bios可以使用鼠标）&lt;br&gt;\n找到Security选项找到Secure Boot，回车键进入&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690903080306.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n找到Secure Boot，回车键进入&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690903122509.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n选择disable禁用该选项，如果你不禁用，你是无法进入u盘的安装界面的。&lt;br&gt;\n禁用后我们按esc退出，找到Startup或是Boot选项，找到大概意思是启动顺序的选项，回车进入。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690903208846.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n通过回车键和上下方向键将你的电脑的第一启动选项调成你的u盘，如上图所示。如果你还是不清楚怎么弄的话，可以去阅读选项右边的帮助文档，里面的解释还是比较详细的&lt;/p&gt;\n&lt;p&gt;好，调完启动顺序以后，按下键盘上的F10（可能有的机型是其他键，但一般都会写在屏幕底下，叫做Save and Exit） 保存并退出，等待片刻，如果你进入了这个界面，恭喜你！你完成一大半了！&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690903644994.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n然后我们通过上下键选择firpe选项，一路无脑回车，等待片刻后你会发现自己进入了firpe的桌面&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690903721054.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n接下来我们打开diskgenius，这是一个很棒的磁盘管理软件，选择你的系统盘（C盘），右键点击 选择格式化当前分区。格式化后选择顶栏上的「保存更改」至此，你已经完成了安装系统的所有步骤&lt;br&gt;\n接下来，我们再次重启电脑，注意不要拔出你的u盘！再次来到这个界面&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690903976393.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n这次选择windows的镜像，一路回车进入安装程序&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690904068392.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690904073861.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n注意这里要选择自定义安装&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690904098488.JPG\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n选择你刚刚格式化的c盘，点击下一步 安装的系统版本选啥都无所谓，但我自己是习惯安装企业版&lt;br&gt;\n后面就基本无脑操作了，唯一需要注意的是微软找你要激活密钥的时候要选择先不需要密钥，激活windows这个事情等我们安装好系统以后再说。&lt;br&gt;\n剩下的就是等待了&lt;br&gt;\n如果你是第一次重装系统的话，重装完以后是不是有一种极大的成就感啊？😂反正我第一次是这样的。其实就这一次一次的成就感就是我继续折腾电脑的动力。&lt;br&gt;\n最后，我们再来激活你的windows&lt;br&gt;\n进入我的网盘，下载激活软件 https://casperfeehily-my.sharepoint.com/:u:/g/personal/casper_casperfeehily_onmicrosoft_com/EXIopdV821JPs4ZqaDkX4FQBfGDdrhQLpQvudOY1ZGf8HA?e=DtMxaH&lt;br&gt;\n下载完了双击打开，点击自动激活即可&lt;br&gt;\n诶呦，这么长的文章终于写完了😂&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;windows-dian-nao-chong-zhuang-xi-tong-de-fang-fa&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;Windows 电脑重装系统的方法&#34;,&#34;tags&#34;:[{&#34;index&#34;:0,&#34;name&#34;:&#34;Windows&#34;,&#34;slug&#34;:&#34;B0-RPcCND&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/B0-RPcCND/&#34;},{&#34;index&#34;:-1,&#34;name&#34;:&#34;维修电脑&#34;,&#34;slug&#34;:&#34;QclRBFus-&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/QclRBFus-/&#34;}],&#34;date&#34;:&#34;2023-08-01 18:09:18&#34;,&#34;dateFormat&#34;:&#34;2023-08-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/windows-dian-nao-chong-zhuang-xi-tong-de-fang-fa/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;8 min read&#34;,&#34;time&#34;:444000,&#34;words&#34;:2098,&#34;minutes&#34;:8},&#34;description&#34;:&#34;当你的windows出现问题的时候，或是你想从win10升级至win11的时候，就需要重装系统了。今天我就给大家讲讲如何通过pe系统盘重装系统（这个文章中不仅会教授方法，而且可能会连带着介绍很多知识，所以如果你没有耐心看完的话，就只看方法就...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;相信大家也和我一样遇到过本来想上网搜索一个知识，但是看着看着就跳到了搞笑视频，或者是什么劲爆新闻之类的地方。今天就来说说该如何避免这种情况&lt;br&gt;\n我们每天都在接收资讯。无论是社交网络中好友分享的新鲜事，还是像今日头条等聚合阅读工具里的文章，依靠推荐算法，它们总能带来你可能感兴趣的内容。这些或有用、或无用的资讯不仅消耗了我们大量的时间，无穷尽的时间流也在让我们超负荷地接受信息，还会在无形之中让我们接触的资讯类型越来越窄。&lt;br&gt;\n为了解决信息过载的问题，让我们对于接收的信息掌握主动权，RSS 重新进入了我们的视野：我们可以自由选择订阅的信息源，不用再受算法的控制，也可以及时地对信息源进行调整以避免信息过载。&lt;/p&gt;\n&lt;p&gt;RSS，一个每天刷着抖音的你可能并不知道的词，一个来自上世纪的产物，一个曾经风光无限如今却快被多数人遗忘的东西...&lt;br&gt;\n我知道 RSS 注定小众，但正因知道知道它的人少，我就想有更多的人知道它。&lt;br&gt;\n但在国内，想要真正舒服的用上 RSS 对于多数人来说太难了&lt;br&gt;\n知名在线 RSS 服务 Feedly（2018.11）、Inoreader（2020.4） 先后被墙，打着万物皆可RSS大旗的 RssHub 官方域名也被墙了（2020.3）， iOS 端最多好评的 RSS 阅读器 Reeder 也于2020年九月在国区被下架。&lt;br&gt;\n尽管困难重重，但这并不意味着我们该放弃 RSS，甚至越是如此，我觉得越能体现 RSS 的价值。&lt;br&gt;\nRSS 的全称有三种说法，RDF Site Summary（资源描述框架站点摘要）、Rich Site Summary（网站内容摘要）和 Really Simple Syndication（简易资讯聚合）&lt;br&gt;\n当然，具体是什么其实不太重要&lt;br&gt;\n对于多数人，你这样理解就够了：RSS是一个能让你在&lt;strong&gt;一个地方&lt;/strong&gt;订阅各种感兴趣网站的工具&lt;br&gt;\n仔细去理解这句话，这和你常见的订阅行为并不一样&lt;/p&gt;\n&lt;p&gt;以社交媒体举个最简单的例子：&lt;br&gt;\n如果我想对「Backstreet boys」保持关注，那我可能需要关注他的 ins、FaceBook、微博、B站、抖音、贴吧...&lt;br&gt;\n同时为了不漏掉演出信息、新专发布，那我可能还需要在大麦网、音乐平台上也关注他&lt;br&gt;\n而事实上，我不使用其中的大多数平台，也不想给手机装这么多APP，然后每天一个一个打开查看，更不可能给这些APP都打开通知权限，毕竟通知权限可是垃圾信息的重灾区。&lt;br&gt;\n你应该知道我接下来要说什么了&lt;/p&gt;\n&lt;p&gt;是的，RSS 就可以解决这个问题。用RSS追番可太舒服了😂&lt;/p&gt;\n&lt;p&gt;2 拒绝推荐算法&lt;br&gt;\nRSS 的核心是资讯聚合，但远不止此&lt;br&gt;\n时至2021年，订阅这种行为，早已不再纯粹，而是被大量的「推荐算法」所侵占&lt;br&gt;\n如今只要是个APP，就会被加入「视频流」功能，算是一个很好的例子&lt;br&gt;\n不否认推荐算法能有助于我们节约时间，快速发现更多自己感兴趣的内容&lt;br&gt;\n但你得承认：大多数人很容易陷入被毫无意义的推荐内容浪费了时间却还浑然不知的处境&lt;br&gt;\n技术应当是给人们带来自由和发展，而非接管人们的注意力，浪费宝贵的时间&lt;br&gt;\n对于那些真正明白自己需要什么的人来说，用上 RSS 吧，因为 RSS 能真正给你一个自己决定看什么的机会。&lt;/p&gt;\n&lt;p&gt;大致了解了的优点后，我们从最简单的开始——先看看如何用 RSS 订阅一个博客&lt;br&gt;\n这里就用我自己的博客进行演示，可以看到，我的博客界面上有很明显的RSS标识&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690863241830.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n如果你是电脑用户，只需要右键点击这个按钮并选择复制链接就好了&lt;br&gt;\n如果你是手机用户，可以复制以下这个链接：https://casperfeehily.github.io/atom.xml&lt;/p&gt;\n&lt;p&gt;好，复制完连接以后，我们需要从网上下载一个RSS阅读器，这里我给出几个推荐。&lt;br&gt;\n1 安卓手机&lt;br&gt;\nFeedme下载地址：https://play.google.com/store/apps/details?id=com.seazon.feedme&lt;br&gt;\n2 windows&lt;br&gt;\nfluent下载地址：https://apps.microsoft.com/store/detail/fluent-%E9%98%85%E8%AF%BB%E5%99%A8/9P71FC94LRH8?hl=zh-cn&amp;amp;gl=cn&amp;amp;rtc=1&lt;br&gt;\n（别看上面显示的要付费，其实这个软件可以无限期免费试用，付费按钮只是提供一个打赏渠道）&lt;br&gt;\n3 mac&lt;br&gt;\n在appstore中搜索fluent进行下载&lt;br&gt;\n4 iphone ipad&lt;br&gt;\n在appstore中搜索Ego reader或NetNews Reader&lt;/p&gt;\n&lt;p&gt;接下来我们将复制好的连接导入你的RSS阅读器，这里就以mac上的fluent为例，其他阅读器大同小异&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690864521169.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n首先点击右上角设置按钮，在弹出的界面中找到添加订阅源这一项&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690864775655.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n然后control+v把之前复制的连接粘贴进去，点击添加即可。当然，你也可以把订阅源的名称改成自己喜欢的名字。&lt;br&gt;\n这样，就创建好了一个RSS订阅啦&lt;br&gt;\n那么如果想订阅一个网站，但是网站上没有rss连接该怎么办？&lt;br&gt;\n这里提供一个涵盖很多常用网站RSS值的网站&lt;br&gt;\nhttps://docs.rsshub.app/social-media.html#bilibili&lt;br&gt;\n这里以添加一个bilibili up主专栏的RSS订阅来给大家演示如何使用&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690878226129.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n这里我们可以看到网站上有比较详细的描述，我们只需要把例子中连接最后的那一串数字换成想要订阅的up主的用户id即可。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690878585797.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690878592445.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n复制用户id 进行替换，替换完了应该是这样：https://rsshub.app/bilibili/user/article/6336952&lt;br&gt;\n然后导入订阅即可。&lt;br&gt;\n这个网站里还有像柳叶刀或者是nature这类的学术期刊的链接，也很不错。&lt;/p&gt;\n&lt;p&gt;另外推荐一个油猴脚本：RSS+ 这个脚本可以自动识别当前网站的RSS源 点击此链接下载https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss&lt;br&gt;\n如果你之前没有用过油猴脚本的话，需要先在浏览器上安装一个插件（这里推荐使用Eage或chorme进行安装，firefox可能会出现一些问题）&lt;br&gt;\n启用这个油猴脚本以后，在他检测到CSS源以后，你的浏览器右下方会有一个小蓝点，点开以后找到你需要的链接进行复制即可。&lt;/p&gt;\n&lt;p&gt;最后我推荐几个我个人订阅的RSS&lt;br&gt;\n1 少数派 https://sspai.com/feed&lt;br&gt;\n2 阮一峰的博客 http://www.ruanyifeng.com/blog/atom.xml&lt;br&gt;\n3 果壳网 https://rss.aishort.top/?type=guokr&lt;br&gt;\n4 知乎每日精选 https://zhihu.com/rss&lt;br&gt;\n5 国内应急新闻 http://newzone.top/rss.php?type=cneb&lt;br&gt;\n6 百度实时热点 http://newzone.top/rss.php?type=baidu&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;li-yong-rss-ding-yue-you-xiao-de-huo-qu-xin-xi-bi-mian-xin-xi-guo-zai&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;利用RSS订阅有效的获取信息，避免信息过载&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;网站Web类&#34;,&#34;slug&#34;:&#34;Yqw5RtzQo&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/Yqw5RtzQo/&#34;}],&#34;date&#34;:&#34;2023-08-01 10:59:35&#34;,&#34;dateFormat&#34;:&#34;2023-08-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/li-yong-rss-ding-yue-you-xiao-de-huo-qu-xin-xi-bi-mian-xin-xi-guo-zai/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;7 min read&#34;,&#34;time&#34;:395000,&#34;words&#34;:1807,&#34;minutes&#34;:7},&#34;description&#34;:&#34;相信大家也和我一样遇到过本来想上网搜索一个知识，但是看着看着就跳到了搞笑视频，或者是什么劲爆新闻之类的地方。今天就来说说该如何避免这种情况\n我们每天都在接收资讯。无论是社交网络中好友分享的新鲜事，还是像今日头条等聚合阅读工具里的文章，依靠推...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;今天来说说windows电脑对病毒的预防&lt;br&gt;\n首先，安装正确的杀毒软件是非常重要的。一个好的杀毒软件可以帮你省下很多功夫&lt;br&gt;\n下面推荐几个不错的杀毒软件，并且我会写出他们各自的优点和缺点。&lt;br&gt;\n1 火绒 超老牌的杀毒软件&lt;br&gt;\n优点：非常安静、简洁 内存占用小 不流氓 被动防御和弹窗拦截很强大 内置的火绒剑非常好用。&lt;br&gt;\n缺点：主动防御较弱 病毒识别能力较弱（经我本人测试彩虹猫病毒被upx加壳后火绒识别不出来）&lt;br&gt;\n评价：推荐不喜欢经常有弹窗提醒的人使用 功能日常完全够用&lt;br&gt;\n2 卡巴斯基付费版&lt;br&gt;\n优点：病毒库非常广泛，杀毒能力强悍&lt;br&gt;\n缺点：付费 （不要在网上下载所谓的破解版）&lt;br&gt;\n3 智量&lt;br&gt;\n优点：中规中矩&lt;br&gt;\n缺点：被动防御较弱&lt;br&gt;\n4 360极速版（一定要在官网下载极速版！不要下载普通版！）&lt;br&gt;\n优点：相比360普通版来说不流氓了 基本没广告 病毒库广 杀毒能力强&lt;br&gt;\n缺点：弹窗还是有点多 比较吵闹 系统性能占用多&lt;br&gt;\n其实日常使用的话，火绒完全够用了，如果你对安全要求比较高，而且你的电脑还不错的话，可以去官网安装360极速版。&lt;br&gt;\n其次，养成良好的上网习惯也是十分必要的，好的上网习惯可以减少你个人隐私的泄漏。&lt;br&gt;\n首先，你要是用正确的浏览器&lt;br&gt;\n1 microsoft eage 这是微软开发的浏览器，日常使用很不错&lt;/p&gt;\n&lt;p&gt;2 firefox developer 火狐开发者版 这是我日常使用的浏览器 隐私保护做的不错，也集成了一些web工具&lt;/p&gt;\n&lt;p&gt;3 Google chorme 功能十分强大 但是隐私保护应该是这四个浏览器里最差的 而且网上的盗版很多，要下载就去谷歌中国的官网下载&lt;/p&gt;\n&lt;p&gt;4 Tor Browser 洋葱浏览器 这4个浏览器中隐私保护最好的一个 同时也是速度最慢的一个 上手难度也比较高。关于这个神秘的TorBrowser，我以后可能会单独开一篇博客的讲讲他的原理和使用方法。&lt;/p&gt;\n&lt;p&gt;说完了浏览器，再说说上网习惯&lt;br&gt;\n1 尽量访问https网站：一般咱们访问网站时，都会看到地址栏开头有https:// 或是http:// 的字样 这是该网页采用的网络安全协议而https的诞生就是为了取代老旧而且不安全的http协议的。所以一般在访问网站是，记得看看地址栏前面是不是https&lt;/p&gt;\n&lt;p&gt;2 时刻注意浏览器地址栏：有些钓鱼网站可能会模仿成正常网站的登录页面来骗取你的个人信息，其中有些钓鱼网站的网址是和你要访问的网站十分不同的。所以当你发现你的浏览器跳转到了一个奇怪的地址以后，一定要提高警惕&lt;/p&gt;\n&lt;p&gt;3 养成良好的下载习惯：尽量在官网或是Appstore下载东西 或是在大型的镜像站上下载&lt;/p&gt;\n&lt;p&gt;4 不要相信所谓的破解版：如果你真的要试试这些东西的话，建议先放在虚拟机里运行试试，虚拟机里打开火绒剑看看有没有可疑的进程。（安装虚拟机和火绒剑的用法以后再说吧😂）&lt;/p&gt;\n&lt;p&gt;5 如果你迫不得已在所谓的软件下载网之类的地方下载软件，一定点击“普通下载”而不是“安全（快速）下载” 安全下载意味着他会先给你下载一个下载器，比如360软件管家，再从下载器上下载应用。这些下载器对你的电脑没有任何好处。&lt;/p&gt;\n&lt;p&gt;6 躲开流氓软件 下面列出一些我想到的流氓软件：金山毒霸 360普通版 2345全家桶 p2p下载器 瑞金杀毒软件 360安全浏览器 驱动精灵 鲁大师 flashplayer（这个不是flashplayer流氓，是因为flashplayer有很多安全漏洞） 快压&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;windows-dian-nao-de-shi-yong-ji-qiao-he-zhu-yi-shi-xiang-zhi-bing-du-de-yu-fang-xiao-bai-xiang&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;Windows电脑的使用技巧和注意事项之病毒的预防（小白向）&#34;,&#34;tags&#34;:[{&#34;index&#34;:0,&#34;name&#34;:&#34;Windows&#34;,&#34;slug&#34;:&#34;B0-RPcCND&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/B0-RPcCND/&#34;}],&#34;date&#34;:&#34;2023-07-31 22:46:41&#34;,&#34;dateFormat&#34;:&#34;2023-07-31&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/windows-dian-nao-de-shi-yong-ji-qiao-he-zhu-yi-shi-xiang-zhi-bing-du-de-yu-fang-xiao-bai-xiang/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;4 min read&#34;,&#34;time&#34;:224000,&#34;words&#34;:1083,&#34;minutes&#34;:4},&#34;description&#34;:&#34;今天来说说windows电脑对病毒的预防\n首先，安装正确的杀毒软件是非常重要的。一个好的杀毒软件可以帮你省下很多功夫\n下面推荐几个不错的杀毒软件，并且我会写出他们各自的优点和缺点。\n1 火绒 超老牌的杀毒软件\n优点：非常安静、简洁 内存占用...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;今天就来教大家搭建一个自己的网站，可以像我一样随便写点东西放上去😂&lt;br&gt;\nGrida是一个博客软件，用他不仅搭建的时候非常简单，后续的维护更是简单。基本上你一两年不关它也没啥事。&lt;br&gt;\n搭建博客之前，需要先下载几个软件。&lt;br&gt;\n1 Git&lt;br&gt;\nGridea 的同步功能依赖本地 Git 客户端，所以我们需要先安装 Git。Git这个东西是由我的偶像、linux之父 Linus Torvalds 主持建立的（我记得当时Linus好像是在休假期间，用不到一周的时间随随便便组织写出了这个超级好用的东西）Git让编程变得更加方便，同时也便利了本地主机与服务器的沟通。 Git官网下载平台对应的安装程序。安装没有特别的要求，一路下一步即可。&lt;br&gt;\n官网地址：https://git-scm.com/downloads&lt;br&gt;\n网站会自动给你挑选适合的版本，点击我图片中画圈的按钮下载并安装。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690802862477.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;2 Gridea&lt;br&gt;\n进入官网，选择自己的操作系统下载并安装。&lt;br&gt;\n官网地址：https://open.gridea.dev/#started&lt;/p&gt;\n&lt;p&gt;好了，准备工作都做完了，现在开始申请一个免费的github服务器。建立一个网站主要分成两步，一个是编写网站的代码（这里Gridea就相当于是会自动生成一个博客页面的代码）另一个就是服务器，你总不能只有程序吧，没有服务器你程序在哪里运行啊？服务器其实就是一台日夜不停运行的电脑，通常服务器都是要花好多钱的，但是Github真的是一个特别棒的网站。他竟然给咱们免费提供服务器诶！快，和我一起喊：谢谢Github！！！！（手动狗头&lt;br&gt;\nGitHub是一个开源网站，全世界的程序猿都可以参与代码的开发，比如我想开发一个破解软件，我可以把代码公布在github上，全世界的程序员都能看见，其中感兴趣的的人就可以把你的程序下载到他那里进行改进，改进完了以后在发给你，你可以选择是否采用他的改进。这可以让一个本来需要一年才能完成的项目在一个月内就完成了。总之这个网站是一个特别特别棒的想法。顺带提一句，上文那位Linus Torvalds就是github的主要创建者之一&lt;br&gt;\n言归正传，没有登录过github的小伙伴需要首先创建一个账号 进入官网，点击右上角的sign up进行注册 这里注意，给自己选个好点的名字！因为你以后博客网站的地址就是  ‘你的账户名’.github.io&lt;br&gt;\n官网地址：https://github.com/（这个网站如果用正常方式进入的话，有的时候可能会登不上去 解决方法以后再讲，这次咱们就看运气了😂如果登不上去可以过一会再试）&lt;br&gt;\n注册完了以后，点击右上角的加号，选择图片中画圈的那个，新建一个仓库。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690804088199.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n然后给你的仓库命名 这里十分重要！！！一定要写成 你的用户名.github.io的形式！！！比如我用户名是CasperFeehily，我就要填CapserFeehily.github.io&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690804288615.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n输入完就点击右下角绿色按钮创造仓库就行了。&lt;br&gt;\n创造完仓库以后我们要创造一个新的token值，这个token值是为了让Gridea连接github时让github仓库同意Gridea的连接的。&lt;br&gt;\n进入这个连接新建一个token：https://github.com/settings/tokens/new&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690804892647.webp\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n这里的note随便填什么都可以，但是要记得把下面repo的相关权限全都选上&lt;br&gt;\n点击下一步以后会出现一个绿色的条条，里面有一大串字母和数字，记得一定把它复制下来保存好，因为一旦关闭这个页面以后你就再也看不见了。&lt;/p&gt;\n&lt;p&gt;如果你看到这里，并且完成了上述步骤，那么恭喜你，你已经完成三分之二了，加油！胜利就在眼前！&lt;/p&gt;\n&lt;p&gt;接下来我们打开刚刚安装的Gridea，点击左边的“远程”你会发现有一个下图一样的东西出现。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690805384962.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n接下来按着步骤一步一步模仿这个图片填写&lt;br&gt;\n平台选择github pages  域名和仓库名称里面填上你的仓库名字  分支填main  用户名填你注册github时给自己取的名字，邮箱填你注册github时用的邮箱。令牌填入你刚才复制的那个token值。&lt;br&gt;\n底下的CNAME留空&lt;br&gt;\n然后点击保存，这步设置好后就可以开始使用。你可以点击客户端左下角的预览按钮来查看本地渲染效果，或者点击同步进行博客最新内容的部署。&lt;br&gt;\n至此 安装过程已经结束。这个博客有很多功能，可以上网更换模版，我用的就是Next模版。剩下的操作就比较简单了，大家可以自行百度。如果有不明白的也欢迎在评论中或微信里向我提问。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;xiang-wo-yi-yang-ji-yu-grideagithub-pages-da-jian-yi-ge-ge-ren-bo-ke&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;像我一样基于Gridea、github pages搭建一个个人博客&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;网站Web类&#34;,&#34;slug&#34;:&#34;Yqw5RtzQo&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/Yqw5RtzQo/&#34;}],&#34;date&#34;:&#34;2023-07-31 19:15:15&#34;,&#34;dateFormat&#34;:&#34;2023-07-31&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/xiang-wo-yi-yang-ji-yu-grideagithub-pages-da-jian-yi-ge-ge-ren-bo-ke/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;5 min read&#34;,&#34;time&#34;:278000,&#34;words&#34;:1333,&#34;minutes&#34;:5},&#34;description&#34;:&#34;今天就来教大家搭建一个自己的网站，可以像我一样随便写点东西放上去😂\nGrida是一个博客软件，用他不仅搭建的时候非常简单，后续的维护更是简单。基本上你一两年不关它也没啥事。\n搭建博客之前，需要先下载几个软件。\n1 Git\nGridea 的...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;如果你是一个对折腾电脑感兴趣的人，我在篇文章中会谈谈我对折腾电脑的理解，并且也会给你一些从何处开始的建议。&lt;br&gt;\n首先，我们先来看看折腾电脑到底能折腾出来点啥。&lt;br&gt;\n依我看，折腾电脑主要分成在本地折腾和在互联网上折腾😂。比如说重装系统、找盗版软件、玩虚拟机之类的都属于在本地折腾。我在本地折腾的结果有给我的ipad装上了win7虚拟机、在虚拟机里面玩电脑病毒之类的😂在我在互联网上折腾出来一个自己的网站 xionggongda.github.io 申请到了微软e5开发者账号 白白领取Office的使用资格和5个Tb的onedrive空间、还有包括建立这个个人博客。英勇事迹太多了，就不一一赘述了（手动狗头&lt;br&gt;\n怎么样，现在是不是对折腾电脑有点兴趣了？现在，我再来说说该如何开始。&lt;br&gt;\n在我看来，计算机知识是一个非常庞大的存在，种类繁多。这也就导致了一种情况的出现：你在解决a问题的时候发现解决a问题之前又必须要掌握b知识，结果你在学习b知识的时候发现网上的教学中又提到了c知识🤣这就是一个挺让人崩溃的情况。&lt;br&gt;\n那我们该如何应对这样的情况呢？方法只有一个：尽可能多的学习😂 那有没有方法能让这个学习过程变得不那么痛苦吗？答案是有的，就是在解决问题 在玩电脑中学习。比如当我有迫切的欲望想要建立一个网站的时候，我脑子里想的一切事情都是怎么着把这个网站快点建好。一旦你进入了这个状态，我相信你不会抱怨说这时候还要去费劲了解域名、服务器、dns之类的知识了。&lt;br&gt;\n那我们应该从何处开始呢？我个人的观点是从哪里开始都无所谓，就看你自己的兴趣。想从哪折腾起就从哪里折腾。因为前文说过，电脑这个玩意的知识面是非常广的，所以了解什么知识都不是没用的。当然这些知识积累到一定地步以后就可以选择一个自己最感兴趣的地方钻研下去，比如我就选择了我感兴趣的Kali Linux打算仔细研究。&lt;br&gt;\n在这里我给大家3个鼓捣电脑的建议&lt;br&gt;\n1 学会使用浏览器获取知识&lt;br&gt;\n你可以通过多个关键词来更加具体的检索你需要的知识，比如我想了解如何用kali破解wifi密码，我首先&lt;br&gt;\n会通过帮助文档了解到kali里有个叫Hydra的玩意可以破解wifi。然后我会在搜索框里输入“kali Hydra&lt;br&gt;\nwifi密码破解”来进行搜索。这样搜到的东西会更符合你的需要。&lt;br&gt;\n其次根据我的个人经验，有关折腾电脑方面，一般知乎、CSDN、或者程序员的个人博客会更有帮助。所以&lt;br&gt;\n你在搜到很多结果的时候，可以优先查看这几个平台上的。&lt;br&gt;\n2 先从实用性出发&lt;br&gt;\n这一条适用于像我一样对电脑有兴趣但是惰性比较强、容易折腾一半就放弃的人。从实用出发可以让你有&lt;br&gt;\n更强的需求，让你更容易坚持下去。比如我的网盘空间不足以后我就有很强的需求去申请微软开发者。&lt;br&gt;\n具体的项目就有比如白嫖网易云音乐会员、下载各种破解软件、白嫖苹果商店里的付费应用、在重装系统&lt;br&gt;\n以后免费激活windows等。大家可以一一尝试😂&lt;br&gt;\n3 千万不要害怕失败&lt;br&gt;\n折腾电脑，尤其是白嫖付费软件这种东西，在鼓捣很久以后仍然不成功的概率是很大的，但是这个时候千&lt;br&gt;\n万不要气馁啊💪越是难搞的东西，成功以后你的成就感就会越大。只要成功个两三次以后，我相信你也会&lt;br&gt;\n和我一样，有很强的动力继续折腾下去。&lt;br&gt;\n&lt;img src=\&#34;https://CasperFeehily.github.io/post-images/1690802067359.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n（手动狗头&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;shuo-zai-qian-mian&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;说在前面&#34;,&#34;tags&#34;:[{&#34;index&#34;:0,&#34;name&#34;:&#34;Windows&#34;,&#34;slug&#34;:&#34;B0-RPcCND&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/B0-RPcCND/&#34;},{&#34;index&#34;:1,&#34;name&#34;:&#34;Linux&#34;,&#34;slug&#34;:&#34;SyXIIUwuj&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/SyXIIUwuj/&#34;},{&#34;index&#34;:2,&#34;name&#34;:&#34;Macos&#34;,&#34;slug&#34;:&#34;jKv2RnbI-&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/jKv2RnbI-/&#34;},{&#34;index&#34;:-1,&#34;name&#34;:&#34;维修电脑&#34;,&#34;slug&#34;:&#34;QclRBFus-&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/QclRBFus-/&#34;},{&#34;index&#34;:-1,&#34;name&#34;:&#34;网站Web类&#34;,&#34;slug&#34;:&#34;Yqw5RtzQo&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://CasperFeehily.github.io/tag/Yqw5RtzQo/&#34;}],&#34;date&#34;:&#34;2023-07-31 18:23:21&#34;,&#34;dateFormat&#34;:&#34;2023-07-31&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://CasperFeehily.github.io/post/shuo-zai-qian-mian/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:true,&#34;stats&#34;:{&#34;text&#34;:&#34;4 min read&#34;,&#34;time&#34;:227000,&#34;words&#34;:1116,&#34;minutes&#34;:4},&#34;description&#34;:&#34;如果你是一个对折腾电脑感兴趣的人，我在篇文章中会谈谈我对折腾电脑的理解，并且也会给你一些从何处开始的建议。\n首先，我们先来看看折腾电脑到底能折腾出来点啥。\n依我看，折腾电脑主要分成在本地折腾和在互联网上折腾😂。比如说重装系统、找盗版软件、...&#34;,&#34;toc&#34;:&#34;&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
+
+<script src="/media/js/mouse/peace.js"></script>
+
+
+
+</html>
