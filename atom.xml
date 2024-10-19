@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://CasperFeehily.github.io</id>
     <title>Casper的个人博客</title>
-    <updated>2024-10-19T08:33:19.004Z</updated>
+    <updated>2024-10-19T08:44:33.850Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://CasperFeehily.github.io"/>
     <link rel="self" href="https://CasperFeehily.github.io/atom.xml"/>
@@ -10,6 +10,127 @@
     <logo>https://CasperFeehily.github.io/images/avatar.png</logo>
     <icon>https://CasperFeehily.github.io/favicon.ico</icon>
     <rights>All rights reserved 2024, Casper的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[有关iGEM大赛Wiki制作的反思和经验总结]]></title>
+        <id>https://CasperFeehily.github.io/post/P_suhiOnAp/</id>
+        <link href="https://CasperFeehily.github.io/post/P_suhiOnAp/">
+        </link>
+        <updated>2024-10-21T16:30:29.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="前言">前言</h2>
+<p>2023 年，我非常幸运地加入了我们学校的 iGEM 队伍，并主要负责其中的 Wiki 制作。这里可能有些读者并不知道什么是 iGEM 在此我先简单介绍一下。这里借用百度的解释</p>
+<blockquote>
+<p>iGEM competition（International Genetically Engineered Machine）国际遗传工程的机器设计竞赛，美国麻省理工学院（MIT）创办，是合成生物学（Synthetic Biology）领域最高水平的国际性学术竞赛。iGEM是以合成生物学为主，化学，数学，计算机，机械电子工程设计等多学科为辅的团队性竞赛。</p>
+</blockquote>
+<p>说白了，这玩意和平时咱们理解的学科竞赛不大一样。这玩意要求你利用生物学和工程学知识设计一个项目，用来解决生活中的实际问题。同时，仅仅做点实验、写点论文可不能算是完成任务。你还要做一系列社会实践调查、制作项目宣传片等等。最后，还需要把你这一年时间做的所有工作都呈现在一个叫做Wiki的网站上。而这就是我的主要职责。</p>
+<h2 id="相关语言的学习">相关语言的学习</h2>
+<p>编写这种静态的网站，所涉及到的语言基本上就是HTML、JS和CSS <em>（请注意我这里说的是“语言”而不是“编程语言”）</em> 下面我会简单介绍一下这三个语言的特点和应用方面。</p>
+<h3 id="html">HTML</h3>
+<p>这玩意相当于是一种复杂版的Markdown语法。<em>(如果你不知道什么是Markdown的话，我强烈建议你了解一下。这玩意真超级好用，这篇博客就是用Markdown写成的)</em> 但与之不同的是，他关于文字格式的描述不是用简单的符号，而是用一种叫做标签的东西。光说可能比较难理解，所以我来举个例子。</p>
+<pre><code class="language-html">&lt;html&gt;
+&lt;body style=&quot;background-color:yellow&quot;&gt; #这一行设置了网页背景色是黄色
+&lt;h2 style=&quot;background-color:red&quot;&gt;This is a heading&lt;/h2&gt; #前面的标签设定了这行字的背景是红色的
+&lt;p style=&quot;background-color:green&quot;&gt;This is a paragraph.&lt;/p&gt; #前面的标签设置了这行字的背景是绿色
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>上面这些代码的效果是这样的：<br>
+<img src="https://CasperFeehily.github.io/post-images/1729266155593.png" alt="" loading="lazy"><br>
+怎么样，是不是理解一些了？🐶具体的教程可以查看W3School的教程<a href="https://www.w3school.com.cn/html/index.asp">W3School的教程</a>，我就是在这上面自学的！其实还是蛮容易的。</p>
+<h3 id="css">CSS</h3>
+<p>CSS严格来说不能算是一种标记语言，它的诞生主要是因为程序员的懒惰🐶举个例子，我想要在很多段文字上应用 “粗体 红色背景 绿色字体” 这个样式，按照之前的做法，我要在所有的文字前面都要添加一个标签，注明这段文字是 “粗体 红色背景 绿色字体” 这听起来就怪麻烦的。所以有人想到了一个好办法，他把“粗体 红色背景 绿色字体”这个格式规定了一个名字叫做“标题”，以后所有想引用这个格式的文段只需要在前面注明“标题”就好了。<strong>而CSS文件就是建立这些格式和他们的名字对应关系的文件</strong>。这里还是举个例子吧。<br>
+这个是css文件</p>
+<pre><code class="language-css">h1 {
+  color: green;
+  text-align: center;
+} 
+# 这里定义了标题这一样式 格式是“绿色 居中显示”
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+} 
+# 这里定义了正文这一样式 格式是“vandana字体 大小20px”
+</code></pre>
+<p>这个是他所标记的html文件</p>
+<pre><code class="language-html">&lt;html&gt;
+    &lt;h1&gt;我的第一个 CSS 实例&lt;/h1&gt;
+    &lt;p&gt;这是一个段落。&lt;/p&gt;
+&lt;/html&gt;
+</code></pre>
+<p>上面这些代码的效果是这样的：<br>
+<img src="https://CasperFeehily.github.io/post-images/1729267485570.png" alt="" loading="lazy"></p>
+<h4 id="css编写注意事项">CSS编写注意事项</h4>
+<p>这里是写给有点基础的朋友们看的，如果你看不懂，就去上面的网站好好学习吧🐶</p>
+<ul>
+<li>
+<p>一定要认真的给你的样式取名，不要图省事就取类似于“a1”“a2”的名字，这样就是在折磨日后检查代码的自己🤡</p>
+</li>
+<li>
+<p>不要用太多的!improtant 提高权重，这样万一有写错的地方，很难找到问题所在。</p>
+</li>
+<li>
+<p>iGEM组委会给的仓库中有很多预设的CSS，其中不乏一些十分脑瘫的设计，所以你在发现iGEM服务器上的网页和你本地的长的不一样时，记得检查并注释掉原来的脑瘫CSS。🐶<s>这点让当时的我吃了不少苦头</s></p>
+<h3 id="javascript">JavaScript</h3>
+</li>
+</ul>
+<p>JavaScript是这三个东西里上手难度最高的一个，这是一个真正的编程语言，他能够改变HTML的样式，进而实现一些花里胡哨的效果。比如说文字图片的动画、鼠标追踪等等。总之，这是一个能让你的网站“动”起来的东西。</p>
+<p>如果你是一个之前没有接触过Web前端开发，但又想写出一个网站，我建议你不要花费太多时间去学习JS，因为你可能要花费比HTML和CSS更多的时间去学习，最后还有可能写不出来像别人那样好看的动画效果。<s>不说了，说多了都是泪😥</s></p>
+<p>但如果你的时间充裕，你也可以看看<a href="https://www.w3school.com.cn/js/index.asp">W3school</a>、<a href="https://www.runoob.com/">菜鸟学院</a>的教程。但如果你时间紧张，我的建议是直接面向<a href="https://www.csdn.net/">CSDN</a>、<a href="https://stackoverflow.com/">Stack Overflow</a>和<a href="www.google.com">Google</a>编程。（手动狗头 在这些网站里搜索你想要的动画效果，然后直接把JS代码control+C+V大法到你的网页里，再简单修改一些参数，让它符合你网页的需要就行了。</p>
+<h2 id="igem组委会对于wiki要求">iGEM组委会对于WIki要求</h2>
+<ul>
+<li>
+<p>多媒体文件不能直接放到组委会给的Gitlab仓库里，需要上传到iGEM提供的<a href="https://tools.igem.org/uploads/teams">图床</a>上，再在你的wiki中直接引用链接</p>
+</li>
+<li>
+<p>注意版权，不要使用有版权保护的字体和图片。尽管历年有许多队伍不遵守这一规定，有些还获得了Best Wiki的奖项，但这种行为是不可取的。对于英文字体，我比较推荐<a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>，还挺好看的。</p>
+</li>
+<li>
+<p>不要在网站中引入外部链接，这样会直接让你失去掉评选Best Wiki的资格。你可以用<a href="https://tools.igem.org/wiki/external-content-check">组委会提供的检查工具</a> 检查一下自己的网页。</p>
+</li>
+<li>
+<p>血泪教训 注意Deadline 千万不要把所有工作全都压在Deadline之前做，这样真的特别崩溃。而且iGEM组委会收了这么多钱，买的服务器却破破烂烂的🙂，在上传量大的时候非常容易崩溃，而且这是一个国际性的比赛，每时每刻都可能有人在往服务器上上传数据，不会有半夜三点钟服务器空闲的情况。所以最好在Deadline的前两天就完成Wiki的上传，最后两天只进行一些小的改动。</p>
+</li>
+<li>
+<p>还是血泪教训 iGEM 中所有的页面都是基于 MediaWiki 构建的，我们在编辑页面提交的代码，会经过 MediaWiki 处理，修改代码中的部分内容。所以一定不要前期一直在本地埋头编写Wiki，一定要在每次编写完后Push到Gitlab上看看效果。iGEM 引入的默认规则总能给你带来别样的惊喜。😈</p>
+</li>
+<li>
+<p>iGEM组委会给的模板，最底下有一个写着gitlab地址的底栏，一定不要删去</p>
+</li>
+<li>
+<p>我可能还有一些遗漏的注意事项没说，所以还是一定一定一定要仔细阅读iGEM的帮助文档。</p>
+</li>
+</ul>
+<h2 id="美工与设计">美工与设计</h2>
+<p>iGEM 官方为我们提供了一套默认的 Wiki 模板。 虽然可以直接使用默认模板，但是为了 Wiki 页面的美观性，我们需要对 Wiki 页面进行重新设计。 因此，队伍中有名厉害的美工是件非常重要的事。 在正式进行设计前，一定要明确wiki的主题、基本配色和所需元素、布局规划等。</p>
+<p>在这之后，负责美工的同学和负责 Wiki 制作的同学之间需要进行良好的沟通，这是非常重要的一环。 另外，建议设计在定下来以后不要轻易修改，否则一来容易引起风格不统一，一处修改后可能导致其他地方也需要修改， 二来可能会对制作 Wiki 的同学产生额外负担，因为一个不起眼的功能或设计可能需要大量的代码来实现。😥<s>真的，甲方爸爸改需求真的超崩溃</s></p>
+<p>为了避免美工设计与实际实现有较大的出入，美工的同学可以将预想成品做成一张图片或是pdf， 在图上标注好颜色、尺寸、字体等信息，让制作 Wiki 的同学根据图上信息完成代码的编写工作。比如这样：<br>
+<img src="https://CasperFeehily.github.io/post-images/1729308331422.png" alt="" loading="lazy"></p>
+<p>还有一点需要注意的是，负责美工的同学设计出来的图片最好以透明为底色。如果以白色为底色，并且 Wiki 页面背景不是白色的话，就会出现下面这样的问题。<br>
+<img src="https://CasperFeehily.github.io/post-images/1729308452098.png" alt="" loading="lazy"></p>
+<h2 id="wiki制作技巧">Wiki制作技巧</h2>
+<h3 id="编译器">编译器</h3>
+<p>你需要一个本地的应用来写代码，这个应用就叫做编译器。这里我强烈推荐JetBrain家的Webstorm，真的超级好用。如果你遇到了一些经济学问题🐶<s>可以去网上找找破解版</s>🐶如果不想用破解版，VScode也是个不错的选则。这两个编译器里都有Git插件，可以让你在写完代码后很方便的Push到Gitlab上。<br>
+同时，iGEM官方也在Gitlab中内置了一个在线编辑器，这东西有点类似于VScode，但我并不建议你直接在这个上面写代码，这玩意运行的不是很流畅，但是用来进行简单的修改还是很好用的。</p>
+<h3 id="善用f12">善用F12</h3>
+<p>F12是打开浏览器中的开发者工具的快捷键，这东西在用来调试、修改代码的时候非常的好用，你可以直接把鼠标移动到要修改的地方，它就会显示出相应的css和html，你可以现在上面修改代码 用浏览器预览效果。等到修改好以后，直接在本地的编译器查找替换相应的代码即可。<br>
+<img src="https://CasperFeehily.github.io/post-images/1729319078813.png" alt="" loading="lazy"><br>
+另外，当你看到别的网站上有让你惊艳的设计，可以直接F12一下，看看源码，再control+C+V大法一下🐶<br>
+这里强烈推荐google chorme的开发者工具，真的非常好用。</p>
+<h2 id="我遇到的奇奇怪怪的问题">我遇到的奇奇怪怪的问题</h2>
+<p>下面写了一些我在wiki编写过程中遇到的个性化问题和我的解决方式，我觉得这应该属于小概率事件，应该不会经常发生。但是解决问题的过程还是挺<s>痛苦</s>好玩的，所以不妨听我唠两句🐶</p>
+<ul>
+<li>
+<p>我在往Gitlab上面提交代码的时候，发现虽然代码能成功提交，但是Gitlab老显示Pipline Failed网页构建失败<br>
+<img src="https://CasperFeehily.github.io/post-images/1729319728601.jpg" alt="" loading="lazy"><br>
+经过一个通宵的排查，终于找到了问题。。。我之前觉得iGEM给的footer.html、layout.html、menu.html没啥用，就直接给删了。。。结果后来一看，这里面全是各种依赖关系，把这三个文件删了以后，没有了依赖，Gitlab自然也没法完成构建。于是我把这三个文件回滚回来后修改了一下dependencies.txt文件就解决了问题。</p>
+</li>
+<li>
+<p>如果说上面那个是我自己作的，那下面这个问题就是Gitlab自己的锅。在Pipline正常后，我发现我的网页还是乱七八糟的，很像没有加载css文件的样子。所以不用怀疑，一定又是构建出问题了。又是一个通宵的排查，我发现iGEM组委会是用Flusk路由来构建网页的，而这种情况的出现很有可能是因为Flusk路由出问题了。而这个万恶之源app.py就是负责构建网页的。<br>
+<img src="https://CasperFeehily.github.io/post-images/1729320609183.jpg" alt="" loading="lazy"></p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[有关无损音频和发声单元的知识]]></title>
         <id>https://CasperFeehily.github.io/post/you-guan-wu-sun-yin-pin-he-fa-sheng-dan-yuan-de-zhi-shi/</id>
