@@ -2134,9 +2134,9 @@ pre > span.copy-code:hover {
       border-bottom-color: #495057;
     }
       .nav-item a {
-        color:  #555;
+        color:  #212529;
       }.nav-item a:hover {
-        color: #222;
+        color: #da77f2;
       }.nav-item-active {
       background: #f9f9f9e5;
     }
@@ -2190,12 +2190,13 @@ pre > span.copy-code:hover {
       background: #212529e5;
     }
     .main-title, .brand {
-      color: #FFF !important;
+      color: #f8f9fa !important;
     }
     .mist .site-title i {
-      background: #FFFFFFe5;
-    }
-.box-shadow-wrapper {
+      background: #f8f9fae5;
+    }}.markdownIt-TOC a {
+      color: #ff7301 !important;
+      border-bottom-color: #5a3bf6 !important;.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
       cursor: default;
