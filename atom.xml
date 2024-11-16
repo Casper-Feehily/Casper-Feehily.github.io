@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://casper-feehily.github.io</id>
     <title>Casper的个人博客</title>
-    <updated>2024-11-16T15:40:08.896Z</updated>
+    <updated>2024-11-16T15:55:08.061Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://casper-feehily.github.io"/>
     <link rel="self" href="https://casper-feehily.github.io/atom.xml"/>
@@ -24,9 +24,9 @@
 想想看，现在最顶级的消费级显卡4090的显存只有24GB，而mac在运行一些对CPU要求不高的大模型训练上，系统内存完全可以缩减到6GB左右，而剩下的30GB就都能分到GPU上用作显存。这对于一些语音大模型是极大的优势。这里面又涉及到ai大模型炼丹的知识。<s>这里先挖个坑，以后再来填🐶</s><br>
 除此以外，还有个间接的优点。当你用惯macOS以后，当你换了一个高性能的windows的时候，你会发现自己怎么也习惯不了windows一些反人类的操作逻辑、还有史一样的powershell，但是又装不上macOS系统（黑苹果只能在一些老一点的设备上安装，所以这不算个解决方式）这就会迫使你转向命令行操作逻辑差不多的linux，迫使你学习linux🐶</p>
 <h1 id="macos的操作逻辑和设计架构">macOS的操作逻辑和设计架构</h1>
-<p>macOS发源于UNIX系统，所以广义上，它算和linux是兄弟关系，这点从两者的命令行就能很容易看出来。<s>不过一个兄弟一心只想着捞钱，而另一个却是普济苍生！</s>  不过这两者还是有些区别的，比如 <mark>（）</mark> 我总是觉得虽然感觉mac表面上看起来非常简洁，但如果你打开访达仔细看系统文件夹的话，还是能感觉出来它的文件分类比linux混乱不少的。（不过这也可能是人家防止抄袭的一个手段。。）<br>
-macOS设计上的基本逻辑是（）<br>
-而他的操作逻辑则是所见即所得，几乎完全符合我们的认知。举个例子，mac的触控板中的大部分手势，都是能够凭借直觉直接推测出来的，省去了学习的成本。虽然你可能觉得这样很傻，但是你相信我，你只要用过一个月的macOS，你就再也回不到windows了。<s>我现在就是，用别人的windows电脑，尤其是文件分类整理做的不好的，真的跟赤石一样难受</s><br>
+<p>macOS发源于UNIX系统，所以广义上，它算和linux是兄弟关系，这点从两者的命令行就能很容易看出来。<s>不过一个兄弟一心只想着捞钱，而另一个却是普济苍生！</s>  不过这两者还是有些区别的，比如内核不同、一个开源 一个闭源等等。我总是觉得虽然感觉mac表面上看起来非常简洁，但如果你打开访达仔细看系统文件夹的话，还是能感觉出来它的文件分类比linux混乱不少的。（不过这也可能是人家防止抄袭的一个手段。。。）<br>
+Windows的操作逻辑感觉有些繁琐。不过微软虽然没啥格调，但它的有一种工程师的可爱之处----他们不屑于维持这些表面的风光<br>
+Mac操作逻辑则是所见即所得，几乎完全符合我们的认知。举个例子，mac的触控板中的大部分手势，都是能够凭借直觉直接推测出来的，省去了学习的成本。虽然你可能觉得这样很傻，但是你相信我，你只要用过一个月的macOS，你就再也回不到windows了。<s>我现在就是，用别人的windows电脑，尤其是文件分类整理做的不好的，真的跟赤石一样难受</s><br>
 #Mac的缺点<br>
 注意我这里说的是mac的缺点，而不是macos的缺点，因为我觉得macos对比Windows来说，真的可以算几乎没有缺点🐶</p>
 <ol>
@@ -47,16 +47,18 @@ macOS设计上的基本逻辑是（）<br>
 <li>
 <p><strong>LittleSnitch</strong><br>
 这是一个网络防火墙软件，可以让你对各种软件的连网行为进行管理。如果你下载了破解版，又担心自己的隐私泄露，你可以直接用LittleSnitch让这个软件只能访问特定的ip<br>
-<img src="https://casper-feehily.github.io/post-images/1731683486178.jpg" alt="这个界面还是蛮炫酷的" loading="lazy"></p>
+<img src="https://casper-feehily.github.io/post-images/1731772445815.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p><strong><mark>Alfred5</mark></strong><br>
 这是一个非常强大的全局搜索工具，使用一个快捷键（我配置的是双击Command键）就可以呼出一个搜索框，你就可以在里面搜索任何东西。你可以用它打开应用、查找文件、搜索网页。你还可以通过一些简单的插件和语法扩展实现许多自动化功能。总是非常强大就是了<br>
-<em>有人给我推荐一个叫rycast的应用，是免费的，据说功能比Alfred还要强大 我因为已经配置好了Alfred，懒得重新学习新软件了 所以就没有尝试过。感兴趣的朋友可以试试</em></p>
+<em>有人给我推荐一个叫rycast的应用，是免费的，据说功能比Alfred还要强大 我因为已经配置好了Alfred，懒得重新学习新软件了 所以就没有尝试过。感兴趣的朋友可以试试</em><br>
+<img src="https://casper-feehily.github.io/post-images/1731772455644.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p><strong>Downie4</strong><br>
-这是一个强大的视频下载工具，你只需要把视频网址输入进去，他就能下载到最高清的画质。基本上你能看见的视频，他都能下载。</p>
+这是一个强大的视频下载工具，你只需要把视频网址输入进去，他就能下载到最高清的画质。基本上你能看见的视频，他都能下载。<br>
+<img src="https://casper-feehily.github.io/post-images/1731772463394.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p><strong>Permute3</strong><br>
@@ -85,11 +87,13 @@ macOS设计上的基本逻辑是（）<br>
 <ol start="11">
 <li>
 <p><strong>NotchNook</strong><br>
-这是一个花里胡哨、没啥卵用，但是很有情绪价值的软件🐶他能把新款Mac上面那个巨丑的刘海变成灵动岛，可以显示播放歌曲、或者待办事项之类的东西，还可以作为文件的暂时存放区域。</p>
+这是一个花里胡哨、没啥卵用，但是很有情绪价值的软件🐶他能把新款Mac上面那个巨丑的刘海变成灵动岛，可以显示播放歌曲、或者待办事项之类的东西，还可以作为文件的暂时存放区域。<br>
+<img src="https://casper-feehily.github.io/post-images/1731772493244.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p><strong><mark>iTerm</mark></strong><br>
-如果你和我一样是终端的重度依赖者，你一定能体会到原生的mac终端有多么难用。而iTerm+ohmyzsh是我觉得目前最完美的一套组合。这个东西只要你肯折腾，它能被玩出花来。比如我之前见到的MIT计算机学院的大佬就在iTerm里面装了个nanoVim，然后把终端当做IDE来敲代码</p>
+如果你和我一样是终端的重度依赖者，你一定能体会到原生的mac终端有多么难用。而iTerm+ohmyzsh是我觉得目前最完美的一套组合。这个东西只要你肯折腾，它能被玩出花来。比如我之前见到的MIT计算机学院的大佬就在iTerm里面装了个nanoVim，然后把终端当做IDE来敲代码<br>
+<img src="https://casper-feehily.github.io/post-images/1731772500438.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p><strong><mark>Cheatsheet</mark></strong><br>
