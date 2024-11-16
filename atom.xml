@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://casper-feehily.github.io</id>
     <title>Casper的个人博客</title>
-    <updated>2024-11-15T13:45:59.640Z</updated>
+    <updated>2024-11-16T15:40:08.896Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://casper-feehily.github.io"/>
     <link rel="self" href="https://casper-feehily.github.io/atom.xml"/>
@@ -10,6 +10,105 @@
     <logo>https://casper-feehily.github.io/images/avatar.png</logo>
     <icon>https://casper-feehily.github.io/favicon.ico</icon>
     <rights>All rights reserved 2024, Casper的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Mac系统杂谈和小众好用的软件推荐]]></title>
+        <id>https://casper-feehily.github.io/post/macapp/</id>
+        <link href="https://casper-feehily.github.io/post/macapp/">
+        </link>
+        <updated>2024-10-22T15:58:51.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="前言">前言</h1>
+<p>我个人非常喜欢用Mac系统，不论是操作逻辑还是一些特定的软件，感觉都要比Windows好上不少。这篇文章我会比较详细的介绍mac系统的特点和优势，并把它和windows系统做一个对比，再推荐一些我认为超级好用的mac应用<br>
+顺便提一嘴，这篇文章还是我在去法国的飞机上写的。对于倒时差，我一直的选择都是多熬一会儿🐶，所以我写出来的东西逻辑可能会有些混乱😓<s>大家意会一下就行了</s></p>
+<h1 id="macos的优势">macOS的优势</h1>
+<p>Mac系统以其符合直觉的操作、丝滑的动画、美观的ui著称 <s>此处点名批评某w姓操作系统，都11代了，只要你找对方法，还能找到十几年前做的ui界面😓</s>说到优点，这里就不得不提到Mac堪称逆天的内存管理机制。Mac的显储和系统内存是共用的。就用我的电脑举例，我的电脑上面标的是内存36GB内存，那意味着我的内存+显存一共是32GB，而这里的显存和内存是macOS根据系统使用情况自行分配的。这种内存共享机制和macos出色的优化使得mac在一些特定的任务，比如剪辑或一些特定的大模型训练，相比windows有极大的优势。<br>
+想想看，现在最顶级的消费级显卡4090的显存只有24GB，而mac在运行一些对CPU要求不高的大模型训练上，系统内存完全可以缩减到6GB左右，而剩下的30GB就都能分到GPU上用作显存。这对于一些语音大模型是极大的优势。这里面又涉及到ai大模型炼丹的知识。<s>这里先挖个坑，以后再来填🐶</s><br>
+除此以外，还有个间接的优点。当你用惯macOS以后，当你换了一个高性能的windows的时候，你会发现自己怎么也习惯不了windows一些反人类的操作逻辑、还有史一样的powershell，但是又装不上macOS系统（黑苹果只能在一些老一点的设备上安装，所以这不算个解决方式）这就会迫使你转向命令行操作逻辑差不多的linux，迫使你学习linux🐶</p>
+<h1 id="macos的操作逻辑和设计架构">macOS的操作逻辑和设计架构</h1>
+<p>macOS发源于UNIX系统，所以广义上，它算和linux是兄弟关系，这点从两者的命令行就能很容易看出来。<s>不过一个兄弟一心只想着捞钱，而另一个却是普济苍生！</s>  不过这两者还是有些区别的，比如 <mark>（）</mark> 我总是觉得虽然感觉mac表面上看起来非常简洁，但如果你打开访达仔细看系统文件夹的话，还是能感觉出来它的文件分类比linux混乱不少的。（不过这也可能是人家防止抄袭的一个手段。。）<br>
+macOS设计上的基本逻辑是（）<br>
+而他的操作逻辑则是所见即所得，几乎完全符合我们的认知。举个例子，mac的触控板中的大部分手势，都是能够凭借直觉直接推测出来的，省去了学习的成本。虽然你可能觉得这样很傻，但是你相信我，你只要用过一个月的macOS，你就再也回不到windows了。<s>我现在就是，用别人的windows电脑，尤其是文件分类整理做的不好的，真的跟赤石一样难受</s><br>
+#Mac的缺点<br>
+注意我这里说的是mac的缺点，而不是macos的缺点，因为我觉得macos对比Windows来说，真的可以算几乎没有缺点🐶</p>
+<ol>
+<li>显而易见，复杂的经济学问题 对吧😓</li>
+<li>核心硬件（CPU GPU）性价比奇低 让你感觉就是花钱买了个操作系统的使用权。（不过macbook还是有许多可取之处的，比如说M系列超高的能效比和持久的续航）反倒是周边硬件（比如说屏幕、音频接口）的质量非常高。。。</li>
+<li>文件管理器（Finder）及其难用 只考虑设计感而忽略使用需求的一个反面教材</li>
+<li>Mac的风扇工作逻辑是尽量减少噪声，有的时候你觉得mac已经很烫手了，风扇甚至还没有开始工作。。不过这个缺点可以通过我接下来推荐的一款软件解决。</li>
+</ol>
+<h1 id="macos软件推荐">macOS软件推荐</h1>
+<p>我下面推荐的软件, 有很多都是需要付费的。如果你和我一样，面临着一些复杂的经济学问题，我向你推荐一个老毛子的<a href="www.appstorrent.ru">Mac软件破解网站</a>, <strong>我提到的所有软件这里面都能找到破解版，而且完全免费不限速下载</strong> 国内很多网站都是从他们这里下载完破解版，再挂个不便宜的价格二次出售。。。<br>
+因为是俄罗斯的网站，所以访问速度可能会有点慢，如果你有梯子可以极大的改善体验<br>
+虽然破解版用的香，<mark>但是等你有能力了，我强烈建议你购买正版支持一下开发者，正版才是支持开发者继续创作的动力，大家都需要生活~~</mark></p>
+<ol>
+<li>
+<p><strong><mark>Bartender</mark></strong><br>
+这是一个菜单栏图标管理软件，当你电脑里的应用太多的时候，你的菜单很容易就被堆满了, Bartender允许你通过command+拖动的方式将图标拖动到一个隐藏区域中,只有当鼠标移动到菜单栏的时候才会展开。</p>
+</li>
+<li>
+<p><strong>LittleSnitch</strong><br>
+这是一个网络防火墙软件，可以让你对各种软件的连网行为进行管理。如果你下载了破解版，又担心自己的隐私泄露，你可以直接用LittleSnitch让这个软件只能访问特定的ip<br>
+<img src="https://casper-feehily.github.io/post-images/1731683486178.jpg" alt="这个界面还是蛮炫酷的" loading="lazy"></p>
+</li>
+<li>
+<p><strong><mark>Alfred5</mark></strong><br>
+这是一个非常强大的全局搜索工具，使用一个快捷键（我配置的是双击Command键）就可以呼出一个搜索框，你就可以在里面搜索任何东西。你可以用它打开应用、查找文件、搜索网页。你还可以通过一些简单的插件和语法扩展实现许多自动化功能。总是非常强大就是了<br>
+<em>有人给我推荐一个叫rycast的应用，是免费的，据说功能比Alfred还要强大 我因为已经配置好了Alfred，懒得重新学习新软件了 所以就没有尝试过。感兴趣的朋友可以试试</em></p>
+</li>
+<li>
+<p><strong>Downie4</strong><br>
+这是一个强大的视频下载工具，你只需要把视频网址输入进去，他就能下载到最高清的画质。基本上你能看见的视频，他都能下载。</p>
+</li>
+<li>
+<p><strong>Permute3</strong><br>
+这个是制作Downie的公司开发的一款格式转换工具，在批量转换的时候速度很不错（记得要在设置里把性能限制关掉）</p>
+</li>
+<li>
+<p><strong>IINA</strong><br>
+一款免费的播放器，和windows端的potplayer差不多，基本上能播放所有格式的视频。直接浏览器搜索，官网下载即可</p>
+</li>
+<li>
+<p><strong>Localsend</strong><br>
+一款免费的跨平台文件传输工具，支持Mac、Linux、Windows、安卓、ios之间在局域网内互传文件<br>
+。直接浏览器中搜索，在官网下载即可</p>
+</li>
+<li>
+<p><strong><mark>Loop</mark></strong><br>
+这是一款窗口管理器，可以让你在不使用鼠标的情况下快速调整应用窗口的大小 用他进行分屏操作非常的方便，你可以轻松实现二分屏、三分屏、四分屏等操作，只需要几个快捷键。</p>
+</li>
+<li>
+<p><strong>Macs Fan Control</strong><br>
+这个就是前文提到的控制风扇的软件<s>想要让软件起到作用，首先你的电脑不能是近几年的macbook air，因为air没有风扇哈哈哈哈</s> 你可以手动调整转速，也可以设定让机器在达到一定温度以后风扇自动开始工作。</p>
+</li>
+</ol>
+<p>10.<strong>Clean My Mac</strong><br>
+这玩意有点像mac端的、没有广告的360（doge 这软件长的是真好看，功能也是真强大。</p>
+<ol start="11">
+<li>
+<p><strong>NotchNook</strong><br>
+这是一个花里胡哨、没啥卵用，但是很有情绪价值的软件🐶他能把新款Mac上面那个巨丑的刘海变成灵动岛，可以显示播放歌曲、或者待办事项之类的东西，还可以作为文件的暂时存放区域。</p>
+</li>
+<li>
+<p><strong><mark>iTerm</mark></strong><br>
+如果你和我一样是终端的重度依赖者，你一定能体会到原生的mac终端有多么难用。而iTerm+ohmyzsh是我觉得目前最完美的一套组合。这个东西只要你肯折腾，它能被玩出花来。比如我之前见到的MIT计算机学院的大佬就在iTerm里面装了个nanoVim，然后把终端当做IDE来敲代码</p>
+</li>
+<li>
+<p><strong><mark>Cheatsheet</mark></strong><br>
+这个软件能够在你长按Command时显示当前软件的所有快捷键。在使用新软件的时候非常有帮助。</p>
+</li>
+<li>
+<p><strong><mark>Bear熊掌记</mark></strong><br>
+这个Markdown笔记软件刚刚入坑不久，但是强烈推荐。iCloud多端同步和备忘录一样丝滑，我现在已经用他完全代替了备忘录。而且里面以标签为主的分类逻辑也很方便。这个软件能够让你专注于写作，而不是被繁杂的操作影响思路。<br>
+<em>这个软件的免费版不支持icloud同步，而且它在我提供的那个网站上并没有破解版。不过这里给出一个提示，这个软件是通过向验证服务器发送明文数据包的方式验证的，所以可以通过QuantumultX等软件对数据包进行重写 在手机端破解，然后通过apple的订阅同步功能同步到Mac端。具体方式这里就不展开介绍了。而且这玩意的收费并不贵，有能力的朋友们还是支持一下开发者吧</em></p>
+</li>
+<li>
+<p><strong>Obsidian</strong><br>
+这是一款重量级的笔记软件，其中的“双向链接”和强大的搜索功能完美解决了笔记分类的问题。<strong>非常适合对大体量的知识进行梳理</strong>比如我就用它来记录生物竞赛的知识。</p>
+</li>
+</ol>
+<h1 id="说在最后">说在最后</h1>
+<p>这里再唠叨一句，虽然我提供了毛子破解网站 但是我觉得这个可以作为大家对软件进行试用的一个手段。如果这个软件真的帮到了你，而且你有能力购买正版，<mark>我强烈建议盗版转正版</mark>。给你喜爱的开发者一些支持！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[有关iGEM大赛Wiki制作的反思和经验总结]]></title>
         <id>https://casper-feehily.github.io/post/igemwiki/</id>
