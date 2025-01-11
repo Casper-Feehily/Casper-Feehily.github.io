@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://casper-feehily.github.io</id>
     <title>Casper的个人博客</title>
-    <updated>2025-01-11T08:25:06.873Z</updated>
+    <updated>2025-01-11T08:26:52.269Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://casper-feehily.github.io"/>
     <link rel="self" href="https://casper-feehily.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://casper-feehily.github.io/post/opensource/</id>
         <link href="https://casper-feehily.github.io/post/opensource/">
         </link>
-        <updated>2024-12-27T13:30:35.000Z</updated>
+        <updated>2025-12-10T13:30:35.000Z</updated>
         <content type="html"><![CDATA[<h1 id="前言"><strong>前言</strong></h1>
 <p>最近，Linux内核项目的维护者移除了11名与俄罗斯相关的开发者，据称这一决定是为了遵守美国的制裁规定。制裁的背景是由于俄罗斯在2022年入侵乌克兰后，美国政府加强了对俄技术出口的限制。这些开发者主要参与了与硬件驱动相关的工作，如Acer和Cirrus Logic等厂商的驱动程序。<br>
 这次行动引发了开源社区的广泛讨论和争议。虽然Linus老爷子确认这不是针对个人开发者的攻击，而是为了确保Linux基金会及其项目符合国际法规，但许多人认为<mark>这破坏了开源社区的核心原则，即全球协作和技术无国界</mark><br>
